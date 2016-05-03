@@ -1,0 +1,28 @@
+#!/usr/bin/python2
+
+from os import environ
+
+# Program
+src_env = Environment(
+	CXX = 'clang++',
+	CXXFLAGS = [
+		'-std=c++14', '-O0', '-g',
+		'-Weverything', '-Wno-documentation-unknown-command', '-Wno-padded'
+	],
+	CPPPATH = [
+	],
+	LIBS = [
+	]
+)
+
+src_env['ENV']['TERM'] = environ['TERM']
+
+src_env.Object([
+	'src/main.cc'
+#	Glob('src/subdir/*.cc')
+])
+
+src_env.Program('kislab', [
+	'src/main.o'
+#	Glob('src/subdir/*.o')
+])
