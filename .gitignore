@@ -7,3 +7,10 @@ code/.sconsign.dblite
 
 code/doc/html/*
 code/doc/latex/*
+
+laborbericht/**/*.aux
+laborbericht/**/*.log
+laborbericht/**/*.out
+laborbericht/**/*.toc
+
+laborbericht/Laborbericht.pdf
