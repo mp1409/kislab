@@ -10,6 +10,7 @@ src_env = Environment(
 		'-Weverything', '-Wno-documentation-unknown-command', '-Wno-padded'
 	],
 	CPPPATH = [
+		'src/common'
 	],
 	LIBS = [
 	]
