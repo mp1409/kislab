@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 scons -c
 
 rm -rf doc/html/*
