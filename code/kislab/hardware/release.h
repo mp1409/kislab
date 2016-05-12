@@ -16,6 +16,9 @@
 class Release : public Component {
 
 	private:
+		/**
+		 * Instance of the servo motor.
+		 */
 		Servo _servo;
 
 	public:
