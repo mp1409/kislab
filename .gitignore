@@ -1,10 +1,5 @@
 *.swp
 
-code/src/**/*.o
-code/kislab
-
-code/.sconsign.dblite
-
 code/doc/html/*
 code/doc/latex/*
 

@@ -2,7 +2,7 @@ DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = "KisLab"
 PROJECT_BRIEF          =
 OUTPUT_DIRECTORY       = doc
-EXTENSION_MAPPING      = cc=C++ hh=C++
+EXTENSION_MAPPING      = cpp=C++ h=C++ ino=C++
 FULL_PATH_NAMES        = NO
 INHERIT_DOCS           = NO
 BUILTIN_STL_SUPPORT    = YES
@@ -18,8 +18,8 @@ WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
 WARN_NO_PARAMDOC       = YES
-INPUT                  = src
-FILE_PATTERNS          = *.cc *.hh
+INPUT                  = kislab
+FILE_PATTERNS          = *.cpp *.h *.ino
 RECURSIVE              = YES
 
 SOURCE_BROWSER         = YES
