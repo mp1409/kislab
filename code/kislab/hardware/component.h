@@ -11,6 +11,7 @@
  */
 class Component {
 	protected:
+
 		/**
 		 * The number of the pin connected to the component.
 		 */
