@@ -28,7 +28,7 @@ class LED : public Component {
 		 *
 		 * \param pin The number of the pin connected to the LED.
 		 */
-		inline LED(unsigned short pin) : Component(pin) { set(false); }
+		LED(unsigned short pin);
 
 	public:
 
