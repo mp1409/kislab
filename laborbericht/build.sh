@@ -1,6 +1,13 @@
 #!/usr/bin/env sh
 
-echo "Pkg.update()\nPkg.add(\"Gadfly\")\nPkg.add(\"Cairo\")" | ./julia/julia-2ac304dfba/bin/julia
-./julia/julia-2ac304dfba/bin/julia julia/*.j
+# Test if julia is in path
+julia --version
+retval=$?
+
+if [ $retval -eq 127 ]; then
+	./julia/julia-2ac304dfba/bin/julia julia/*.j
+else
+	julia julia/*.j
+fi
 
 ./build_withoutplots.sh
