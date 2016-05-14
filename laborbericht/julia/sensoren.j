@@ -1,8 +1,6 @@
 # Julia-Script um die KIS-Sensorwerte zu plotten
 # Bisher noch nicht mit sinnvollen Daten gefüllt
 
-Pkg.add("Gadfly")
-Pkg.add("Cairo")
 using Gadfly
 using Cairo
 
