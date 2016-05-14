@@ -46,6 +46,5 @@ p = plot(
     ),
     Guide.title("Sensorenwerte")
 )
-
-draw(PDF("p.pdf", 8inch, 4inch), p)
+draw(PDF("images/sensor_messwerte1.pdf", 8inch, 4inch), p) 
 

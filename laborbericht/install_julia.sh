@@ -9,5 +9,5 @@ else
     wget https://julialang.s3.amazonaws.com/bin/linux/x86/0.4/julia-0.4.5-linux-i686.tar.gz
 fi
 
-tar -xzf julia-0.4.5-linux*.tar.gz* -C /julia
+tar -xzf julia-0.4.5-linux*.tar.gz* -C julia/
 rm julia-0.4.5-linux*.tar.gz*
