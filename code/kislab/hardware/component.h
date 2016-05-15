@@ -6,6 +6,8 @@
 
 #pragma once
 
+#include "Arduino.h"
+
 /**
  * A hardware component which is accesible by the Arduino.
  */
