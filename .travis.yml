@@ -11,6 +11,7 @@ before_install:
   - arduino --pref "compiler.warning_level=all" --save-prefs
 script:
   - ./build.sh
+  - ./check-code.sh
 notifications:
   email:
     on_success: change
