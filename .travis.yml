@@ -1,9 +1,9 @@
 language: c++
 sudo: false
 before_install:
-  - travis-setup.sh
+  - code/travis-setup.sh
 script:
-  - travis-run.sh
+  - code/travis-run.sh
 notifications:
 email:
   on_success: change
