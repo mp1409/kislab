@@ -3,7 +3,7 @@ sudo: false
 before_install:
   - code/travis-setup.sh
 script:
-  - code/travis-run.sh
+  - build_platform uno
 notifications:
 email:
   on_success: change
