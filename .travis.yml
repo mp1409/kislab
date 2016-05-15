@@ -2,10 +2,8 @@ language: c++
 sudo: false
 before_install:
   - cd code/kislab
-  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 script:
-  - find .
-  - build_platform uno
+  - travis.sh
 notifications:
 email:
   on_success: change
