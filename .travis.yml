@@ -1,7 +1,7 @@
 language: c++
 sudo: required
 before_install:
-  - cd code/kislab
+  - cd code
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
   - export DISPLAY=:1.0
@@ -10,7 +10,7 @@ before_install:
   - sudo mv arduino-1.6.9 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 script:
-  - arduino --verify kislab.ino
+  - ./build.sh
 notifications:
 email:
   on_success: change
