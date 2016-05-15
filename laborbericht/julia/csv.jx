@@ -1,4 +1,4 @@
-# Julia-Script um die SV-Dateien zu plotten.
+# Julia-Script um die CSV-Dateien zu plotten.
 # Erste Zeile des CSV Datei wird als Achsenbeschriftung genutzt.
 # CSV Dateiname als Name für resultierende PDF.
 # Title verwendet zweites Kommandozeilenargument, wird allerdings aufgrund automatischer Erzeugung nicht genutzt.
@@ -21,14 +21,14 @@ p = plot(
     #    y = a[2:end, 3],
     #    Geom.step,
     #    Geom.smooth,
-    #    Theme(default_color=color("orange"))
+    #    Theme(default_color=colorant"orange")
     #),
     Guide.XLabel(a[1,1]),
     Guide.YLabel(a[1,2]),
     #Guide.manual_color_key(
     #    "Legende",
-    #    ["Hall-Sensor", "Optischer Sensor"], 
-    #    [color("cyan"), color("orange")]
+    #    ["Hall-Sensor", "Optischer Sensor"],
+    #    [colorant"cyan", colorant"orange"]
     #),
     Guide.title(length(ARGS) > 1 ? ARGS[2] : "")
 )
