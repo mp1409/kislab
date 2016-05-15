@@ -28,7 +28,7 @@ class LED : public Component {
 		 *
 		 * \param pin The number of the pin connected to the LED.
 		 */
-		LED(unsigned short pin);
+		explicit LED(unsigned short pin);
 
 	public:
 

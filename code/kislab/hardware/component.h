@@ -24,5 +24,5 @@ class Component {
 		 *
 		 * \param pin The number of the pin connected to the component.
 		 */
-		Component(unsigned short pin) : _pin(pin) {}
+		inline explicit Component(unsigned short pin) : _pin(pin) {}
 };
