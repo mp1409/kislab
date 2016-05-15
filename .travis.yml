@@ -1,7 +1,8 @@
 language: c++
 sudo: false
 before_install:
-  - code/travis-setup.sh
+  - cd code
+  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 script:
   - build_platform uno
 notifications:
