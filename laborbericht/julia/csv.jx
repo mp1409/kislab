@@ -1,0 +1,34 @@
+# Julia-Script um die KIS-Sensorwerte zu plotten
+# Bisher noch nicht mit sinnvollen Daten gefüllt
+
+using Gadfly
+using Cairo
+
+a = readdlm(ARGS[1], ';');
+m = match(r"julia/(?P<name>\w+)\.csv", ARGS[1])
+
+p = plot(
+    layer(
+        x = a[2:end, 1],
+        y = a[2:end, 2],
+        Geom.point,
+        Geom.smooth
+    ),
+    #layer(
+    #    x = a[2:end, 1],
+    #    y = a[2:end, 3],
+    #    Geom.step,
+    #    Geom.smooth,
+    #    Theme(default_color=color("orange"))
+    #),
+    Guide.XLabel(a[1,1]),
+    Guide.YLabel(a[1,2]),
+    #Guide.manual_color_key(
+    #    "Legende",
+    #    ["Hall-Sensor", "Optischer Sensor"], 
+    #    [color("cyan"), color("orange")]
+    #),
+    #Guide.title(length(ARGS) > 1 ? ARGS[2] : "")
+)
+
+draw(PDF(string("images/generated/", m[:name], ".pdf"), 8inch, 4inch), p)
