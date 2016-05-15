@@ -1,4 +1,3 @@
-language: c++
 sudo: required
 before_install:
   - cd code
@@ -13,6 +12,6 @@ before_install:
 script:
   - ./build.sh
 notifications:
-email:
-  on_success: change
-  on_failure: change
+  email:
+    on_success: change
+    on_failure: change
