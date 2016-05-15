@@ -1,10 +1,10 @@
-language: c++
 sudo: false
 before_install:
-  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq arduino
 script:
-  - build_platform uno
+  - sh -c 'cd code && ./build.sh'
 notifications:
-email:
-  on_success: change
-  on_failure: change
+  email:
+    on_success: change
+    on_failure: change
