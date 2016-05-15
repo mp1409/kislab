@@ -1,5 +1,7 @@
-# Julia-Script um die KIS-Sensorwerte zu plotten
-# Bisher noch nicht mit sinnvollen Daten gefüllt
+# Julia-Script um die SV-Dateien zu plotten.
+# Erste Zeile des CSV Datei wird als Achsenbeschriftung genutzt.
+# CSV Dateiname als Name für resultierende PDF.
+# Title verwendet zweites Kommandozeilenargument, wird allerdings aufgrund automatischer Erzeugung nicht genutzt.
 
 using Gadfly
 using Cairo
@@ -28,7 +30,7 @@ p = plot(
     #    ["Hall-Sensor", "Optischer Sensor"], 
     #    [color("cyan"), color("orange")]
     #),
-    #Guide.title(length(ARGS) > 1 ? ARGS[2] : "")
+    Guide.title(length(ARGS) > 1 ? ARGS[2] : "")
 )
 
 draw(PDF(string("images/generated/", m[:name], ".pdf"), 8inch, 4inch), p)
