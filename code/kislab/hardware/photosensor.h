@@ -18,4 +18,6 @@ class PhotoSensor : public Sensor {
 		 * Class constructor.
 		 */
 		inline PhotoSensor() : Sensor(2) {}
+
+		inline String name() { return String("PhotoSensor"); }
 };
