@@ -3,7 +3,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq arduino
 script:
-  - sh -c 'cd code && ./build.sh'
+  - sh -c 'cd code && ./build-headless.sh'
 notifications:
   email:
     on_success: change
