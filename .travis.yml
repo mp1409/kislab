@@ -1,7 +1,7 @@
 language: c++
 sudo: false
 before_install:
-  - cd code/kislab
+  - cd code
 script:
   - travis.sh
 notifications:
