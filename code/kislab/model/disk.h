@@ -76,7 +76,7 @@ class Disk {
 		 *
 		 * \return True if the disk is stable, else false.
 		 */
-		inline bool getState() { return _stable; }
+		inline bool isStable() { return _stable; }
 
 		/**
 		 * Method to let the ball fall.
