@@ -24,6 +24,13 @@ class Sensor : public Component {
 	public:
 
 		/**
+		 * Method returning a descriptive name of the sensor.
+		 *
+		 * \return The sensor's name.
+		 */
+		virtual String name() = 0;
+
+		/**
 		 * Method reading binary values from the sensor.
 		 *
 		 * \return The (binary) value of the sensor.

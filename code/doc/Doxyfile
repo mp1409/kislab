@@ -4,7 +4,7 @@ PROJECT_BRIEF          =
 OUTPUT_DIRECTORY       = doc
 EXTENSION_MAPPING      = cpp=C++ h=C++ ino=C++
 FULL_PATH_NAMES        = NO
-INHERIT_DOCS           = NO
+INHERIT_DOCS           = YES
 BUILTIN_STL_SUPPORT    = YES
 
 EXTRACT_PRIVATE        = YES

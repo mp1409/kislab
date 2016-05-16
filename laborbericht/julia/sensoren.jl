@@ -28,7 +28,7 @@ p = plot(
         x = x1,
         y = y1,
         Geom.step,
-        Theme(default_color=color("orange"))
+        Theme(default_color=colorant"orange")
     ),
     layer(
         x = x2,
@@ -39,8 +39,8 @@ p = plot(
     Guide.YLabel("Sensor"),
     Guide.manual_color_key(
         "Legende",
-        ["Hall-Sensor", "Optischer Sensor"], 
-        [color("cyan"), color("orange")]
+        ["Hall-Sensor", "Optischer Sensor"],
+        [colorant"cyan", colorant"orange"]
     ),
     Guide.title("Sensorenwerte")
 )

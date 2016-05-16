@@ -6,8 +6,6 @@
 
 #include "led.h"
 
-#include "Arduino.h"
-
 LED::LED(unsigned short pin) : Component(pin) {
 	pinMode(_pin, OUTPUT);
 	set(false);

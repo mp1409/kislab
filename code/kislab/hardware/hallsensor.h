@@ -18,4 +18,6 @@ class HallSensor : public Sensor {
 		 * Class constructor.
 		 */
 		inline HallSensor() : Sensor(3) {}
+
+		inline String name() { return String("HallSensor"); }
 };

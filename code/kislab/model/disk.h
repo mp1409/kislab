@@ -17,6 +17,8 @@ class Disk {
 
 	private:
 		bool stable;
+		bool westside; // bool die indiziert ob die scheibe sich grade auf der richtigen seite zum fallen befindet
+		float speed; // geschwindikgeit der scheibe
 		Release* release;
 		PhotoSensor* pSensor;
 		HallSensor* hSensor;
