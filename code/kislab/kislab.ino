@@ -4,9 +4,9 @@
  * Main file of the programm, containing setup and loop functions.
  */
 
-#include "model/disk.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
+#include "model/disk.h"
 #include "utils/datawriter.h"
 
 /**

@@ -7,8 +7,8 @@
 #pragma once
 
 #include "../hardware/hallsensor.h"
-#include "../hardware/release.h"
 #include "../hardware/photosensor.h"
+#include "../hardware/release.h"
 
 /**
  * The component responsible for releasing bullets.
