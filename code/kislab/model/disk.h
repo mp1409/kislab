@@ -63,6 +63,10 @@ class Disk {
 
 		/**
 		 * Class constructor.
+		 *
+		 * \param ps Instance of the photo sensor.
+		 * \param hs Instance of the hall sensor.
+		 * \param r Instance of the release.
 		 */
 		inline Disk(PhotoSensor* ps, HallSensor* hs, Release* r) : _release(r),
 				_pSensor(ps), _hSensor(hs) {}
