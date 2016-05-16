@@ -35,7 +35,7 @@ class Disk {
 		float speed;
 
 		/**
-		 * Pointer to the release instance.
+		 * Pointer to the Release instance.
 		 *
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
@@ -43,7 +43,7 @@ class Disk {
 		Release* release;
 
 		/**
-		 * Pointer to the photosensor instance.
+		 * Pointer to the PhotoSensor instance.
 		 *
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
@@ -51,7 +51,7 @@ class Disk {
 		PhotoSensor* pSensor;
 
 		/**
-		 * Pointer to the hallsensor instance.
+		 * Pointer to the HallSensor instance.
 		 *
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
@@ -66,6 +66,11 @@ class Disk {
 		Disk(PhotoSensor*, HallSensor*);
 		~Disk();
 
+		/**
+		 * Checks whether the disk is stable.
+		 *
+		 * \return True if the disk is stable, else false.
+		 */
 		inline bool getState() { return stable; }
 
 		/**
