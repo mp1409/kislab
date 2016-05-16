@@ -21,19 +21,19 @@ class Disk {
 		/**
 		 * Bool indicating whether the disk is stable.
 		 */
-		bool _stable;
+		bool _stable = false;
 
 		/**
 		 * Bool indicating whether the disk is on the correct side.
 		 *
 		 * \todo Unclear whether this is one is needed.
 		 */
-		bool _westside;
+		bool _westside = false;
 
 		/**
 		 * Speed of the disk.
 		 */
-		float _speed;
+		float _speed = 0;
 
 		/**
 		 * Pointer to the Release instance.
