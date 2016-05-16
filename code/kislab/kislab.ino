@@ -45,7 +45,6 @@ void setup() {
 
 	Sensor* sensors[] = { hs, ps };
 	dw = new DataWriter(sensors, 2);
-
 }
 
 /**
