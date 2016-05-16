@@ -73,7 +73,7 @@ class Disk {
 		inline bool getState() { return _stable; }
 
 		/**
-		 * Method to let the disk run and the ball fall.
+		 * Method to let the ball fall.
 		 *
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
