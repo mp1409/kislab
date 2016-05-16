@@ -32,6 +32,8 @@ class Disk {
 
 		/**
 		 * Speed of the disk.
+		 * meassured in average millis ?!
+		 * see https://www.arduino.cc/en/Reference/Millis
 		 */
 		float _speed = 0;
 
@@ -45,17 +47,11 @@ class Disk {
 
 		/**
 		 * Pointer to the PhotoSensor instance.
-		 *
-		 * \todo Unclear whether this is needed here, i.e. does it make sense
-		 * that the Disk class controls the relase?
 		 */
 		PhotoSensor* _pSensor;
 
 		/**
 		 * Pointer to the HallSensor instance.
-		 *
-		 * \todo Unclear whether this is needed here, i.e. does it make sense
-		 * that the Disk class controls the relase?
 		 */
 		HallSensor* _hSensor;
 
