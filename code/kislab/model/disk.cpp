@@ -1,7 +1,7 @@
 /**
  * @file
  *
- * The implmentation file of the Disk class.
+ * The implementation file of the Disk class.
  */
 
 #include "disk.h"

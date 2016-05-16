@@ -1,7 +1,7 @@
 /**
  * @file
  *
- * The implmentation file of the LED class.
+ * The implementation file of the LED class.
  */
 
 #include "led.h"
