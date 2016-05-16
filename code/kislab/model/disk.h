@@ -14,7 +14,6 @@
  * A model for the disk.
  */
 class Disk {
-
 	private:
 
 		/**
