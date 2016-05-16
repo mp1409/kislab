@@ -4,6 +4,7 @@
  * Main file of the programm, containing setup and loop functions.
  */
 
+#include "model/disk.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
 #include "utils/datawriter.h"
@@ -24,6 +25,11 @@ PhotoSensor* ps;
 DataWriter* dw;
 
 /**
+ * Pointer to the disk instance.
+ */
+Disk* d;
+
+/**
  * The setup function, invoked once when the Arduino is powered on or the reset
  * button was pressed.
  *
@@ -33,11 +39,13 @@ DataWriter* dw;
 void setup() {
 	hs = new HallSensor();
 	ps = new PhotoSensor();
+	d = new Disk(ps, hs);
 
 	Serial.begin(115200);
 
 	Sensor* sensors[] = { hs, ps };
 	dw = new DataWriter(sensors, 2);
+
 }
 
 /**
