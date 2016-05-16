@@ -62,7 +62,8 @@ class Disk {
 		/**
 		 * Class constructor.
 		 */
-		Disk(PhotoSensor*, HallSensor*, Release*);
+		inline Disk(PhotoSensor* ps, HallSensor* hs, Release* r) : _release(r),
+				_pSensor(ps), _hSensor(hs) {}
 
 		/**
 		 * Checks whether the disk is stable.

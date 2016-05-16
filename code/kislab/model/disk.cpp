@@ -7,12 +7,6 @@
 #include "disk.h"
 
 // TODO: als parameter vllt drehrichtung?
-Disk::Disk(PhotoSensor* ps, HallSensor* hs, Release* r) {
-	_release = r;
-	_pSensor = ps;
-	_hSensor = hs;
-}
-
 void Disk::go() {
 	/**
 	 * \todo geschwindikeit messen
