@@ -28,7 +28,7 @@ class Disk {
 		/**
 		 * Class constructor
 		 */
-		Disk();
+		Disk(PhotoSensor*, HallSensor*);
 		~Disk();
 
 		inline bool getState() { return stable; }

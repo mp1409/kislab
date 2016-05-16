@@ -7,10 +7,10 @@
 #include "disk.h"
 
 // TODO: als parameter vllt drehrichtung?
-Disk::Disk() { 
+Disk::Disk(PhotoSensor* ps, HallSensor* hs) { 
 	release = new Release();
-	pSensor = new PhotoSensor();
-	hSensor = new HallSensor();
+	pSensor = ps;
+	hSensor = hs;
 }
 
 Disk::~Disk() {
@@ -27,4 +27,8 @@ void Disk::go() {
 	if(pSensor->read() == 1 and hSensor->read() == 1) {
 		release->open();
 	}
+	/* TODO:
+	*  - geschwindikeit messen
+	*  - anständige logik für wann fallen lassen implementieren
+	*/
 }
