@@ -6,6 +6,7 @@
 
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
+#include "hardware/release.h"
 #include "model/disk.h"
 #include "utils/datawriter.h"
 
@@ -25,9 +26,14 @@ PhotoSensor* ps;
 DataWriter* dw;
 
 /**
+ * Pointer to the release instance.
+ */
+Release* rel;
+
+/**
  * Pointer to the disk instance.
  */
-Disk* d;
+Disk* disk;
 
 /**
  * The setup function, invoked once when the Arduino is powered on or the reset
@@ -39,7 +45,8 @@ Disk* d;
 void setup() {
 	hs = new HallSensor();
 	ps = new PhotoSensor();
-	d = new Disk(ps, hs);
+	rel = new Release();
+	disk = new Disk(ps, hs, rel);
 
 	Serial.begin(115200);
 

@@ -62,8 +62,7 @@ class Disk {
 		/**
 		 * Class constructor.
 		 */
-		Disk(PhotoSensor*, HallSensor*);
-		~Disk();
+		Disk(PhotoSensor*, HallSensor*, Release*);
 
 		/**
 		 * Checks whether the disk is stable.
