@@ -78,5 +78,5 @@ class Disk {
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
 		 */
-		inline void go();
+		void go();
 };
