@@ -12,6 +12,8 @@
 
 /**
  * A model for the disk.
+ *
+ * \todo Add direction (of rotation) as class member.
  */
 class Disk {
 	private:

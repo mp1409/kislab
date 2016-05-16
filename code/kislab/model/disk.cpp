@@ -6,7 +6,6 @@
 
 #include "disk.h"
 
-// TODO: als parameter vllt drehrichtung?
 void Disk::go() {
 	/**
 	 * \todo geschwindikeit messen
