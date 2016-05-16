@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include "hallsensor.h"
-#include "release.h"
-#include "photosensor.h"
+#include "../hardware/hallsensor.h"
+#include "../hardware/release.h"
+#include "../hardware/photosensor.h"
 
 /**
  * The component responsible for releasing bullets.
@@ -17,7 +17,9 @@ class Disk {
 
 	private:
 		bool stable;
-		Release release = new Release();
+		Release* release;
+		PhotoSensor* pSensor;
+		HallSensor* hSensor;
 
 	public:
 
@@ -25,6 +27,7 @@ class Disk {
 		 * Class constructor
 		 */
 		Disk();
+		~Disk();
 
 		inline bool getState() { return stable; }
 
