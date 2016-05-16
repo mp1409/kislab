@@ -19,9 +19,6 @@ Disk::~Disk() {
 	delete hSensor;
 }
 
-/*
-* Method to let the disk run and the ball fall
-*/
 void Disk::go() {
 	// sensoren auswerten und logs printen die in diagramme gepackt werden können
 	if(pSensor->read() == 1 and hSensor->read() == 1) {
