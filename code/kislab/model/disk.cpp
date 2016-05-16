@@ -8,15 +8,15 @@
 
 // TODO: als parameter vllt drehrichtung?
 Disk::Disk(PhotoSensor* ps, HallSensor* hs) { 
-	release = new Release();
-	pSensor = ps;
-	hSensor = hs;
+	_release = new Release();
+	_pSensor = ps;
+	_hSensor = hs;
 }
 
 Disk::~Disk() {
-	delete release; 
-	delete pSensor;
-	delete hSensor;
+	delete _release;
+	delete _pSensor;
+	delete _hSensor;
 }
 
 void Disk::go() {
@@ -26,7 +26,7 @@ void Disk::go() {
 	 * \todo sensoren auswerten und logs printen die in diagramme gepackt
 	 * werden können
 	 */
-	if(pSensor->read() == 1 and hSensor->read() == 1) {
-		release->open();
+	if(_pSensor->read() == 1 and _hSensor->read() == 1) {
+		_release->open();
 	}
 }

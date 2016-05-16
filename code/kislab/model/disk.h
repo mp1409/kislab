@@ -19,19 +19,19 @@ class Disk {
 		/**
 		 * Bool indicating whether the disk is stable.
 		 */
-		bool stable;
+		bool _stable;
 
 		/**
 		 * Bool indicating whether the disk is on the correct side.
 		 *
 		 * \todo Unclear whether this is one is needed.
 		 */
-		bool westside;
+		bool _westside;
 
 		/**
 		 * Speed of the disk.
 		 */
-		float speed;
+		float _speed;
 
 		/**
 		 * Pointer to the Release instance.
@@ -39,7 +39,7 @@ class Disk {
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
 		 */
-		Release* release;
+		Release* _release;
 
 		/**
 		 * Pointer to the PhotoSensor instance.
@@ -47,7 +47,7 @@ class Disk {
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
 		 */
-		PhotoSensor* pSensor;
+		PhotoSensor* _pSensor;
 
 		/**
 		 * Pointer to the HallSensor instance.
@@ -55,7 +55,7 @@ class Disk {
 		 * \todo Unclear whether this is needed here, i.e. does it make sense
 		 * that the Disk class controls the relase?
 		 */
-		HallSensor* hSensor;
+		HallSensor* _hSensor;
 
 	public:
 
@@ -70,7 +70,7 @@ class Disk {
 		 *
 		 * \return True if the disk is stable, else false.
 		 */
-		inline bool getState() { return stable; }
+		inline bool getState() { return _stable; }
 
 		/**
 		 * Method to let the disk run and the ball fall.
