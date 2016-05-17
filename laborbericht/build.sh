@@ -6,10 +6,10 @@ retval=$?
 
 if [ $retval -eq 127 ]; then
 	./julia/julia-2ac304dfba/bin/julia julia/*.jl
-	./julia/julia-2ac304dfba/bin/julia julia/csv.jlx julia/*.csv
+	./julia/julia-2ac304dfba/bin/julia julia/plot-csv.jlx julia/*.csv
 else
 	julia julia/*.jl
-	julia julia/csv.jlx julia/*.csv
+	julia julia/plot-csv.jlx julia/*.csv
 fi
 
 ./build_withoutplots.sh

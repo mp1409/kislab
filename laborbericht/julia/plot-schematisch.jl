@@ -1,4 +1,4 @@
-# Julia-Script um die KIS-Sensorwerte zu plotten
+# Julia-Script um schematisches Diagramm zu erzeugen
 # Bisher noch nicht mit sinnvollen Daten gefüllt
 
 using Gadfly
