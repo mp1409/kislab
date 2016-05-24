@@ -10,13 +10,14 @@ y1 = []
 x2 = []
 y2 = []
 
-for i in [0,1,2,3,4,5]
-    append!(x1, [i * 72.0])
+for i = 0:11
+    append!(x1, [i * 32.8])
     append!(y1, [i % 2])
 end
 
 y1 *= 0.99
 y1 += 0.005
+
 
 for i in [0,1,2,3]
     append!(x2, [i * 120])
