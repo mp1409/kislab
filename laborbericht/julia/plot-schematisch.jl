@@ -1,5 +1,4 @@
 # Julia-Script um schematisches Diagramm zu erzeugen
-# Bisher noch nicht mit sinnvollen Daten gefüllt
 
 using Gadfly
 using Cairo
@@ -43,6 +42,6 @@ p = plot(
         ["Hall-Sensor", "Optischer Sensor"],
         [colorant"cyan", colorant"orange"]
     ),
-    Guide.title("Sensorenwerte")
+    # Guide.title("Sensorenwerte")
 )
 draw(PDF("images/generated/sensor_messwerte1.pdf", 8inch, 4inch), p)
