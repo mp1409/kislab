@@ -20,6 +20,8 @@ HallSensor* hs;
  */
 PhotoSensor* ps;
 
+Sensor* sensors[2];
+
 /**
  * Pointer to the datawriter instance.
  */
@@ -48,9 +50,11 @@ void setup() {
 	rel = new Release();
 	disk = new Disk(ps, hs, rel);
 
+	sensors[0] = hs;
+	sensors[1] = ps;
+
 	Serial.begin(115200);
 
-	Sensor* sensors[] = { hs, ps };
 	dw = new DataWriter(sensors, 2);
 }
 
