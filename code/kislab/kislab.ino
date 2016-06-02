@@ -20,7 +20,16 @@ HallSensor* hs;
  */
 PhotoSensor* ps;
 
-Sensor* sensors[2];
+/**
+ * The number of sensors.
+ */
+const unsigned int numSensors = 2;
+
+/**
+ * Array with pointers to all sensor instances (in the order they shall
+ * appear in the output.
+ */
+Sensor* sensors[numSensors];
 
 /**
  * Pointer to the datawriter instance.
@@ -46,16 +55,17 @@ Disk* disk;
  */
 void setup() {
 	hs = new HallSensor();
+	sensors[0] = hs;
+
 	ps = new PhotoSensor();
+	sensors[1] = ps;
+
 	rel = new Release();
 	disk = new Disk(ps, hs, rel);
 
-	sensors[0] = hs;
-	sensors[1] = ps;
-
 	Serial.begin(115200);
 
-	dw = new DataWriter(sensors, 2);
+	dw = new DataWriter(sensors, numSensors);
 }
 
 /**
