@@ -1,7 +1,7 @@
 /**
  * @file
  *
- * The header file of the Fall class.
+ * The header file of the FallController class.
  */
 
 #pragma once
@@ -14,7 +14,7 @@
  * This is a controller for the release of (several) bullets after the trigger
  * has been pressed.
  */
-class Fall : public Controller {
+class FallController : public Controller {
 	private:
 
 		/**
@@ -43,7 +43,7 @@ class Fall : public Controller {
 		 * \param disk Pointer to the Disk instance.
 		 * \param trigger Pointer to the Trigger instance.
 		 */
-		inline Fall(Disk* disk, Trigger* trigger) : _disk(disk),
+		inline FallController(Disk* disk, Trigger* trigger) : _disk(disk),
 				_trigger(trigger) {}
 
 		void run();

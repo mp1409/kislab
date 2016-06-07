@@ -1,12 +1,12 @@
 /**
  * @file
  *
- * The implementation file of the Fall class.
+ * The implementation file of the FallController class.
  */
 
-#include "fall.h"
+#include "fallcontroller.h"
 
-int Fall::calculateNextReleaseTime() {
+int FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Implement!
 	 * use pos and speed from disk to determine in_position_time
@@ -17,7 +17,7 @@ int Fall::calculateNextReleaseTime() {
 	return 0;
 }
 
-void Fall::run() {
+void FallController::run() {
 	/**
 	 * \todo \b Implement!
 	 */
