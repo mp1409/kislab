@@ -18,4 +18,6 @@ class Trigger : public Sensor {
 		 * Class constructor.
 		 */
 		inline Trigger() : Sensor(4) {}
+
+		inline String name() { return String("Trigger"); }
 };

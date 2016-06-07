@@ -32,9 +32,9 @@ const unsigned int numSensors = 2;
 Sensor* sensors[numSensors];
 
 /**
- * Pointer to the controller instance.
+ * Pointer to the trigger instance.
  */
-Controller* controller;
+Trigger* trigger;
 
 /**
  * Pointer to the release instance.
@@ -45,6 +45,11 @@ Release* rel;
  * Pointer to the disk instance.
  */
 Disk* disk;
+
+/**
+ * Pointer to the controller instance.
+ */
+Controller* controller;
 
 /**
  * The setup function, invoked once when the Arduino is powered on or the reset
@@ -60,7 +65,10 @@ void setup() {
 	ps = new PhotoSensor();
 	sensors[1] = ps;
 
+	trigger = new Trigger();
+
 	rel = new Release();
+
 	disk = new Disk(ps, hs, rel);
 
 	Serial.begin(115200);
