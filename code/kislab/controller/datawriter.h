@@ -6,12 +6,13 @@
 
 #pragma once
 
+#include "controller.h"
 #include "../hardware/sensor.h"
 
 /**
- * A supportive class writing sensor values to the serial output.
+ * A controller writing sensor values to the serial output.
  */
-class DataWriter {
+class DataWriter : public Controller {
 	private:
 
 		/**
@@ -35,7 +36,7 @@ class DataWriter {
 		DataWriter(Sensor** sensors, unsigned int numSensors);
 
 		/**
-		 * Write a single line of values with the current timestamp.
+		 * Write a line of values with the current timestamp every 10 msecs.
 		 */
-		void writeValues();
+		void run();
 };

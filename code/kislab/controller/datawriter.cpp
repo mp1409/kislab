@@ -18,13 +18,17 @@ DataWriter::DataWriter(Sensor** sensors, unsigned int numSensors) :
 	Serial.println();
 }
 
-void DataWriter::writeValues() {
-	Serial.print(millis());
+void DataWriter::run() {
+	while (true) {
+		Serial.print(millis());
 
-	for(unsigned int i = 0; i < _numSensors; i++) {
-		Serial.print(",");
-		Serial.print(_sensors[i]->read());
+		for(unsigned int i = 0; i < _numSensors; i++) {
+			Serial.print(",");
+			Serial.print(_sensors[i]->read());
+		}
+
+		Serial.println();
+
+		delay(10);
 	}
-
-	Serial.println();
 }

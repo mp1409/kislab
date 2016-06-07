@@ -32,9 +32,9 @@ const unsigned int numSensors = 2;
 Sensor* sensors[numSensors];
 
 /**
- * Pointer to the datawriter instance.
+ * Pointer to the controller instance.
  */
-DataWriter* dw;
+Controller* controller;
 
 /**
  * Pointer to the release instance.
@@ -45,18 +45,6 @@ Release* rel;
  * Pointer to the disk instance.
  */
 Disk* disk;
-
-/**
- * The possible operation modes for the program.
- */
-enum OperationMode {
-	data_output /*!< Write sensor values to serial port. */
-};
-
-/**
- * The current mode of operation.
- */
-const OperationMode mode = data_output;
 
 /**
  * The setup function, invoked once when the Arduino is powered on or the reset
@@ -75,18 +63,15 @@ void setup() {
 	rel = new Release();
 	disk = new Disk(ps, hs, rel);
 
-	if (mode == data_output) {
-		Serial.begin(115200);
-		dw = new DataWriter(sensors, numSensors);
-	}
+	Serial.begin(115200);
+	controller = new DataWriter(sensors, numSensors);
 }
 
 /**
- * The main loop function, run continiously.
+ * The main loop function. By the Arduino platform, it is run continiously.
+ * However, we ignore this, and implement our own endless loop in the run method
+ * of the Controllers, because this better suits object-oriented design.
  */
 void loop() {
-	if (mode == data_output) {
-		dw->writeValues();
-		delay(10);
-	}
+	controller->run();
 }
