@@ -4,11 +4,11 @@
  * Main file of the programm, containing setup and loop functions.
  */
 
+#include "controller/datawriter.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
 #include "hardware/release.h"
 #include "model/disk.h"
-#include "utils/datawriter.h"
 
 /**
  * Pointer to the hall sensor instance.
