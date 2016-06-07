@@ -70,7 +70,7 @@ void setup() {
 
 	rel = new Release();
 
-	disk = new Disk(ps, hs, rel);
+	disk = new Disk(ps, hs);
 
 	// Serial.begin(115200);
 	// controller = new DataWriter(sensors, numSensors);

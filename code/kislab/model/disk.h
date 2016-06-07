@@ -32,18 +32,13 @@ class Disk {
 
 		/**
 		 * Speed of the disk.
+		 *
+		 * \todo
 		 * meassured in average millis ?!
 		 * see https://www.arduino.cc/en/Reference/Millis
+		 * Do we keep it as value or calc it on the fly?
 		 */
 		float _speed = 0;
-
-		/**
-		 * Pointer to the Release instance.
-		 *
-		 * \todo Unclear whether this is needed here, i.e. does it make sense
-		 * that the Disk class controls the relase?
-		 */
-		Release* _release;
 
 		/**
 		 * Pointer to the PhotoSensor instance.
@@ -62,10 +57,9 @@ class Disk {
 		 *
 		 * \param ps Instance of the photo sensor.
 		 * \param hs Instance of the hall sensor.
-		 * \param r Instance of the release.
 		 */
-		inline Disk(PhotoSensor* ps, HallSensor* hs, Release* r) : _release(r),
-				_pSensor(ps), _hSensor(hs) {}
+		inline Disk(PhotoSensor* ps, HallSensor* hs) : _pSensor(ps),
+				_hSensor(hs) {}
 
 		/**
 		 * Checks whether the disk is stable.
@@ -73,12 +67,4 @@ class Disk {
 		 * \return True if the disk is stable, else false.
 		 */
 		inline bool isStable() { return _stable; }
-
-		/**
-		 * Method to let the ball fall.
-		 *
-		 * \todo Unclear whether this is needed here, i.e. does it make sense
-		 * that the Disk class controls the relase?
-		 */
-		void go();
 };
