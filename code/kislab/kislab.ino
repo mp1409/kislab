@@ -5,6 +5,7 @@
  */
 
 #include "controller/datawriter.h"
+#include "controller/fall.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
 #include "hardware/release.h"
@@ -71,8 +72,9 @@ void setup() {
 
 	disk = new Disk(ps, hs, rel);
 
-	Serial.begin(115200);
-	controller = new DataWriter(sensors, numSensors);
+	// Serial.begin(115200);
+	// controller = new DataWriter(sensors, numSensors);
+	controller = new Fall(disk, trigger);
 }
 
 /**

@@ -1,0 +1,50 @@
+/**
+ * @file
+ *
+ * The header file of the Fall class.
+ */
+
+#pragma once
+
+#include "controller.h"
+#include "../model/disk.h"
+#include "../hardware/trigger.h"
+
+/**
+ * This is a controller for the release of (several) bullets after the trigger
+ * has been pressed.
+ */
+class Fall : public Controller {
+	private:
+
+		/**
+		 * Pointer to the disk instance.
+		 */
+		Disk* _disk;
+
+		/**
+		 * Pointer to the trigger instance.
+		 */
+		Trigger* _trigger;
+
+		/**
+		 * Calculates the next bullet release time, based on current values from
+		 * the disk.
+		 *
+		 * \return The next possible bullet release time.
+		 */
+		int calculateNextReleaseTime();
+
+	public:
+
+		/**
+		 * Class constructor.
+		 *
+		 * \param disk Pointer to the Disk instance.
+		 * \param trigger Pointer to the Trigger instance.
+		 */
+		inline Fall(Disk* disk, Trigger* trigger) : _disk(disk),
+				_trigger(trigger) {}
+
+		void run();
+};
