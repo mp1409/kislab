@@ -47,6 +47,18 @@ Release* rel;
 Disk* disk;
 
 /**
+ * The possible operation modes for the program.
+ */
+enum OperationMode {
+	data_output /*!< Write sensor values to serial port. */
+};
+
+/**
+ * The current mode of operation.
+ */
+const OperationMode mode = data_output;
+
+/**
  * The setup function, invoked once when the Arduino is powered on or the reset
  * button was pressed.
  *
@@ -63,15 +75,18 @@ void setup() {
 	rel = new Release();
 	disk = new Disk(ps, hs, rel);
 
-	Serial.begin(115200);
-
-	dw = new DataWriter(sensors, numSensors);
+	if (mode == data_output) {
+		Serial.begin(115200);
+		dw = new DataWriter(sensors, numSensors);
+	}
 }
 
 /**
  * The main loop function, run continiously.
  */
 void loop() {
-	dw->writeValues();
-	delay(10);
+	if (mode == data_output) {
+		dw->writeValues();
+		delay(10);
+	}
 }
