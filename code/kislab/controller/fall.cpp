@@ -20,12 +20,18 @@ int Fall::calculateNextReleaseTime() {
 void Fall::run() {
 	/**
 	 * \todo \b Implement!
-	 * wait until trigger was pressed
-	 *		while True
-	 *			if stable
-	 *				calculate next release time (=nrt)
-	 *			if time in [nrt - 0,5 * polldelay, nrt + 0,5 * polldelay) # compiler pragma unlikely
-	 *				releaseTheKraken
-	 *			short delay
 	 */
+
+	while (true) {
+		/** \todo
+		 *
+		 * Wait until trigger has been pressed.
+		 *
+		 * if stable
+		 *		calculate next release time (=nrt)
+		 *		if time in [nrt - 0,5 * polldelay, nrt + 0,5 * polldelay) # compiler pragma unlikely
+		 *			releaseTheKraken
+		 *	short delay
+		 */
+	}
 }
