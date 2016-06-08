@@ -1,14 +1,21 @@
-CurveFit with least squares method as linear function:
-f(x) = a * x + b
+CurveFit with least squares method with 3 linear functions, each covering a third of the data:
 
-Data1:  a = -0.9396521739130437
-        b = 107.978260869565283
+Data1:  
+    CurveFit.LinearFit{Float64}([116.46428571428577,-1.2428571428571435])
+    CurveFit.LinearFit{Float64}([104.62222222222213,-0.9399999999999992])
+    CurveFit.LinearFit{Float64}([86.99999999999996,-0.7166666666666665])
 
-Data2:  a = -1.0377120963327864
-        b = 137.626984126984158
+Data2: 
+    CurveFit.LinearFit{Float64}([150.55555555555551,-1.4399999999999984])
+    CurveFit.LinearFit{Float64}([132.7272727272726,-1.0448484848484836])
+    CurveFit.LinearFit{Float64}([107.28181818181811,-0.7581818181818178])
+            
+Data3:
+    CurveFit.LinearFit{Float64}([159.44444444444443,-1.5066666666666655])     
+    CurveFit.LinearFit{Float64}([140.52727272727262,-1.0848484848484838])
+    CurveFit.LinearFit{Float64}([112.2818181818181,-0.776363636363636])
 
-Data3:  a = -1.0841269841269847
-        b = 145.920634920634971
-
-Data4:  a = -1.033333333333334
-        b = 137.595238095238169
+Data4:
+    CurveFit.LinearFit{Float64}([150.63888888888883,-1.4433333333333318])
+    CurveFit.LinearFit{Float64}([132.6181818181817,-1.038787878787878])
+    CurveFit.LinearFit{Float64}([107.94545454545445,-0.7599999999999993])
