@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-string="Pkg.update(); Pkg.add(\"Gadfly\"); Pkg.add(\"Cairo\")"
+string="Pkg.update(); Pkg.add(\"Gadfly\"); Pkg.add(\"Cairo\"); Pkg.add(\"CurveFit\");"
+
 
 # Test if julia is in path
 julia --version

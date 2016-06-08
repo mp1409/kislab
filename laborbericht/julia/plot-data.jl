@@ -1,5 +1,6 @@
 using Gadfly
 using Cairo
+using CurveFit
 
 a = readdlm(ARGS[1], ',')
 m = match(r"julia/data/(?P<name>\w+)\.csv", ARGS[1])
@@ -9,7 +10,6 @@ time = interval
 v = 0
 slopes = []
 
-# Testschleife
 for line in 2:size(a)[1]
 	if a[line, 1] < time
 		if a[line, 3] != v
@@ -26,7 +26,14 @@ for line in 2:size(a)[1]
 end
 
 rot = map(x -> (x * 5) / (interval / 1000), slopes)
-println(string(m[:name], ": Berechnungen erfolgreich beendet. Plotte Graph..."))
+
+f = curve_fit(LinearFit, map(x -> Float64(x * (interval / 1000)), collect(1:size(rot)[1])), convert(Array{Float64, 1}, rot))
+
+
+println(string(m[:name], ": Berechnungen erfolgreich beendet."))
+println(string("Approx:\t", f))
+print("Plotte Graph...")
+println()
 
 
 p = plot(
@@ -36,12 +43,17 @@ p = plot(
         Geom.point,
         Geom.smooth
     ),
+    layer(
+        x =  map(x -> Float64(x * (interval / 1000)), collect(1:size(rot)[1] - 2)),
+        y = f(map(x -> Float64(x * (interval / 1000)), collect(1:size(rot)[1] - 2))),
+        Geom.line,
+        Theme(default_color=colorant"orange")
+    ),
     #layer(
     #    x = a[2:end, 1],
     #    y = a[2:end, 3],
     #    Geom.step,
     #    Geom.smooth,
-    #    Theme(default_color=colorant"orange")
     #),
     Guide.XLabel("Zeit [s]"),
     Guide.YLabel("U/min"),
