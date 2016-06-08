@@ -25,8 +25,9 @@ for line in 2:size(a)[1]
 	end
 end
 
-rot = map(x -> (x * 10) / (interval / 1000), slopes)
+rot = map(x -> (x * 5) / (interval / 1000), slopes)
 println(string(m[:name], ": Berechnungen erfolgreich beendet. Plotte Graph..."))
+
 
 p = plot(
     layer(
