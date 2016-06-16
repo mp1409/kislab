@@ -31,9 +31,6 @@ void Disk::update() {
 	}
 }
 
-/**
- * \return 0 if in warmup-state
- */
 double Disk::millisPerRot() {
 	unsigned long timeDiff = _pSensorLastTimes[_timeIndex] - _pSensorLastTimes[(_timeIndex + 1) % _pSensorSampleSize];
 	double rot = static_cast<double>(_pSensorSampleSize) / 12.0;

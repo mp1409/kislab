@@ -13,6 +13,12 @@
 /**
  * A model for the disk.
  *
+ * The basic design principle of this class is that the output values (e.g. the
+ * duration of a rotation or the disk poistion) are calculated from the internal
+ * state of the class. The internal state is updated by a non-blocking method.
+ * By this, a clear seperation between polling sensors and return of values is
+ * established.
+ *
  * \todo Add direction (of rotation) as class member.
  */
 class Disk {
@@ -35,18 +41,39 @@ class Disk {
 		 * Pointer to the PhotoSensor instance.
 		 */
 		PhotoSensor* _pSensor;
+
+		/**
+		 * The number of samples taken from the Photosensor.
+		 */
 		static const unsigned short _pSensorSampleSize = 12;
 
 		/**
 		 * Pointer to the HallSensor instance.
 		 */
 		HallSensor* _hSensor;
+
+		/**
+		 * The number of samples taken from the HallSensor.
+		 */
 		static const unsigned short _hSensorSampleSize = 2;
 
 		short _lastSlope = -1;
-		short _timeIndex = 0;
+
+		/**
+		 * The last sample values from the PhotoSensor. The array is used as a
+		 * ring buffer.
+		 */
 		unsigned long _pSensorLastTimes[_pSensorSampleSize] = { };
-		
+
+		/**
+		 * Index of the newest element in the ring buffer of PhotoSensor sample
+		 * values.
+		 */
+		short _timeIndex = 0;
+
+		/**
+		 * The last recorded position of the hall sensor.
+		 */
 		struct {
 			short position = -1;
 			unsigned long lastTime = 0;
@@ -70,6 +97,20 @@ class Disk {
 		 * \return True if the disk is stable, else false.
 		 */
 		inline bool isStable() { return _stable; }
+
+		/**
+		 * Update the internal state by polling the sensors. Immediately return
+		 * the control flow.
+		 */
 		void update();
+
+		/**
+		 * Return the number of milliseconds per disk rotation. The number is
+		 * calculated from the latest measurement values that have been obtained
+		 * by the update method.
+		 *
+		 * \return Number of milliseconds per disk rotation, 0 if in warmup
+		 * state.
+		 */
 		double millisPerRot();
 };
