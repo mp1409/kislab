@@ -30,25 +30,22 @@ class Disk {
 		 */
 		bool _westside = false;
 
-		/**
-		 * Speed of the disk.
-		 *
-		 * \todo
-		 * meassured in average millis ?!
-		 * see https://www.arduino.cc/en/Reference/Millis
-		 * Do we keep it as value or calc it on the fly?
-		 */
-		float _speed = 0;
 
 		/**
 		 * Pointer to the PhotoSensor instance.
 		 */
 		PhotoSensor* _pSensor;
+		static const unsigned short _pSensorSampleSize = 12;
 
 		/**
 		 * Pointer to the HallSensor instance.
 		 */
 		HallSensor* _hSensor;
+		static const unsigned short _hSensorSampleSize = 2;
+
+		short _lastSlope = -1;
+		short _timeIndex = 0;
+		unsigned long _lastTimes[_pSensorSampleSize] = { };
 
 	public:
 
@@ -67,4 +64,6 @@ class Disk {
 		 * \return True if the disk is stable, else false.
 		 */
 		inline bool isStable() { return _stable; }
+		void update();
+		double millisPerRot();
 };
