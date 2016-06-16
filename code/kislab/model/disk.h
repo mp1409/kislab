@@ -52,14 +52,14 @@ class Disk {
 		/**
 		 * Bool indicating whether the disk is stable.
 		 */
-		bool _stable = false;
+		bool _stable;
 
 		/**
 		 * Bool indicating whether the disk is on the correct side.
 		 *
 		 * \todo Unclear whether this is one is needed.
 		 */
-		bool _westside = false;
+		bool _westside;
 
 		/**
 		 * Pointer to the PhotoSensor instance.
@@ -75,19 +75,19 @@ class Disk {
 		 * The "after" value of the last slope of the PhotoSensor (0->1 means
 		 * position is ONE, 1->0 means position is ZERO).
 		 */
-		Sensor::Value _pSensorLastValue = Sensor::Value::INVALID;
+		Sensor::Value _pSensorLastValue;
 
 		/**
 		 * The last sample values from the PhotoSensor. The array is used as a
 		 * ring buffer.
 		 */
-		unsigned long _pSensorLastTimes[_pSensorSampleSize] = { };
+		unsigned long _pSensorLastTimes[_pSensorSampleSize];
 
 		/**
 		 * Index of the newest element in the ring buffer of PhotoSensor sample
 		 * values.
 		 */
-		unsigned short _timeIndex = 0;
+		unsigned short _timeIndex;
 
 		/**
 		 * The last recorded HallSensor slope, i.e. the last recorded disk
@@ -103,8 +103,10 @@ class Disk {
 		 * \param ps Instance of the photo sensor.
 		 * \param hs Instance of the hall sensor.
 		 */
-		inline Disk(PhotoSensor* ps, HallSensor* hs) : _pSensor(ps),
-				_hSensor(hs) {}
+		inline Disk(PhotoSensor* ps, HallSensor* hs) : _stable(false),
+			_westside(false), _pSensor(ps), _hSensor(hs),
+			_pSensorLastValue(Sensor::Value::INVALID), _pSensorLastTimes{ },
+			_timeIndex(0), _position{Sensor::Value::INVALID, 0} {}
 
 		/**
 		 * Checks whether the disk is stable.
