@@ -22,7 +22,24 @@
  * \todo Add direction (of rotation) as class member.
  */
 class Disk {
+	public:
+
+		/**
+		 * A struct containing the position of the Disk (determined by the
+		 * HallSensor and the time when this position has been determined.
+		 */
+		struct DiskPosition {
+
+			short value;
+
+			unsigned long time;
+		};
+
 	private:
+		/**
+		 * The number of samples taken from the Photosensor.
+		 */
+		static const unsigned short _pSensorSampleSize = 12;
 
 		/**
 		 * Bool indicating whether the disk is stable.
@@ -42,16 +59,11 @@ class Disk {
 		PhotoSensor* _pSensor;
 
 		/**
-		 * The number of samples taken from the Photosensor.
-		 */
-		static const unsigned short _pSensorSampleSize = 12;
-
-		/**
 		 * Pointer to the HallSensor instance.
 		 */
 		HallSensor* _hSensor;
 
-		short _lastSlope = -1;
+		short _pSensorLastValue = -1;
 
 		/**
 		 * The last sample values from the PhotoSensor. The array is used as a
@@ -66,13 +78,10 @@ class Disk {
 		unsigned short _timeIndex = 0;
 
 		/**
-		 * The last recorded position of the hall sensor.
+		 * The last recorded HallSensor slope, i.e. the last recorded disk
+		 * position.
 		 */
-		struct {
-			short position = -1;
-			unsigned long lastTime = 0;
-		} _hSensorPosition;
-	
+		DiskPosition _position;
 
 	public:
 

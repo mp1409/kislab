@@ -7,19 +7,19 @@
 #include "disk.h"
 
 void Disk::update() {
-	if(_lastSlope == -1) {
-		_lastSlope = _pSensor->read();
-	} else if (_lastSlope != _pSensor->read()) {
+	if(_pSensorLastValue == -1) {
+		_pSensorLastValue = _pSensor->read();
+	} else if (_pSensorLastValue != _pSensor->read()) {
 		_timeIndex = (_timeIndex + 1) % _pSensorSampleSize;
 		_pSensorLastTimes[_timeIndex] = millis();
-		_lastSlope = 1 - _lastSlope;
+		_pSensorLastValue = 1 - _pSensorLastValue;
 	}
 
-	if(_hSensorPosition.position == -1) {
-		_hSensorPosition.position = _hSensor->read();
-	} else if(_hSensorPosition.position != _hSensor->read()) {
-		_hSensorPosition.lastTime = millis();
-		_hSensorPosition.position = 1 - _hSensorPosition.position;
+	if(_position.value == -1) {
+		_position.value = _hSensor->read();
+	} else if(_position.value != _hSensor->read()) {
+		_position.time = millis();
+		_position.value = 1 - _position.value;
 	}
 }
 
