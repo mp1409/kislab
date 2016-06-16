@@ -36,7 +36,6 @@ class Disk {
 		 */
 		bool _westside = false;
 
-
 		/**
 		 * Pointer to the PhotoSensor instance.
 		 */
