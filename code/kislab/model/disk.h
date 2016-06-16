@@ -30,8 +30,16 @@ class Disk {
 		 */
 		struct DiskPosition {
 
-			short value;
+			/**
+			 * The "after" value of the last slope (0->1 means position is ONE,
+			 * 1->0 means position is ZERO).
+			 */
+			Sensor::Value value;
 
+			/**
+			 * The time when this value has been recorded, i.e. the slope
+			 * occured.
+			 */
 			unsigned long time;
 		};
 
@@ -63,7 +71,11 @@ class Disk {
 		 */
 		HallSensor* _hSensor;
 
-		short _pSensorLastValue = -1;
+		/**
+		 * The "after" value of the last slope of the PhotoSensor (0->1 means
+		 * position is ONE, 1->0 means position is ZERO).
+		 */
+		Sensor::Value _pSensorLastValue = Sensor::Value::INVALID;
 
 		/**
 		 * The last sample values from the PhotoSensor. The array is used as a
