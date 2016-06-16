@@ -45,7 +45,13 @@ class Disk {
 
 		short _lastSlope = -1;
 		short _timeIndex = 0;
-		unsigned long _lastTimes[_pSensorSampleSize] = { };
+		unsigned long _pSensorLastTimes[_pSensorSampleSize] = { };
+		
+		struct {
+			short position = -1;
+			unsigned long lastTime = 0;
+		} _hSensorPosition;
+	
 
 	public:
 

@@ -19,13 +19,23 @@ void Disk::update() {
 	if(_lastSlope == -1) {
 		_lastSlope = _pSensor->read();
 	} else if (_lastSlope != _pSensor->read()) {
-		_lastTimes[_timeIndex++] = millis();
+		_pSensorLastTimes[_timeIndex++] = millis();
 		_lastSlope = 1 - _lastSlope;
+	}
+
+	if(_hSensorPosition.position == -1) {
+		_hSensorPosition.position = _hSensor->read();
+	} else if(_hSensorPosition.position != _hSensor->read()) {
+		_hSensorPosition.lastTime = millis();
+		_hSensorPosition.position = 1 - _hSensorPosition.position;
 	}
 }
 
+/**
+ * \return 0 if in warmup-state
+ */
 double Disk::millisPerRot() {
-	unsigned long timeDiff = _lastTimes[_timeIndex] - _lastTimes[(_timeIndex + 1) % _pSensorSampleSize];
+	unsigned long timeDiff = _pSensorLastTimes[_timeIndex] - _pSensorLastTimes[(_timeIndex + 1) % _pSensorSampleSize];
 	double rot = static_cast<double>(_pSensorSampleSize) / 12.0;
 	return static_cast<double>(timeDiff) / rot;
 }
