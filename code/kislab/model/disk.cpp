@@ -19,7 +19,8 @@ void Disk::update() {
 	if(_lastSlope == -1) {
 		_lastSlope = _pSensor->read();
 	} else if (_lastSlope != _pSensor->read()) {
-		_pSensorLastTimes[_timeIndex++] = millis();
+		_timeIndex = (_timeIndex + 1) % _pSensorSampleSize;
+		_pSensorLastTimes[_timeIndex] = millis();
 		_lastSlope = 1 - _lastSlope;
 	}
 

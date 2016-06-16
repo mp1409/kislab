@@ -69,7 +69,7 @@ class Disk {
 		 * Index of the newest element in the ring buffer of PhotoSensor sample
 		 * values.
 		 */
-		short _timeIndex = 0;
+		unsigned short _timeIndex = 0;
 
 		/**
 		 * The last recorded position of the hall sensor.
