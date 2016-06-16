@@ -52,11 +52,6 @@ class Disk {
 		 */
 		HallSensor* _hSensor;
 
-		/**
-		 * The number of samples taken from the HallSensor.
-		 */
-		static const unsigned short _hSensorSampleSize = 2;
-
 		short _lastSlope = -1;
 
 		/**
