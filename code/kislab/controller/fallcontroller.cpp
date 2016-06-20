@@ -51,19 +51,6 @@ void FallController::run() {
 	}
 }
 
-void FallController::debug() {
-	while (true) {
-		_disk->update();
-		Disk::DiskPosition p = _disk->position();
-		Serial.print(p.value);
-		Serial.print("\t");
-		Serial.print(_disk->millisPerRot());
-		Serial.print("\t");
-		Serial.println(p.time);
-
-	}
-}
-
 void FallController::releaseTheKraken() {
 	_release->open();
 	unsigned long timeToClose = millis() + 100;

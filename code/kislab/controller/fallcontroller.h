@@ -63,11 +63,8 @@ class FallController : public Controller {
 		 * \param release Pointer to the Release instance.
 		 * \param trigger Pointer to the Trigger instance.
 		 */
-
 		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
 				_disk(disk), _release(release), _trigger(trigger) {}
 
 		void run();
-
-		void debug();
 };
