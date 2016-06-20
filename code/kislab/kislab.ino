@@ -5,6 +5,7 @@
  */
 
 #include "controller/datawriter.h"
+#include "controller/debugcontroller.h"
 #include "controller/fallcontroller.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
@@ -60,6 +61,8 @@ Controller* controller;
  * Additionally, the serial setup should happen here.
  */
 void setup() {
+	Serial.begin(115200);
+
 	hs = new HallSensor();
 	sensors[0] = hs;
 
@@ -72,9 +75,9 @@ void setup() {
 
 	disk = new Disk(ps, hs);
 
-	// Serial.begin(115200);
 	// controller = new DataWriter(sensors, numSensors);
-	controller = new FallController(disk, trigger);
+	controller = new FallController(disk, rel, trigger);
+	// controller = new DebugController(disk);
 }
 
 /**
