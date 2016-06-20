@@ -11,17 +11,15 @@ unsigned long FallController::calculateNextReleaseTime() {
 	 * \todo \b Implement!
 	 * use pos and speed from disk to determine in_position_time
 	 * subtract fall time (including servo reaction time etc)
-	 * result must be greate than current time + safeguard
+	 *
+	 * result must be greate than current time + safeguard (<- do we need this?
+	 * especially safeguard? nrt can only be one or two millis in the future...)
 	 */
 
-	return 0;
+	return millis() + 5;
 }
 
 void FallController::run() {
-	/**
-	 * \todo \b Implement!
-	 */
-
 	while(true) {
 		while(_trigger->read() != Sensor::Value::ZERO) {
 			_disk->update();
@@ -41,8 +39,7 @@ void FallController::run() {
 				continue;
 			}
 
-			//unsigned long nextReleaseTime = calculateNextReleaseTime();
-			unsigned long nextReleaseTime = millis() + 5;
+			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
 
 			if(currentTime >= nextReleaseTime - 0.5 * _defaultPollInterval and currentTime  <= nextReleaseTime + 0.5 * _defaultPollInterval) {
