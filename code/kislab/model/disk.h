@@ -114,6 +114,8 @@ class Disk {
 		 * Checks whether the disk is stable.
 		 *
 		 * \return True if the disk is stable, else false.
+		 *
+		 * \todo \b Implement!
 		 */
 		//inline bool isStable() { return _stable; }
 		inline bool isStable() { return true; }
@@ -134,5 +136,10 @@ class Disk {
 		 */
 		double millisPerRot();
 
+		/**
+		 * Returns the position of the disk.
+		 *
+		 * \return The last known position of the disk.
+		 */
 		inline DiskPosition position() { return _position; }
 };

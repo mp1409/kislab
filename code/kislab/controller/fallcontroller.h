@@ -14,6 +14,9 @@
 /**
  * This is a controller for the release of (several) bullets after the trigger
  * has been pressed.
+ *
+ * \todo When there are several things to poll (disk, trigger), consolidate them
+ * into an update method.
  */
 class FallController : public Controller {
 	private:
@@ -46,6 +49,9 @@ class FallController : public Controller {
 		 */
 		unsigned long calculateNextReleaseTime();
 
+		/**
+		 * Release a ball while continuing to update the interal states.
+		 */
 		void releaseTheKraken();
 
 	public:
@@ -54,12 +60,12 @@ class FallController : public Controller {
 		 * Class constructor.
 		 *
 		 * \param disk Pointer to the Disk instance.
+		 * \param release Pointer to the Release instance.
 		 * \param trigger Pointer to the Trigger instance.
 		 */
 
 		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
 				_disk(disk), _release(release), _trigger(trigger) {}
-
 
 		void run();
 
