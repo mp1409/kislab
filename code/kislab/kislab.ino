@@ -5,6 +5,7 @@
  */
 
 #include "controller/datawriter.h"
+#include "controller/debugcontroller.h"
 #include "controller/fallcontroller.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
@@ -76,6 +77,7 @@ void setup() {
 
 	// controller = new DataWriter(sensors, numSensors);
 	controller = new FallController(disk, rel, trigger);
+	// controller = new DebugController(disk);
 }
 
 /**
@@ -84,6 +86,5 @@ void setup() {
  * of the Controllers, because this better suits object-oriented design.
  */
 void loop() {
-	// controller->debug();
 	controller->run();
 }
