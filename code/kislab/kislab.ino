@@ -74,7 +74,7 @@ void setup() {
 
 	Serial.begin(115200);
 	// controller = new DataWriter(sensors, numSensors);
-	controller = new FallController(disk, trigger);
+	controller = new FallController(disk, trigger, rel);
 }
 
 /**

@@ -66,3 +66,13 @@ void FallController::debug() {
 
 	}
 }
+
+void FallController::releaseTheKraken() {
+	rel->open();
+	unsinged long atm = millis() + 30;
+	while(millis() < atm) {
+		disk->update();
+		delay();
+	}
+	rel->close();
+}
