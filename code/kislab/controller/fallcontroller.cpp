@@ -6,7 +6,7 @@
 
 #include "fallcontroller.h"
 
-int FallController::calculateNextReleaseTime() {
+//int FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Implement!
 	 * use pos and speed from disk to determine in_position_time
@@ -14,8 +14,8 @@ int FallController::calculateNextReleaseTime() {
 	 * result must be greate than current time + safeguard
 	 */
 
-	return 0;
-}
+//	return 0;
+//}
 
 void FallController::run() {
 	/**

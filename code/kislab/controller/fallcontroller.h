@@ -33,7 +33,7 @@ class FallController : public Controller {
 		 *
 		 * \return The next possible bullet release time.
 		 */
-		int calculateNextReleaseTime();
+//		int calculateNextReleaseTime();
 
 	public:
 
