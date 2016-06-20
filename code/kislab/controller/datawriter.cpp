@@ -8,7 +8,6 @@
 
 DataWriter::DataWriter(Sensor** sensors, unsigned int numSensors) :
 		_sensors(sensors), _numSensors(numSensors) {
-	Serial.begin(115200);
 	Serial.print("Time(ms)");
 
 	for(unsigned int i = 0; i < _numSensors; i++) {

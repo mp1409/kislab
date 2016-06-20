@@ -53,8 +53,6 @@ void FallController::run() {
 }
 
 void FallController::debug() {
-	Serial.begin(115200);
-	
 	while (true) {
 		_disk->update();
 		Disk::DiskPosition p = _disk->position();
