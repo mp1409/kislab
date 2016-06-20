@@ -30,7 +30,7 @@ class Sensor : public Component {
 		 *
 		 * \param pin The number of the pin connected to the sensor.
 		 */
-		inline Sensor(unsigned short pin) : Component(pin) {}
+		inline explicit Sensor(unsigned short pin) : Component(pin) {}
 
 	public:
 
