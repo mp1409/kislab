@@ -6,7 +6,7 @@
 
 #include "fallcontroller.h"
 
-//int FallController::calculateNextReleaseTime() {
+unsigned long FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Implement!
 	 * use pos and speed from disk to determine in_position_time
@@ -14,25 +14,41 @@
 	 * result must be greate than current time + safeguard
 	 */
 
-//	return 0;
-//}
+	return 0;
+}
 
 void FallController::run() {
 	/**
 	 * \todo \b Implement!
 	 */
 
-	while (true) {
-		/** \todo
-		 *
-		 * Wait until trigger has been pressed.
-		 *
-		 * if stable
-		 *		calculate next release time (=nrt)
-		 *		if time in [nrt - 0,5 * polldelay, nrt + 0,5 * polldelay) # compiler pragma unlikely
-		 *			releaseTheKraken
-		 *	short delay
-		 */
+	while(true) {
+		while(_trigger->read() != Sensor::Value::ZERO) {
+			_disk->update();
+			delay(_defaultPollInterval);
+		}
+
+		while(_trigger->read() != Sensor::Value::ONE) {
+			_disk->update();
+			delay(_defaultPollInterval);
+		}
+
+		while (true) {
+			_disk->update();
+
+			if (not _disk->isStable()) {
+				delay(_defaultPollInterval);
+				continue;
+			}
+
+			unsigned long nextReleaseTime = calculateNextReleaseTime();
+			unsigned long currentTime = millis();
+
+			if(currentTime >= nextReleaseTime - 0.5 * _defaultPollInterval and currentTime  <= nextReleaseTime + 0.5 * _defaultPollInterval) {
+				// releaseTheKraken
+				break;
+			}
+		}
 	}
 }
 

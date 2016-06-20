@@ -33,7 +33,9 @@ class FallController : public Controller {
 		 *
 		 * \return The next possible bullet release time.
 		 */
-//		int calculateNextReleaseTime();
+		unsigned long calculateNextReleaseTime();
+
+		unsigned int _defaultPollInterval;
 
 	public:
 
@@ -44,7 +46,7 @@ class FallController : public Controller {
 		 * \param trigger Pointer to the Trigger instance.
 		 */
 		inline FallController(Disk* disk, Trigger* trigger) : _disk(disk),
-				_trigger(trigger) {}
+				_trigger(trigger), _defaultPollInterval(10) {}
 
 		void run();
 

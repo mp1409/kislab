@@ -115,7 +115,8 @@ class Disk {
 		 *
 		 * \return True if the disk is stable, else false.
 		 */
-		inline bool isStable() { return _stable; }
+		//inline bool isStable() { return _stable; }
+		inline bool isStable() { return true; }
 
 		/**
 		 * Update the internal state by polling the sensors. Immediately return
