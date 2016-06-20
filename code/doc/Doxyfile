@@ -44,4 +44,3 @@ HIDE_UNDOC_RELATIONS   = NO
 HAVE_DOT               = YES
 UML_LOOK               = NO
 DOT_IMAGE_FORMAT       = svg
-INTERACTIVE_SVG        = YES
