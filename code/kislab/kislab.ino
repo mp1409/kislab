@@ -75,7 +75,7 @@ void setup() {
 	disk = new Disk(ps, hs);
 
 	// controller = new DataWriter(sensors, numSensors);
-	controller = new FallController(disk, trigger);
+	controller = new FallController(disk, trigger, rel);
 }
 
 /**
@@ -84,6 +84,6 @@ void setup() {
  * of the Controllers, because this better suits object-oriented design.
  */
 void loop() {
-  // controller->run();
-	controller->debug();
+	// controller->debug();
+	controller->run();
 }

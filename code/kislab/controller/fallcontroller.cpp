@@ -41,11 +41,12 @@ void FallController::run() {
 				continue;
 			}
 
-			unsigned long nextReleaseTime = calculateNextReleaseTime();
+			//unsigned long nextReleaseTime = calculateNextReleaseTime();
+			unsigned long nextReleaseTime = millis() + 5;
 			unsigned long currentTime = millis();
 
 			if(currentTime >= nextReleaseTime - 0.5 * _defaultPollInterval and currentTime  <= nextReleaseTime + 0.5 * _defaultPollInterval) {
-				// releaseTheKraken
+				releaseTheKraken();
 				break;
 			}
 		}
@@ -63,4 +64,14 @@ void FallController::debug() {
 		Serial.println(p.time);
 
 	}
+}
+
+void FallController::releaseTheKraken() {
+	_rel->open();
+	unsigned long atm = millis() + 100;
+	while(millis() < atm) {
+		_disk->update();
+		delay(_defaultPollInterval);
+	}
+	_rel->close();
 }
