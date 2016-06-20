@@ -7,9 +7,9 @@
 #pragma once
 
 #include "controller.h"
-#include "../model/disk.h"
 #include "../hardware/trigger.h"
 #include "../hardware/release.h"
+#include "../model/disk.h"
 
 /**
  * This is a controller for the release of (several) bullets after the trigger
@@ -22,6 +22,11 @@ class FallController : public Controller {
 		 * Pointer to the disk instance.
 		 */
 		Disk* _disk;
+
+		/**
+		 * Pointer to the release instance.
+		 */
+		Release* _release;
 
 		/**
 		 * Pointer to the trigger instance.
@@ -38,8 +43,6 @@ class FallController : public Controller {
 
 		unsigned int _defaultPollInterval;
 
-		Release* _rel;
-
 		void releaseTheKraken();
 
 	public:
@@ -51,8 +54,8 @@ class FallController : public Controller {
 		 * \param trigger Pointer to the Trigger instance.
 		 */
 
-		inline FallController(Disk* disk, Trigger* trigger, Release* release) :
-				_disk(disk), _trigger(trigger), _rel(release),
+		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
+				_disk(disk), _release(release), _trigger(trigger),
 				_defaultPollInterval(10) {}
 
 

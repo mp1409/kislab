@@ -75,7 +75,7 @@ void setup() {
 	disk = new Disk(ps, hs);
 
 	// controller = new DataWriter(sensors, numSensors);
-	controller = new FallController(disk, trigger, rel);
+	controller = new FallController(disk, rel, trigger);
 }
 
 /**

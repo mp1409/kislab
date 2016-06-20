@@ -64,11 +64,11 @@ void FallController::debug() {
 }
 
 void FallController::releaseTheKraken() {
-	_rel->open();
-	unsigned long atm = millis() + 100;
-	while(millis() < atm) {
+	_release->open();
+	unsigned long timeToClose = millis() + 100;
+	while(millis() < timeToClose) {
 		_disk->update();
 		delay(_defaultPollInterval);
 	}
-	_rel->close();
+	_release->close();
 }
