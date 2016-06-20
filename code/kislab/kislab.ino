@@ -83,7 +83,7 @@ void setup() {
  * However, we ignore this, and implement our own endless loop in the run method
  * of the Controllers, because this better suits object-oriented design.
  */
-void loop() { 
+void loop() {
   // controller->run();
 	controller->debug();
 }
