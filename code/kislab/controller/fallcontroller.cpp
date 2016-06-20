@@ -38,10 +38,15 @@ void FallController::run() {
 
 void FallController::debug() {
 	Serial.begin(115200);
-	Serial.print("Time(ms)");
 	
 	while (true) {
-		disk->update();
-		Serial.print(disk->position().value);
+		_disk->update();
+		Disk::DiskPosition p = _disk->position();
+		Serial.print(p.value);
+		Serial.print("\t");
+		Serial.print(_disk->millisPerRot());
+		Serial.print("\t");
+		Serial.println(p.time);
+
 	}
 }
