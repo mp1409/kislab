@@ -72,7 +72,7 @@ void setup() {
 
 	disk = new Disk(ps, hs);
 
-	// Serial.begin(115200);
+	Serial.begin(115200);
 	// controller = new DataWriter(sensors, numSensors);
 	controller = new FallController(disk, trigger);
 }
@@ -82,6 +82,6 @@ void setup() {
  * However, we ignore this, and implement our own endless loop in the run method
  * of the Controllers, because this better suits object-oriented design.
  */
-void loop() {
-	controller->run();
+void loop() { 
+  controller->run();
 }

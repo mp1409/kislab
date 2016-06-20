@@ -32,7 +32,9 @@ class Disk {
 
 			/**
 			 * The "after" value of the last slope (0->1 means position is ONE,
-			 * 1->0 means position is ZERO).
+			 * which represents the oposite site of the hole,
+			 * 1->0 means position is ZERO), which represents the position 
+			 * direct in top of the hole.)
 			 */
 			Sensor::Value value;
 
@@ -130,4 +132,6 @@ class Disk {
 		 * state.
 		 */
 		double millisPerRot();
+
+		inline DiskPosition position() { return _position; }
 };

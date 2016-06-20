@@ -31,3 +31,4 @@ double Disk::millisPerRot() {
 	double rot = static_cast<double>(_pSensorSampleSize) / 12.0;
 	return static_cast<double>(timeDiff) / rot;
 }
+
