@@ -23,26 +23,27 @@ void FallController::run() {
 	while(true) {
 		while(_trigger->read() != Sensor::Value::ZERO) {
 			_disk->update();
-			delay(_defaultPollInterval);
+			delay(_pollInterval);
 		}
 
 		while(_trigger->read() != Sensor::Value::ONE) {
 			_disk->update();
-			delay(_defaultPollInterval);
+			delay(_pollInterval);
 		}
 
 		while (true) {
 			_disk->update();
 
 			if (not _disk->isStable()) {
-				delay(_defaultPollInterval);
+				delay(_pollInterval);
 				continue;
 			}
 
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
 
-			if(currentTime >= nextReleaseTime - 0.5 * _defaultPollInterval and currentTime  <= nextReleaseTime + 0.5 * _defaultPollInterval) {
+			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
+					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
 				releaseTheKraken();
 				break;
 			}
@@ -68,7 +69,7 @@ void FallController::releaseTheKraken() {
 	unsigned long timeToClose = millis() + 100;
 	while(millis() < timeToClose) {
 		_disk->update();
-		delay(_defaultPollInterval);
+		delay(_pollInterval);
 	}
 	_release->close();
 }

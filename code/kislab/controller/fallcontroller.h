@@ -19,6 +19,11 @@ class FallController : public Controller {
 	private:
 
 		/**
+		 * The default poll interval (for example for the disk).
+		 */
+		const unsigned int _pollInterval = 10;
+
+		/**
 		 * Pointer to the disk instance.
 		 */
 		Disk* _disk;
@@ -41,8 +46,6 @@ class FallController : public Controller {
 		 */
 		unsigned long calculateNextReleaseTime();
 
-		unsigned int _defaultPollInterval;
-
 		void releaseTheKraken();
 
 	public:
@@ -55,8 +58,7 @@ class FallController : public Controller {
 		 */
 
 		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
-				_disk(disk), _release(release), _trigger(trigger),
-				_defaultPollInterval(10) {}
+				_disk(disk), _release(release), _trigger(trigger) {}
 
 
 		void run();
