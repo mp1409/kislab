@@ -52,7 +52,7 @@ class FallController : public Controller {
 		 */
 
 		inline FallController(Disk* disk, Trigger* trigger, Release* release) : _disk(disk),
-				_trigger(trigger), rel(release), _defaultPollInterval(10) {}
+				_trigger(trigger), _rel(release), _defaultPollInterval(10) {}
 
 
 		void run();

@@ -83,6 +83,6 @@ void setup() {
  * of the Controllers, because this better suits object-oriented design.
  */
 void loop() { 
-  // controller->run();
-	controller->debug();
+  controller->run();
+	// controller->debug();
 }
