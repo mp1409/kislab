@@ -47,4 +47,6 @@ class FallController : public Controller {
 				_trigger(trigger) {}
 
 		void run();
+
+		void debug();
 };
