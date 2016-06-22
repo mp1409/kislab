@@ -16,7 +16,23 @@ unsigned long FallController::calculateNextReleaseTime() {
 	 * especially safeguard? nrt can only be one or two millis in the future...)
 	 */
 
-	return millis() + 5;
+	Disk::DiskPosition diskPos = _disk->position();
+	unsigned long inPositionTime = diskPos.time;
+
+	if(diskPos.value == Sensor::Value::ONE) {
+		inPositionTime += _disk->millisPerRot() / 2;
+		// TODO make millisPerRot unsigned long
+	} else if (diskPos.value == Sensor::Value::ZERO) {
+		inPositionTime += _disk->millisPerRot();
+	} else {
+		//sensor invalid fail TODO
+		return 0;
+	}
+
+	const unsigned long fallTime = static_cast<unsigned long>(sqrt(2 * 0.75 / 9.81) * 1000);
+
+	return inPositionTime - fallTime;
+	//return millis() + 5;
 }
 
 void FallController::run() {
@@ -42,6 +58,12 @@ void FallController::run() {
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
 
+			Serial.print(currentTime); // DEBUG
+			Serial.print(":\t"); // DEBUG
+			Serial.print(nextReleaseTime); // DEBUG
+			Serial.print("\t"); // DEBUG
+			Serial.println(_disk->millisPerRot()); // DEBUG
+
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
 				releaseTheKraken();
@@ -53,10 +75,12 @@ void FallController::run() {
 
 void FallController::releaseTheKraken() {
 	_release->open();
+	//Serial.println(millis() + ":\tRelease opened");  // DEBUG
 	unsigned long timeToClose = millis() + 100;
 	while(millis() < timeToClose) {
 		_disk->update();
 		delay(_pollInterval);
 	}
 	_release->close();
+	//Serial.println(millis() + ":\tRelease closed");  // DEBUG
 }
