@@ -31,7 +31,7 @@ unsigned long FallController::calculateNextReleaseTime() {
 
 	const unsigned long fallTime = static_cast<unsigned long>(sqrt(2 * 0.75 / 9.81) * 1000);
 
-	return inPositionTime - fallTime;
+	return inPositionTime - fallTime - 35;
 	//return millis() + 5;
 }
 
@@ -57,13 +57,13 @@ void FallController::run() {
 
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
-
+			/*
 			Serial.print(currentTime); // DEBUG
 			Serial.print(":\t"); // DEBUG
 			Serial.print(nextReleaseTime); // DEBUG
 			Serial.print("\t"); // DEBUG
 			Serial.println(_disk->millisPerRot()); // DEBUG
-
+			*/
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
 				releaseTheKraken();
@@ -76,7 +76,7 @@ void FallController::run() {
 void FallController::releaseTheKraken() {
 	_release->open();
 	//Serial.println(millis() + ":\tRelease opened");  // DEBUG
-	unsigned long timeToClose = millis() + 100;
+	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {
 		_disk->update();
 		delay(_pollInterval);
