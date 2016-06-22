@@ -18,7 +18,6 @@ unsigned long FallController::calculateNextReleaseTime() {
 
 	if(diskPos.value == Sensor::Value::ONE) {
 		inPositionTime += _disk->millisPerRot() / 2;
-		// TODO make millisPerRot unsigned long
 	} else if (diskPos.value == Sensor::Value::ZERO) {
 		inPositionTime += _disk->millisPerRot();
 	} else {
@@ -35,7 +34,6 @@ unsigned long FallController::calculateNextReleaseTime() {
 	);
 
 	return inPositionTime - fallTime - 35;
-	//return millis() + 5;
 }
 
 void FallController::run() {
