@@ -25,9 +25,9 @@ for line in 2:size(a)[1]
 	end
 end
 
-rot = map(x -> (x * 5) / (interval / 1000), slopes)
+rot = map(x -> ((x * 5) / (interval / 1000)), slopes)
 
-f = curve_fit(Poly, map(x -> Float64(x * (interval / 1000)), collect(1:size(rot)[1])), convert(Array{Float64, 1}, rot), 3)
+f = curve_fit(Poly, map(x -> Float64(x * (interval / 1000)), collect(1:size(rot)[1])), convert(Array{Float64, 1}, rot), 2)
 
 
 println(string(m[:name], ": Berechnungen erfolgreich beendet."))
