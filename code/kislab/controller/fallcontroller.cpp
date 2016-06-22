@@ -9,11 +9,8 @@
 unsigned long FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Implement!
-	 * use pos and speed from disk to determine in_position_time
-	 * subtract fall time (including servo reaction time etc)
 	 *
-	 * result must be greate than current time + safeguard (<- do we need this?
-	 * especially safeguard? nrt can only be one or two millis in the future...)
+	 * Add approximation function
 	 */
 
 	Disk::DiskPosition diskPos = _disk->position();
@@ -25,7 +22,11 @@ unsigned long FallController::calculateNextReleaseTime() {
 	} else if (diskPos.value == Sensor::Value::ZERO) {
 		inPositionTime += _disk->millisPerRot();
 	} else {
-		//sensor invalid fail TODO
+		/**
+		 * \todo \b Implement!
+		 *
+		 * Fail, sensor invalid. This should not happen on a stable disk.
+		 */
 		return 0;
 	}
 
