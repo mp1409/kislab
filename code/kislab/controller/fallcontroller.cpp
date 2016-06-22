@@ -9,14 +9,31 @@
 unsigned long FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Implement!
-	 * use pos and speed from disk to determine in_position_time
-	 * subtract fall time (including servo reaction time etc)
 	 *
-	 * result must be greate than current time + safeguard (<- do we need this?
-	 * especially safeguard? nrt can only be one or two millis in the future...)
+	 * Add approximation function
 	 */
 
-	return millis() + 5;
+	Disk::DiskPosition diskPos = _disk->position();
+	unsigned long inPositionTime = diskPos.time;
+
+	if(diskPos.value == Sensor::Value::ONE) {
+		inPositionTime += _disk->millisPerRot() / 2;
+	} else if (diskPos.value == Sensor::Value::ZERO) {
+		inPositionTime += _disk->millisPerRot();
+	} else {
+		/**
+		 * \todo \b Implement!
+		 *
+		 * Fail, sensor invalid. This should not happen on a stable disk.
+		 */
+		return 0;
+	}
+
+	const unsigned long fallTime = static_cast<unsigned long>(
+			sqrt(2 * 0.75 / 9.81) * 1000
+	);
+
+	return inPositionTime - fallTime - 35;
 }
 
 void FallController::run() {
@@ -53,7 +70,7 @@ void FallController::run() {
 
 void FallController::releaseTheKraken() {
 	_release->open();
-	unsigned long timeToClose = millis() + 100;
+	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {
 		_disk->update();
 		delay(_pollInterval);

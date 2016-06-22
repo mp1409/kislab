@@ -25,9 +25,9 @@ void Disk::update() {
 	}
 }
 
-double Disk::millisPerRot() {
+unsigned long Disk::millisPerRot() {
 	unsigned long timeDiff = _pSensorLastTimes[_timeIndex]
 			- _pSensorLastTimes[(_timeIndex + 1) % _pSensorSampleSize];
 	double rot = static_cast<double>(_pSensorSampleSize) / 12.0;
-	return static_cast<double>(timeDiff) / rot;
+	return timeDiff / rot;
 }

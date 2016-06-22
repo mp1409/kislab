@@ -134,7 +134,7 @@ class Disk {
 		 * \return Number of milliseconds per disk rotation, 0 if in warmup
 		 * state.
 		 */
-		double millisPerRot();
+		unsigned long millisPerRot();
 
 		/**
 		 * Returns the position of the disk.
