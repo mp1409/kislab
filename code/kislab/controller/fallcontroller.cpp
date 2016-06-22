@@ -29,7 +29,9 @@ unsigned long FallController::calculateNextReleaseTime() {
 		return 0;
 	}
 
-	const unsigned long fallTime = static_cast<unsigned long>(sqrt(2 * 0.75 / 9.81) * 1000);
+	const unsigned long fallTime = static_cast<unsigned long>(
+			sqrt(2 * 0.75 / 9.81) * 1000
+	);
 
 	return inPositionTime - fallTime - 35;
 	//return millis() + 5;
