@@ -57,13 +57,7 @@ void FallController::run() {
 
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
-			/*
-			Serial.print(currentTime); // DEBUG
-			Serial.print(":\t"); // DEBUG
-			Serial.print(nextReleaseTime); // DEBUG
-			Serial.print("\t"); // DEBUG
-			Serial.println(_disk->millisPerRot()); // DEBUG
-			*/
+
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
 				releaseTheKraken();
@@ -75,12 +69,10 @@ void FallController::run() {
 
 void FallController::releaseTheKraken() {
 	_release->open();
-	//Serial.println(millis() + ":\tRelease opened");  // DEBUG
 	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {
 		_disk->update();
 		delay(_pollInterval);
 	}
 	_release->close();
-	//Serial.println(millis() + ":\tRelease closed");  // DEBUG
 }
