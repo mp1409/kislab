@@ -7,6 +7,7 @@
 #include "controller/datawriter.h"
 #include "controller/debugcontroller.h"
 #include "controller/fallcontroller.h"
+#include "controller/manualrelease.h"
 #include "hardware/hallsensor.h"
 #include "hardware/photosensor.h"
 #include "hardware/release.h"
@@ -78,6 +79,7 @@ void setup() {
 	// controller = new DataWriter(sensors, numSensors);
 	controller = new FallController(disk, rel, trigger);
 	// controller = new DebugController(disk);
+	// controller = new ManualRelease(rel, trigger);
 }
 
 /**
