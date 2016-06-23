@@ -17,6 +17,8 @@
  *
  * \todo When there are several things to poll (disk, trigger), consolidate them
  * into an update method.
+ *
+ * \todo Allow multiple trigger presses (store them in a variable)
  */
 class FallController : public Controller {
 	private:
