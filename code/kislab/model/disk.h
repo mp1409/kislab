@@ -115,11 +115,8 @@ class Disk {
 		 * Checks whether the disk is stable.
 		 *
 		 * \return True if the disk is stable, else false.
-		 *
-		 * \todo \b Implement!
 		 */
-		//inline bool isStable() { return _stable; }
-		inline bool isStable() { return true; }
+		bool isStable();
 
 		/**
 		 * Update the internal state by polling the sensors. Immediately return

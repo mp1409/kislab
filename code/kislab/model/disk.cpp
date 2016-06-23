@@ -5,6 +5,54 @@
  */
 
 #include "disk.h"
+#include "limits.h"
+
+bool Disk::isStable() {
+	/**
+	 * \todo Finish implementation!
+	 */
+
+	if(_position.value == Sensor::Value::INVALID) {
+		return false;
+	}
+
+	if(_pSensorLastValue == Sensor::Value::INVALID) {
+		return false;
+	}
+
+	for(unsigned short i = 0; i < _pSensorSampleSize; i++) {
+		if(_pSensorLastTimes[i] == 0) {
+			return false;
+		}
+	}
+
+	/**
+	 * \warning The following limits are reciproces of the disk speed/frequency,
+	 * i.e.:
+	 * \li millisPerRotLowerLimit is the \b upper limit for the speed of the
+	 * disk.
+	 * \li millisPerRotUpperLimit is the \b lower limit for the speed of the
+	 * disk.
+	 */
+	const unsigned long millisPerRotLowerLimit = 1;
+	const unsigned long millisPerRotUpperLimit = ULONG_MAX;
+	/**
+	 * \todo \b Set sensible (and tested) values for lower and upper limit.
+	 */
+
+	unsigned long currentMillisPerRot = millisPerRot();
+	if((currentMillisPerRot < millisPerRotLowerLimit)
+			or (currentMillisPerRot > millisPerRotUpperLimit)) {
+		return false;
+	}
+
+	/**
+	 * \todo Test on jumps in disk speed? Perhaps do this by checking if the
+	 * previous prediction was only xy% different from the real value?
+	 */
+
+	return true;
+}
 
 void Disk::update() {
 	if(_pSensorLastValue == Sensor::Value::INVALID) {
