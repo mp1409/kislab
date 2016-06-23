@@ -46,6 +46,7 @@ class Disk {
 		};
 
 	private:
+
 		/**
 		 * The number of samples taken from the Photosensor.
 		 */

@@ -16,6 +16,7 @@
  */
 class ManualRelease : public Controller {
 	private:
+
 		/**
 		 * The default poll interval for the trigger.
 		 */
