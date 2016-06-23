@@ -53,18 +53,6 @@ class Disk {
 		static const unsigned short _pSensorSampleSize = 12;
 
 		/**
-		 * Bool indicating whether the disk is stable.
-		 */
-		bool _stable;
-
-		/**
-		 * Bool indicating whether the disk is on the correct side.
-		 *
-		 * \todo Unclear whether this is one is needed.
-		 */
-		bool _westside;
-
-		/**
 		 * Pointer to the PhotoSensor instance.
 		 */
 		PhotoSensor* _pSensor;
@@ -106,10 +94,10 @@ class Disk {
 		 * \param ps Instance of the photo sensor.
 		 * \param hs Instance of the hall sensor.
 		 */
-		inline Disk(PhotoSensor* ps, HallSensor* hs) : _stable(false),
-			_westside(false), _pSensor(ps), _hSensor(hs),
-			_pSensorLastValue(Sensor::Value::INVALID), _pSensorLastTimes{ },
-			_timeIndex(0), _position{Sensor::Value::INVALID, 0} {}
+		inline Disk(PhotoSensor* ps, HallSensor* hs) : _pSensor(ps),
+			_hSensor(hs), _pSensorLastValue(Sensor::Value::INVALID),
+			_pSensorLastTimes{ }, _timeIndex(0),
+			_position{Sensor::Value::INVALID, 0} {}
 
 		/**
 		 * Checks whether the disk is stable.
