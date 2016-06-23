@@ -12,6 +12,8 @@
 
 /**
  * The component responsible for releasing bullets.
+ *
+ * \todo Open/Close slowly? add a move method
  */
 class Release : public Component {
 
