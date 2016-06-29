@@ -28,6 +28,8 @@ class FallController : public Controller {
 		 */
 		const unsigned int _pollInterval = 10;
 
+		const unsigned int _triggerCooldown = 100;
+
 		/**
 		 * Pointer to the disk instance.
 		 */
@@ -43,6 +45,11 @@ class FallController : public Controller {
 		 */
 		Trigger* _trigger;
 
+		Sensor::Value _lastTriggerState;
+		unsigned long _lastTriggerTime;
+
+		unsigned short _triggerCount;
+
 		/**
 		 * Calculates the next bullet release time, based on current values from
 		 * the disk.
@@ -50,6 +57,8 @@ class FallController : public Controller {
 		 * \return The next possible bullet release time.
 		 */
 		unsigned long calculateNextReleaseTime();
+
+		void update();
 
 		/**
 		 * Release a ball while continuing to update the interal states.
@@ -66,7 +75,7 @@ class FallController : public Controller {
 		 * \param trigger Pointer to the Trigger instance.
 		 */
 		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
-				_disk(disk), _release(release), _trigger(trigger) {}
+				_disk(disk), _release(release), _trigger(trigger), _lastTriggerState(Sensor::Value::INVALID), _triggerCount(0) {}
 
 		void run();
 };

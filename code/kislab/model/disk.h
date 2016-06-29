@@ -86,6 +86,8 @@ class Disk {
 		 */
 		DiskPosition _position;
 
+		unsigned short _invalidMeasuresCount;
+
 	public:
 
 		/**
@@ -97,7 +99,7 @@ class Disk {
 		inline Disk(PhotoSensor* ps, HallSensor* hs) : _pSensor(ps),
 			_hSensor(hs), _pSensorLastValue(Sensor::Value::INVALID),
 			_pSensorLastTimes{ }, _timeIndex(0),
-			_position{Sensor::Value::INVALID, 0} {}
+			_position{Sensor::Value::INVALID, 0}, _invalidMeasuresCount(0) {}
 
 		/**
 		 * Checks whether the disk is stable.
@@ -128,4 +130,6 @@ class Disk {
 		 * \return The last known position of the disk.
 		 */
 		inline DiskPosition position() { return _position; }
+
+		void invalidate();
 };
