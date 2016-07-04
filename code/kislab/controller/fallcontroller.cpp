@@ -8,9 +8,7 @@
 
 unsigned long FallController::calculateNextReleaseTime() {
 	/**
-	 * \todo \b Implement!
-	 *
-	 * Add approximation function
+	 * \todo \b Add approximation function!
 	 */
 
 	Disk::DiskPosition diskPos = _disk->position();
@@ -35,15 +33,17 @@ unsigned long FallController::calculateNextReleaseTime() {
 
 void FallController::update() {
 	_disk->update();
+
 	Sensor::Value currentTriggerState = _trigger->read();
 	unsigned long currentTime = millis();
 
 	if(_lastTriggerState == Sensor::Value::INVALID) {
 		_lastTriggerState = currentTriggerState;
 		_lastTriggerTime = currentTime;
-	} else if ((currentTime - _lastTriggerTime > _triggerCooldown) and (_lastTriggerState != currentTriggerState)) {
-		if(currentTriggerState == Sensor::Value::ONE) {
-			++_triggerCount;
+	} else if(currentTime - _lastTriggerTime > _triggerCooldown) {
+		if((_lastTriggerState == Sensor::Value::ZERO) and
+				(currentTriggerState == Sensor::Value::ONE)) {
+			_triggerCount++;
 		}
 
 		_lastTriggerState = currentTriggerState;
@@ -90,5 +90,5 @@ void FallController::releaseTheKraken() {
 
 	_disk->invalidate();
 
-	--_triggerCount;
+	_triggerCount--;
 }
