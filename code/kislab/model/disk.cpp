@@ -64,7 +64,7 @@ void Disk::update() {
 			_pSensorLastTimes[_timeIndex] = millis();
 		} else {
 			_pSensorLastTimes[_timeIndex] = 0;
-			--_invalidMeasuresCount;
+			_invalidMeasuresCount--;
 		}
 		_pSensorLastValue = static_cast<Sensor::Value>(1 - _pSensorLastValue);
 	}
@@ -76,9 +76,6 @@ void Disk::update() {
 		_position.time = millis();
 		_position.value = static_cast<Sensor::Value>(1 - _position.value);
 	}
-
-	//Serial.println(_hSensor->read());
-	Serial.println(_hSensor->read());
 }
 
 unsigned long Disk::millisPerRot() {
@@ -86,13 +83,4 @@ unsigned long Disk::millisPerRot() {
 			- _pSensorLastTimes[(_timeIndex + 1) % _pSensorSampleSize];
 	double rot = static_cast<double>(_pSensorSampleSize) / 12.0;
 	return timeDiff / rot;
-}
-
-void Disk::invalidate() {
-	_invalidMeasuresCount = 5; // was 9
-	// TODO inline
-
-	// sample size 12->6..9
-	// invalid -> 12 - sample size 
-	
 }

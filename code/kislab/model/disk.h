@@ -86,6 +86,10 @@ class Disk {
 		 */
 		DiskPosition _position;
 
+		/**
+		 * The number of future photo sensor measurements which have to be
+		 * discarded.
+		 */
 		unsigned short _invalidMeasuresCount;
 
 	public:
@@ -131,5 +135,8 @@ class Disk {
 		 */
 		inline DiskPosition position() { return _position; }
 
-		void invalidate();
+		/**
+		 * Invalidate the next measurements.
+		 */
+		inline void invalidate() { _invalidMeasuresCount = 5; }
 };
