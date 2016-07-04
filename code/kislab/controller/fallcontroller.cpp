@@ -18,15 +18,12 @@ unsigned long FallController::calculateNextReleaseTime() {
 
 	if(diskPos.value == Sensor::Value::ONE) {
 		inPositionTime += _disk->millisPerRot() / 2;
-	} else if (diskPos.value == Sensor::Value::ZERO) {
-		inPositionTime += _disk->millisPerRot();
-	} else {
+	} else  {
 		/**
-		 * \todo \b Implement!
-		 *
-		 * Fail, sensor invalid. This should not happen on a stable disk.
+		 * diskPos.value == Sensor::Value::ZERO. Sensor::Value::INVALID not
+		 * possible because disk is stable.
 		 */
-		return 0;
+		inPositionTime += _disk->millisPerRot();
 	}
 
 	const unsigned long fallTime = static_cast<unsigned long>(
@@ -52,9 +49,6 @@ void FallController::update() {
 		_lastTriggerState = currentTriggerState;
 		_lastTriggerTime = currentTime;
 	}
-
-	//Serial.println(_disk->millisPerRot());
-
 }
 
 void FallController::run() {
@@ -73,14 +67,9 @@ void FallController::run() {
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
 
-			//Serial.print(millis());
-			//Serial.print("\t");
-			//Serial.println(nextReleaseTime);
 
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
-				//Serial.print(millis());
-				//Serial.println("\tFALL");
 				releaseTheKraken();
 			}
 
