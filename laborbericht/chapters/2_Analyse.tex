@@ -2,6 +2,17 @@
 
 % Beschreibung des Aufbaus
 \section{Versuchsaufbau}
+
+Der Versuchsaufbau besteht aus einer drehbaren Scheibe mit Loch und einer Kugelabwurfvorrichtung.
+Diese wird mit einem Servo bedient (siehe Abschnitt \ref{subs:aktoren}).
+Abbildung \ref{img:versuchsaufbau} zeigt eine schematische Darstellung.
+Da das Ziel des Praktikums ist, Kugeln durch das Loch fallen zu lassen, ist die Abwurfvorrichtung so angebracht, dass die Kugeln bei einer bestimmten Position der Scheibe durch dieses fallengelassen werden können.
+Die Unterseite des Scheibe besitzt zwei Farbschattierungen (hell und dunkel), welche durch einen Photosensor erkannt werden können.
+Weiterhin sind zwei Magneten angebracht, welche durch einen Hallsensor erkannt werden.
+Im folgenden wird genauer auf die Sensoren eingegangen.
+
+
+
 \begin{figure}[h] \centering
 	\includegraphics[width=\textwidth]{images/aufbau.pdf}
 	\caption{schmatischer Versuchsaufbau - v.\,l.\,n.\,r. Seitenansicht Gesamtaufbau, Drehbare Scheibe}
@@ -36,6 +47,21 @@ Der Photosensor gibt abhängig davon, ob er eine helle oder dunkle Fläche vor s
 Da die Felder auf der Unterseite der Scheibe gleichmäßig verteilt sind (siehe Abb. \ref{img:versuchsaufbau}), kann er nicht zur Positionsbestimmung, dafür für die Bestimmung der Drehgeschwindigkeit verwendet werden.
 
 Die Sensorwerte einer Scheibenumdrehung sind in Abb. \ref{img:sensorwerte} geplottet.
+
+\textbf{TODO: Trigger}
+
+\subsection{Aktoren}
+\label{subs:aktoren}
+Wie bereits beschrieben, wird die Abwurfvorrichtung durch einen Servo gesteuert.
+Sobald sich dieser aus seiner Ursprungsposition auf einen Winkel von 30° dreht, fällt eine Kugel aus dem Magazin und die nächste Kugel wird automatisch nachgeladen.
+
+Weiterhin gibt es noch einige LEDs.
+
+\subsection{Ansteuerung der Komponenten}
+Für die Ansteuerung stehen ein Arduino UNO und eine Art Blackbox zur Verfügung.
+Zweitere sorgt dafür, dass die Sensoren und Aktoren an die Pins des Arduino angeschlossen sind, und einfach angesteuert werden können.
+Die Belegung der Pins sind in folgender Tabelle beschrieben.
+
 
 \begin{figure}[h] \centering
 \begin{tabular}{cll} 
