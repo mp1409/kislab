@@ -2,7 +2,7 @@
 \section{Übersicht über die Klassenhierarchie}
 Die in \cref{design_systemueberlick} vorgestellten Komponenten werden durch eine Klassenhierarchie implementiert.
 Eine Gesamtübersicht der Klassenhierarchie gibt \cref{uml:class_diagram}.
-Im Folgenden werden nun die einzelnen Gruppen genauer betrachtet.
+Im Folgenden werden nun die einzelnen Klassen genauer betrachtet.
 Im Quellcode liegen Klassen derselben Gruppe im gleichen Ordner.
 
 \subsection{Hardware}
@@ -24,7 +24,41 @@ In den konkreten abgeleiteten Klassen (wie \identifier{GreenLED}) erfolgt dann l
 	\label{uml:class_diagram}
 \end{figure}
 
-% Kontrollfluss
+\subsection{Model}
+In dieser Gruppe befindet sich nur die Klasse \identifier{Disk}, die folgende öffentliche Methoden bereitstellt:
+\begin{itemize}
+	\item \identifier{update()} realisiert die Aktualisierung des inneren Zustandes, also der Sensormesswerte (siehe \cref{design_aktualisierung})
+	\item \identifier{position()} gibt die aktuellste Positionsmessung zurück (siehe \cref{design_pos})
+	\item \identifier{millisPerRot()} gibt die aktuellste Schätzung für die Umlaufdauer zurück.
+	Die Berechnung ist in \cref{design_geschwindigkeit} beschrieben.
+	\item \identifier{isStable()} prüft die Sensorwerte mit den Tests aus \cref{design_stabilitaet} auf Plausibilität.
+	\item \identifier{invalidate()} invaldiert 5 Sensorwerte.
+	Diese Methode ist muss jeweils nach dem aktivieren des Servomotors (\identifier{open()} bzw. \identifier{close()} des Release) aufgerufen werden.
+\end{itemize}
+
+Konzeptuell gilt für diese Klasse noch, dass beim (häufigen) Aktualisieren der Messwerte (via \identifier{update()}) nur die minimal nötigen Berechnungen durchgeführt werden.
+Die aufwendigeren Berechnungen, vor allem für die Umlaufzeit, werden nur beim (selteneren) Aufruf der Methode \identifier{millisPerRot()} ausgeführt.
+
+\subsection{Controller}
+Controller-Klassen müssen gemäß ihrer abstrakten Basisklasse \identifier{Controller} lediglich eine \identifier{run()}-Methode implementieren.
+In dieser Methode ist die Hauptschleife des Programms implementiert, so dass sie eine ähnlichen Zweck erfüllt wie die \identifier{loop()}-Funktion von Arduino.
+Im Sinne eines objektorientierten Designs wurde aber von der Verwendung der \identifier{loop()}-Funktion abgesehen.
+
+Der Kontrollfluss soll dabei den Controller nur für kurze Abfragen und Anweisungen verlassen, Methoden anderer Klassen also nicht blockieren.
+Insbesondere soll es keine Delay-Anweisungen außerhalb des Controllers geben.
+Durch diese Einschränkung ist sichergestellt, das regelmäßige Sensorabfragen vom Controller aus möglich sind.
+
+Die Funktion des für die Aufgabenstellung relevanten Controllers (\identifier{FallController}) wird im folgenden Abschnitt genauer erläutert.
+
+\section{Laufzeitverhalten}
+\subsection{Objekterzeugung und Speicherverwaltung}
+Prinzipiell muss bei der Programmierung in C++ die Speicherverwaltung von Objekten, die auf dem Heap alloziert werden, manuell erfolgen.
+Im vorliegenden System müssen allerdings nach der Intialisierung keine Objekte auf dem Heap mehr angelegt werden.
+Zugleich bleiben die initial erzeugten Objekte über die gesamte Laufzeit des Programms in Verwendung, sodass hier auf Delete-Anweisungen verzichtet werden kann.
+
+\subsection{Kontrollfluss}
+TODO
+
 \begin{figure}[hb] \centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\includegraphics[width=\textwidth]{UML/fallcontroller_simple_loop_statechart.pdf}
@@ -49,7 +83,10 @@ In den konkreten abgeleiteten Klassen (wie \identifier{GreenLED}) erfolgt dann l
 	\label{uml:activity_diagram}
 \end{figure}
 
+%TODO why no interrupts
 
-% Validierung
+\section{Validierung}
+TODO
 
-%%%%
+\section{Sonstiges}
+TODO github, travis, doxygen
