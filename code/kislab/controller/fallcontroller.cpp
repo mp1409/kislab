@@ -11,7 +11,7 @@ unsigned long FallController::calculateNextReleaseTime() {
 	double a = 0.0;
 	if (millisPerRot != 0) {
 		// h^-1(t)
-		double t = 212.162 - (0.27027 * sqrt(56933.0 pow((double) millisPerRot, 2.0) + 2.22e8 * (double) millisPerRot)) / (double) millisPerRot;	
+		double t = 212.162 - (0.27027 * sqrt(56933.0 * pow((double) millisPerRot, 2.0) + 2.22e8 * (double) millisPerRot)) / (double) millisPerRot;	
 		// h'(t) - acceleration of timePerRot
 		a = (6.88093e9 - 3.24324e7 * t) / pow(pow(t, 2) - 424.324 * t + 40854.1, 2);
 	}
