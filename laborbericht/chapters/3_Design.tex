@@ -44,14 +44,15 @@ Diesem Problem wird durch ein explizites Invaldieren eines Teils des Ringpuffers
 \subsection{Berechnung des nächsten Fallzeitpunktes}\label{design_zeitpunkt}
 Wenn die Messwerte stabil sind, kann eine Schätzung für den besten nächsten Auslösezeitpunkt $t_A$ berechnet werden.
 Im Folgenden bezeichne $T_U$ die letzte Schätzung der Umlaufdauer, $T_F$ die Fallzeit (wie in \cref{analyse_fallzeit} beschrieben) und $t_P$ den Zeitpunkt der letzten Positionsmessung.
+Die Funktionen $h^{-1}(t)$ und $h'(t)$ werden in Abschnitt \ref{subs:dreh_approx} beschrieben.
 
 Dann gilt:
 \begin{equation*}
 t_A = t_P - T_F +
 \begin{cases}
-	\frac{T_U}{2}, & \text{falls die letzte Positionsmessung an}\\
+	\frac{T_U + h'(h^{-1}(T_U))}{2} , & \text{falls die letzte Positionsmessung an}\\
 	&  \text{Position 1 stattfand}\\
-	T_U, & \text{falls die letzte Positionsmessung an}\\
+	T_U + h'(h^{-1}(T_U)), & \text{falls die letzte Positionsmessung an}\\
 	&  \text{Position 0 stattfand}\\
 
 \end{cases}
