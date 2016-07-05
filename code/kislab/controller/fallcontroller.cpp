@@ -10,18 +10,27 @@ unsigned long FallController::calculateNextReleaseTime() {
 	/**
 	 * \todo \b Add approximation function!
 	 */
+	
+	unsigned long millisPerRot = _disk->millisPerRot();
+	double a = 0.0;
+	if (millisPerRot != 0) {
+		// h^-1(t)
+		double t = 212.162 - (0.27027 sqrt(56933.0 pow((double) millisPerRot, 2.0) + 2.22e8 * (double) millisPerRot)) / (double) millisPerRot;	
+		// h'(t) - acceleration of timePerRot
+		a = (6.88093e9 - 3.24324e7 * t) / pow(pow(t, 2) - 424.324 * t + 40854.1, 2);
+	}
 
 	Disk::DiskPosition diskPos = _disk->position();
 	unsigned long inPositionTime = diskPos.time;
 
 	if(diskPos.value == Sensor::Value::ONE) {
-		inPositionTime += _disk->millisPerRot() / 2;
+		inPositionTime += millisPerRot / 2 + (unsigned long) a / 2;
 	} else  {
 		/**
 		 * diskPos.value == Sensor::Value::ZERO. Sensor::Value::INVALID not
 		 * possible because disk is stable.
 		 */
-		inPositionTime += _disk->millisPerRot();
+		inPositionTime += millisPerRot + (unsigned long) a;
 	}
 
 	const unsigned long fallTime = static_cast<unsigned long>(
