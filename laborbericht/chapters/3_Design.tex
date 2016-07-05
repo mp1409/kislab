@@ -13,9 +13,30 @@ Die Systemkomponenten wurden in drei Gruppen eingeteilt:
 \end{itemize}
 
 \section{Vorgehen}
+Das von Controller-Komponente für den Kugelfall realisierte Verhalten wird im Folgenden genauer dargestellt.
+
+\subsection{Positionsbestimmung}\label{design_pos}
+Zur Ermittlung der Scheibenpositon wird bei der letzten Flanke des Hallsensors die Zeit gespeichert.
+
+\subsection{Geschwindigkeitsberechnung}\label{design_geschwindigkeit}
+Die Zeitpunkte der Flanken des Fotosensors der letzten Umdrehung werden in einem Ringpuffer gehalten.
+Da eine Umdrehung 12 Flanken entspricht, stehen die Zeitpunkte $t_0$, $t_{-1}$, \dots $t_{-11}$ zur Verfügung, wobei $t_0$ den jüngsten und $t_{-11}$ den ältesten Zeitpunkt bezeichnet.
+
+Für die weitere Verarbeitung ist es vorteilhaft, nicht die Drehzahl sondern die Umlaufdauer $U$ zu berechnen.
+Für diese kann dann eine Approxmation für den Durchschnittswert der letzten Umdrehung gewonnen werden:
+\begin{equation*}
+U = \frac{t_0 - t_{-11}}{12}
+\end{equation*}
+
+\subsection{Stabilität der Messwerte}\label{design_stabilitaet}
 TODO
 
-\section{Grenzwerte}
+%invalidierung
+
+\subsection{Kontinuierliche Aktualisierung}\label{design_aktualisierung}
+TODO
+
+\subsection{Berechnung des nächsten Fallzeitpunktes}\label{design_zeitpunkt}
 TODO
 
 \section{Fehlerbetrachtung}
