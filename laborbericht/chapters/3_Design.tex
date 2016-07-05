@@ -1,9 +1,22 @@
 \chapter{Design}\label{k_design}
+\section{Systemüberblick}
+Die Systemkomponenten wurden in drei Gruppen eingeteilt:
+\begin{itemize}
+	\item Gruppe \textbf{Hardware}: Die Komponenten dieser Gruppe stellen eine direkte Abstraktion der Sensoren und Aktoren dar, mit denen direkt interagiert werden kann.
+	Dies umfasst die LEDs, den Photo- und den Hallsensor, den Trigger und das Release.
+	\item Gruppe \textbf{Model}: In dieser Gruppe befinden sich (physikalisch vorhandene) Objekte, mit denen nicht direkt interagiert werden kann, deren Modellierung als eigenes Objekt dennoch den Systementwurf vereinfacht.
+	In der derzeitigen Systemgestaltung befindet sich in dieser Gruppe nur die Scheibe.
+	\item Gruppe \textbf{Controller}\footnote{Die Ähnlichkeit der Gruppenamen zum MVC-Pattern ist zufällig entstanden und wurde nicht beabsichtigt.}:
+	Die Komponenten in dieser Gruppe implementieren die Ablauflogik des Programms.
+	Durch ein einheitliches Interface dieser Komponenten ist einerseits ein einfacher Wechsel zwischen verschiedenen Programmfunktionen möglich, andererseits bleiben unterschiedliche Funktionen getrennt.
+	Hier wurde die Hauptaufgabe (automatischer Kugelfall), ein manuell gesteuerter Abwurf und die Ausgabe der Sensorwerte im CSV-Format als jeweils eigene Komponente realisiert.
+\end{itemize}
 
-% Systemüberblick (3 Komponenten)
+\section{Vorgehen}
+TODO
 
-% Vorgehen
+\section{Grenzwerte}
+TODO
 
-% Grenzwerte
-
-% Fehlerbetrachtung
+\section{Fehlerbetrachtung}
+TODO
