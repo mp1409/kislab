@@ -5,14 +5,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="820"
-   height="476"
    id="svg2"
-   inkscape:version="0.91 r"
-   sodipodi:docname="fallcontroller_loop_activity_diagram.svg">
+   height="476"
+   width="820"
+   version="1.1">
   <metadata
      id="metadata622">
     <rdf:RDF>
@@ -25,1558 +21,1418 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1023"
-     id="namedview620"
-     showgrid="false"
-     inkscape:zoom="2.2059574"
-     inkscape:cx="691.06209"
-     inkscape:cy="229.88018"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g262" />
   <defs
      id="defs4" />
   <g
      id="g6">
     <g
-       transform="translate(-6,-6)"
-       id="g8">
+       id="g8"
+       transform="translate(-6,-6)">
       <path
-         d="m 289,32.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path10"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="m 289,32.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g12">
+       id="g12"
+       transform="translate(-6,-6)">
       <path
-         d="m 282,25.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z"
+         style="fill:#000000;stroke:none"
          id="path14"
-         inkscape:connector-curvature="0"
-         style="fill:#000000;stroke:none" />
+         d="m 282,25.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g16">
+       id="g16"
+       transform="translate(-6,-6)">
       <path
-         d="m 264,61 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path18"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="m 264,61 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g20">
+       id="g20"
+       transform="translate(-6,-6)">
       <path
-         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
+         style="fill:#adc8ff;stroke:none"
          id="path22"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
+         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g24">
+       id="g24"
+       transform="translate(-6,-6)">
       <path
-         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path26"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g28">
+       id="g28"
+       transform="translate(-6,-6)">
       <g
          id="g30">
         <path
-           id="path32"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path32" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="272"
-           y="73.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text34"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">update</text>
+           y="73.5"
+           x="272"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">update</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g36">
+       id="g36"
+       transform="translate(-6,-6)">
       <path
-         d="m 279,167 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path38"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="m 279,167 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g40">
+       id="g40"
+       transform="translate(-6,-6)">
       <path
-         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         style="fill:#adc8ff;stroke:none"
          id="path42"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
+         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g44">
+       id="g44"
+       transform="translate(-6,-6)">
       <path
-         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path46"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g48">
+       id="g48"
+       transform="translate(-6,-6)">
       <g
          id="g50">
         <path
-           id="path52"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path52" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="276"
-           y="179.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text54"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+           y="179.5"
+           x="276"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">delay</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g56">
+       id="g56"
+       transform="translate(-6,-6)">
       <path
-         d="m 291,135 0,24"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path58"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 291,135 0,24" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g60">
+       id="g60"
+       transform="translate(-6,-6)">
       <path
-         d="M 286.79048,148.83733 291,159 l 4.20952,-10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path62"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 286.79048,148.83733 291,159 l 4.20952,-10.16267" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g64">
+       id="g64"
+       transform="translate(-6,-6)">
       <path
-         d="M 287,248.5 298.5,239 309,248.5 298.5,257 287,248.5"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path66"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="M 287,248.5 298.5,239 309,248.5 298.5,257 287,248.5" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g68">
+       id="g68"
+       transform="translate(-6,-6)">
       <path
-         d="m 280,241 11,-9 11,9 -11,9 -11,-9"
+         style="fill:#ffc082;stroke:none"
          id="path70"
-         inkscape:connector-curvature="0"
-         style="fill:#c1eac1;stroke:none" />
+         d="m 280,241 11,-9 11,9 -11,9 -11,-9" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g72">
+       id="g72"
+       transform="translate(-6,-6)">
       <path
-         d="m 280,241 11,-9 11,9 -11,9 -11,-9 0,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path74"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 280,241 11,-9 11,9 -11,9 -11,-9 0,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g76">
+       id="g76"
+       transform="translate(-6,-6)">
       <path
-         d="m 291,201 0,30"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path78"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 291,201 0,30" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g80">
+       id="g80"
+       transform="translate(-6,-6)">
       <path
-         d="M 286.79048,220.83733 291,231 l 4.20952,-10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path82"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g84">
-      <path
-         d="m 264,292 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
-         id="path86"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g88">
-      <path
-         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
-         id="path90"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g92">
-      <path
-         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
          stroke-miterlimit="10"
-         id="path94"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 286.79048,220.83733 291,231 l 4.20952,-10.16267" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g96">
+       id="g84"
+       transform="translate(-6,-6)">
+      <path
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
+         id="path86"
+         d="m 264,292 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g88"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:#adc8ff;stroke:none"
+         id="path90"
+         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g92"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path94"
+         stroke-miterlimit="10"
+         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g96"
+       transform="translate(-6,-6)">
       <g
          id="g98">
         <path
-           id="path100"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path100" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="272"
-           y="304.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text102"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">update</text>
+           y="304.5"
+           x="272"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">update</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g104">
+       id="g104"
+       transform="translate(-6,-6)">
       <path
-         d="m 291,251 0,33"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path106"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g108">
-      <path
-         d="M 286.79048,273.83733 291,284 l 4.20952,-10.16267"
          stroke-miterlimit="10"
-         id="path110"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 291,251 0,33" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g112">
+       id="g108"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path110"
+         stroke-miterlimit="10"
+         d="M 286.79048,273.83733 291,284 l 4.20952,-10.16267" />
+    </g>
+    <g
+       id="g112"
+       transform="translate(-6,-6)">
       <g
          id="g114">
         <path
-           id="path116"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path116" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="167"
-           y="265"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text118"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_triggerCount &gt; 0]</text>
+           y="265"
+           x="167"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[_triggerCount &gt; 0]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g120">
+       id="g120"
+       transform="translate(-6,-6)">
       <path
-         d="M 279,233 Q 202,184 250,135"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path122"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g124">
-      <path
-         d="M 245.89547,145.20553 250,135 l -10.11874,4.31406"
          stroke-miterlimit="10"
-         id="path126"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 279,233 Q 202,184 250,135" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g128">
+       id="g124"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path126"
+         stroke-miterlimit="10"
+         d="M 245.89547,145.20553 250,135 l -10.11874,4.31406" />
+    </g>
+    <g
+       id="g128"
+       transform="translate(-6,-6)">
       <g
          id="g130">
         <path
-           id="path132"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path132" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="207"
-           y="220"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text134"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+           y="220"
+           x="207"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[else]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g136">
+       id="g136"
+       transform="translate(-6,-6)">
       <path
-         d="M 287,400.5 298.5,391 309,400.5 298.5,409 287,400.5"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path138"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="M 287,400.5 298.5,391 309,400.5 298.5,409 287,400.5" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g140">
+       id="g140"
+       transform="translate(-6,-6)">
       <path
-         d="m 280,393 11,-9 11,9 -11,9 -11,-9"
+         style="fill:#ffc082;stroke:none"
          id="path142"
-         inkscape:connector-curvature="0"
-         style="fill:#c1eac1;stroke:none" />
+         d="m 280,393 11,-9 11,9 -11,9 -11,-9" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g144">
+       id="g144"
+       transform="translate(-6,-6)">
       <path
-         d="m 280,393 11,-9 11,9 -11,9 -11,-9 0,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path146"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g148">
-      <path
-         d="m 217,439 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path150"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g152">
-      <path
-         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path154"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g156">
-      <path
-         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
          stroke-miterlimit="10"
-         id="path158"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 280,393 11,-9 11,9 -11,9 -11,-9 0,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g160">
+       id="g148"
+       transform="translate(-6,-6)">
+      <path
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
+         id="path150"
+         d="m 217,439 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g152"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:#adc8ff;stroke:none"
+         id="path154"
+         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g156"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path158"
+         stroke-miterlimit="10"
+         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g160"
+       transform="translate(-6,-6)">
       <g
          id="g162">
         <path
-           id="path164"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path164" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="212.5"
-           y="451.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text166"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">calculate NextReleaseTime</text>
+           y="451.5"
+           x="212.5"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">calculate NextReleaseTime</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g168">
+       id="g168"
+       transform="translate(-6,-6)">
       <path
-         d="m 291,403 0,28"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path170"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g172">
-      <path
-         d="M 286.79048,420.83733 291,431 l 4.20952,-10.16267"
          stroke-miterlimit="10"
-         id="path174"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 291,403 0,28" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g176">
+       id="g172"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path174"
+         stroke-miterlimit="10"
+         d="M 286.79048,420.83733 291,431 l 4.20952,-10.16267" />
+    </g>
+    <g
+       id="g176"
+       transform="translate(-6,-6)">
       <g
          id="g178">
         <path
-           id="path180"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path180" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="295"
-           y="413"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text182"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_disk.isStable()]</text>
+           y="413"
+           x="295"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[_disk.isStable()]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g184">
+       id="g184"
+       transform="translate(-6,-6)">
       <path
-         d="m 448,439 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path186"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="m 448,439 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g188">
+       id="g188"
+       transform="translate(-6,-6)">
       <path
-         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         style="fill:#adc8ff;stroke:none"
          id="path190"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
+         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g192">
+       id="g192"
+       transform="translate(-6,-6)">
       <path
-         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path194"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g196">
+       id="g196"
+       transform="translate(-6,-6)">
       <g
          id="g198">
         <path
-           id="path200"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path200" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="445"
-           y="451.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text202"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">calculate CurrentTime</text>
+           y="451.5"
+           x="445"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">calculate CurrentTime</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g204">
+       id="g204"
+       transform="translate(-6,-6)">
       <path
-         d="m 384,452 46,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path206"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 384,452 46,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g208">
+       id="g208"
+       transform="translate(-6,-6)">
       <path
-         d="M 419.83733,456.20952 430,452 419.83733,447.79048"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path210"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 419.83733,456.20952 430,452 419.83733,447.79048" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g212">
+       id="g212"
+       transform="translate(-6,-6)">
       <path
-         d="M 504,324.5 515.5,315 526,324.5 515.5,333 504,324.5"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path214"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="M 504,324.5 515.5,315 526,324.5 515.5,333 504,324.5" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g216">
+       id="g216"
+       transform="translate(-6,-6)">
       <path
-         d="m 497,317 11,-9 11,9 -11,9 -11,-9"
+         style="fill:#ffc082;stroke:none"
          id="path218"
-         inkscape:connector-curvature="0"
-         style="fill:#c1eac1;stroke:none" />
+         d="m 497,317 11,-9 11,9 -11,9 -11,-9" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g220">
+       id="g220"
+       transform="translate(-6,-6)">
       <path
-         d="m 497,317 11,-9 11,9 -11,9 -11,-9 0,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path222"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 497,317 11,-9 11,9 -11,9 -11,-9 0,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g224">
+       id="g224"
+       transform="translate(-6,-6)">
       <path
-         d="m 508,431 0,-104"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path226"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 508,431 0,-104" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g228">
+       id="g228"
+       transform="translate(-6,-6)">
       <path
-         d="M 512.20952,337.16267 508,327 l -4.20952,10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path230"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g232">
-      <path
-         d="m 463,207 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path234"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g236">
-      <path
-         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path238"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g240">
-      <path
-         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
          stroke-miterlimit="10"
-         id="path242"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 512.20952,337.16267 508,327 l -4.20952,10.16267" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g244">
+       id="g232"
+       transform="translate(-6,-6)">
+      <path
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
+         id="path234"
+         d="m 463,207 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g236"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:#adc8ff;stroke:none"
+         id="path238"
+         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g240"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path242"
+         stroke-miterlimit="10"
+         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g244"
+       transform="translate(-6,-6)">
       <g
          id="g246">
         <path
-           id="path248"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path248" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="456.5"
-           y="219.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text250"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">releaseTheKraken</text>
+           y="219.5"
+           x="456.5"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">releaseTheKraken</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g252">
+       id="g252"
+       transform="translate(-6,-6)">
       <path
-         d="m 508,307 0,-66"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path254"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 508,307 0,-66" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g256">
+       id="g256"
+       transform="translate(-6,-6)">
       <path
-         d="M 512.20952,251.16267 508,241 l -4.20952,10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path258"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g260">
-      <g
-         id="g262">
-        <path
-           id="path264"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="666.48413"
-           y="265.31403"
-           id="text5098"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan5100"
-             x="666.48413"
-             y="265.31403"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle">[currentTime &gt;= nextReleaseTime - 0.5 * _pollInterval</tspan><tspan
-             sodipodi:role="line"
-             x="666.48413"
-             y="281.56403"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="tspan5104">AND</tspan><tspan
-             sodipodi:role="line"
-             x="666.48413"
-             y="297.81403"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="tspan5110">currentTime &lt;= nextReleaseTime + 0.5 * _pollInterval]</tspan><tspan
-             sodipodi:role="line"
-             x="666.48413"
-             y="314.06403"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="tspan5108" /></text>
-      </g>
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g268">
-      <path
-         d="m 291,36 0,17"
          stroke-miterlimit="10"
+         d="M 512.20952,251.16267 508,241 l -4.20952,10.16267" />
+    </g>
+    <g
+       id="g268"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path270"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 291,36 0,17" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g272">
+       id="g272"
+       transform="translate(-6,-6)">
       <path
-         d="M 286.79048,42.837325 291,53 295.20952,42.837325"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path274"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 286.79048,42.837325 291,53 295.20952,42.837325" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g276">
+       id="g276"
+       transform="translate(-6,-6)">
       <path
-         d="m 496,317 -159,1"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path278"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g280">
-      <path
-         d="M 347.136,313.72665 337,318 l 10.18895,4.14552"
          stroke-miterlimit="10"
-         id="path282"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 496,317 -159,1" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g284">
+       id="g280"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path282"
+         stroke-miterlimit="10"
+         d="M 347.136,313.72665 337,318 l 10.18895,4.14552" />
+    </g>
+    <g
+       id="g284"
+       transform="translate(-6,-6)">
       <g
          id="g286">
         <path
-           id="path288"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path288" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="447"
-           y="309"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text290"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+           y="309"
+           x="447"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[else]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g292">
+       id="g292"
+       transform="translate(-6,-6)">
       <rect
-         x="569"
-         y="205"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect294"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="205"
+         x="569" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g296">
+       id="g296"
+       transform="translate(-6,-6)">
       <path
-         d="m 569,205 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path298"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 569,205 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g300">
+       id="g300"
+       transform="translate(-6,-6)">
       <path
-         d="m 571,213 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path302"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 571,213 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g304">
+       id="g304"
+       transform="translate(-6,-6)">
       <path
-         d="m 584,213 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path306"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g308">
-      <path
-         d="m 584,213 -3,3"
          stroke-miterlimit="10"
-         id="path310"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 584,213 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g312">
+       id="g308"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path310"
+         stroke-miterlimit="10"
+         d="m 584,213 -3,3" />
+    </g>
+    <g
+       id="g312"
+       transform="translate(-6,-6)">
       <g
          id="g314">
         <path
-           id="path316"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path316" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="595.5"
-           y="218"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text318"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_release: Release</text>
+           y="218"
+           x="595.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_release: Release</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g320">
+       id="g320"
+       transform="translate(-6,-6)">
       <rect
-         x="232"
-         y="64"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect322"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="64"
+         x="232" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g324">
+       id="g324"
+       transform="translate(-6,-6)">
       <path
-         d="m 232,64 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path326"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 232,64 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g328">
+       id="g328"
+       transform="translate(-6,-6)">
       <path
-         d="m 234,72 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path330"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 234,72 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g332">
+       id="g332"
+       transform="translate(-6,-6)">
       <path
-         d="m 247,72 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path334"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g336">
-      <path
-         d="m 247,72 -3,3"
          stroke-miterlimit="10"
-         id="path338"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 247,72 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g340">
+       id="g336"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path338"
+         stroke-miterlimit="10"
+         d="m 247,72 -3,3" />
+    </g>
+    <g
+       id="g340"
+       transform="translate(-6,-6)">
       <g
          id="g342">
         <path
-           id="path344"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path344" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="87.5"
-           y="76"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text346"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_pSensor: PhotoSensor</text>
+           y="76"
+           x="87.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_pSensor: PhotoSensor</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g348">
+       id="g348"
+       transform="translate(-6,-6)">
       <rect
-         x="232"
-         y="80"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect350"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="80"
+         x="232" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g352">
+       id="g352"
+       transform="translate(-6,-6)">
       <path
-         d="m 232,80 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path354"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 232,80 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g356">
+       id="g356"
+       transform="translate(-6,-6)">
       <path
-         d="m 234,88 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path358"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 234,88 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g360">
+       id="g360"
+       transform="translate(-6,-6)">
       <path
-         d="m 247,88 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path362"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g364">
-      <path
-         d="m 247,88 -3,3"
          stroke-miterlimit="10"
-         id="path366"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 247,88 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g368">
+       id="g364"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path366"
+         stroke-miterlimit="10"
+         d="m 247,88 -3,3" />
+    </g>
+    <g
+       id="g368"
+       transform="translate(-6,-6)">
       <g
          id="g370">
         <path
-           id="path372"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path372" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="96.5"
-           y="92"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text374"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_hSensor: HallSensor</text>
+           y="92"
+           x="96.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_hSensor: HallSensor</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g376">
+       id="g376"
+       transform="translate(-6,-6)">
       <rect
-         x="233"
-         y="296"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect378"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="296"
+         x="233" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g380">
+       id="g380"
+       transform="translate(-6,-6)">
       <path
-         d="m 233,296 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path382"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 233,296 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g384">
+       id="g384"
+       transform="translate(-6,-6)">
       <path
-         d="m 235,304 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path386"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 235,304 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g388">
+       id="g388"
+       transform="translate(-6,-6)">
       <path
-         d="m 248,304 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path390"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g392">
-      <path
-         d="m 248,304 -3,3"
          stroke-miterlimit="10"
-         id="path394"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 248,304 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g396">
+       id="g392"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path394"
+         stroke-miterlimit="10"
+         d="m 248,304 -3,3" />
+    </g>
+    <g
+       id="g396"
+       transform="translate(-6,-6)">
       <g
          id="g398">
         <path
-           id="path400"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path400" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="87.5"
-           y="308"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text402"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_pSensor: PhotoSensor</text>
+           y="308"
+           x="87.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_pSensor: PhotoSensor</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g404">
+       id="g404"
+       transform="translate(-6,-6)">
       <rect
-         x="233"
-         y="312"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect406"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="312"
+         x="233" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g408">
+       id="g408"
+       transform="translate(-6,-6)">
       <path
-         d="m 233,312 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path410"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 233,312 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g412">
+       id="g412"
+       transform="translate(-6,-6)">
       <path
-         d="m 235,320 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path414"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 235,320 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g416">
+       id="g416"
+       transform="translate(-6,-6)">
       <path
-         d="m 248,320 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path418"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g420">
-      <path
-         d="m 248,320 -3,3"
          stroke-miterlimit="10"
-         id="path422"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 248,320 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g424">
+       id="g420"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path422"
+         stroke-miterlimit="10"
+         d="m 248,320 -3,3" />
+    </g>
+    <g
+       id="g424"
+       transform="translate(-6,-6)">
       <g
          id="g426">
         <path
-           id="path428"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path428" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="95.5"
-           y="324"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text430"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_hSensor: HallSensor</text>
+           y="324"
+           x="95.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_hSensor: HallSensor</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g432">
+       id="g432"
+       transform="translate(-6,-6)">
       <path
-         d="m 291,353 0,30"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path434"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 291,353 0,30" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g436">
+       id="g436"
+       transform="translate(-6,-6)">
       <path
-         d="M 286.79048,372.83733 291,383 l 4.20952,-10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path438"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g440">
-      <path
-         d="m 33,295 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path442"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g444">
-      <path
-         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path446"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g448">
-      <path
-         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
          stroke-miterlimit="10"
-         id="path450"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 286.79048,372.83733 291,383 l 4.20952,-10.16267" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g452">
+       id="g440"
+       transform="translate(-6,-6)">
+      <path
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
+         id="path442"
+         d="m 33,295 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g444"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:#adc8ff;stroke:none"
+         id="path446"
+         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g448"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path450"
+         stroke-miterlimit="10"
+         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g452"
+       transform="translate(-6,-6)">
       <g
          id="g454">
         <path
-           id="path456"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path456" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="30"
-           y="307.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text458"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+           y="307.5"
+           x="30"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">delay</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g460">
+       id="g460"
+       transform="translate(-6,-6)">
       <path
-         d="M 279,394 Q 136,400 66,329"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path462"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g464">
-      <path
-         d="M 76.132565,333.28149 66,329 l 4.137338,10.19227"
          stroke-miterlimit="10"
-         id="path466"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 279,394 Q 136,400 66,329" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g468">
+       id="g464"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path466"
+         stroke-miterlimit="10"
+         d="M 76.132565,333.28149 66,329 l 4.137338,10.19227" />
+    </g>
+    <g
+       id="g468"
+       transform="translate(-6,-6)">
       <g
          id="g470">
         <path
-           id="path472"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path472" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="150"
-           y="403"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text474"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+           y="403"
+           x="150"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[else]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g476">
+       id="g476"
+       transform="translate(-6,-6)">
       <path
-         d="M 59,287 Q 120,192 246,120"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path478"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 59,287 Q 120,192 246,120" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g480">
+       id="g480"
+       transform="translate(-6,-6)">
       <path
-         d="M 239.26483,128.69698 246,120 l -10.91218,1.38721"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path482"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g484">
-      <path
-         d="m 496,81 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path486"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g488">
-      <path
-         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
-         id="path490"
-         inkscape:connector-curvature="0"
-         style="fill:#9ae79a;stroke:none" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g492">
-      <path
-         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
          stroke-miterlimit="10"
-         id="path494"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="M 239.26483,128.69698 246,120 l -10.91218,1.38721" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g496">
+       id="g484"
+       transform="translate(-6,-6)">
+      <path
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
+         id="path486"
+         d="m 496,81 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g488"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:#adc8ff;stroke:none"
+         id="path490"
+         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g492"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path494"
+         stroke-miterlimit="10"
+         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z" />
+    </g>
+    <g
+       id="g496"
+       transform="translate(-6,-6)">
       <g
          id="g498">
         <path
-           id="path500"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path500" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="493"
-           y="93.5"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text502"
-           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+           y="93.5"
+           x="493"
+           text-decoration="none"
+           font-weight="bold"
+           font-style="normal"
+           font-size="13px">delay</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g504">
+       id="g504"
+       transform="translate(-6,-6)">
       <path
-         d="m 508,199 0,-84"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path506"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 508,199 0,-84" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g508">
+       id="g508"
+       transform="translate(-6,-6)">
       <path
-         d="M 512.20952,125.16267 508,115 l -4.20952,10.16267"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path510"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 512.20952,125.16267 508,115 l -4.20952,10.16267" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g512">
+       id="g512"
+       transform="translate(-6,-6)">
       <rect
-         x="232"
-         y="96"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect514"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="96"
+         x="232" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g516">
+       id="g516"
+       transform="translate(-6,-6)">
       <path
-         d="m 232,96 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path518"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 232,96 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g520">
+       id="g520"
+       transform="translate(-6,-6)">
       <path
-         d="m 234,104 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path522"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 234,104 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g524">
+       id="g524"
+       transform="translate(-6,-6)">
       <path
-         d="m 247,104 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path526"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g528">
-      <path
-         d="m 247,104 -3,3"
          stroke-miterlimit="10"
-         id="path530"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 247,104 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g532">
+       id="g528"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path530"
+         stroke-miterlimit="10"
+         d="m 247,104 -3,3" />
+    </g>
+    <g
+       id="g532"
+       transform="translate(-6,-6)">
       <g
          id="g534">
         <path
-           id="path536"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path536" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="134.5"
-           y="107"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text538"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_trigger: Trigger</text>
+           y="107"
+           x="134.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_trigger: Trigger</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g540">
+       id="g540"
+       transform="translate(-6,-6)">
       <rect
-         x="233"
-         y="328"
-         width="17"
-         height="17"
+         style="fill:#ffffff;stroke:none"
          id="rect542"
-         style="fill:#ffffff;stroke:none" />
+         height="17"
+         width="17"
+         y="328"
+         x="233" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g544">
+       id="g544"
+       transform="translate(-6,-6)">
       <path
-         d="m 233,328 17,0 0,17 -17,0 0,-17 z"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path546"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 233,328 17,0 0,17 -17,0 0,-17 z" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g548">
+       id="g548"
+       transform="translate(-6,-6)">
       <path
-         d="m 235,336 13,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path550"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 235,336 13,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g552">
+       id="g552"
+       transform="translate(-6,-6)">
       <path
-         d="m 248,336 -3,-3"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path554"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g556">
-      <path
-         d="m 248,336 -3,3"
          stroke-miterlimit="10"
-         id="path558"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 248,336 -3,-3" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g560">
+       id="g556"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path558"
+         stroke-miterlimit="10"
+         d="m 248,336 -3,3" />
+    </g>
+    <g
+       id="g560"
+       transform="translate(-6,-6)">
       <g
          id="g562">
         <path
-           id="path564"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path564" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="133.5"
-           y="339"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text566"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_trigger: Trigger</text>
+           y="339"
+           x="133.5"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">_trigger: Trigger</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g568">
+       id="g568"
+       transform="translate(-6,-6)">
       <path
-         d="M 399,101.5 410.5,92 421,101.5 410.5,110 399,101.5"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none"
          id="path570"
-         inkscape:connector-curvature="0"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+         d="M 399,101.5 410.5,92 421,101.5 410.5,110 399,101.5" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g572">
+       id="g572"
+       transform="translate(-6,-6)">
       <path
-         d="m 392,94 11,-9 11,9 -11,9 -11,-9"
+         style="fill:#ffc082;stroke:none"
          id="path574"
-         inkscape:connector-curvature="0"
-         style="fill:#c1eac1;stroke:none" />
+         d="m 392,94 11,-9 11,9 -11,9 -11,-9" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g576">
+       id="g576"
+       transform="translate(-6,-6)">
       <path
-         d="m 392,94 11,-9 11,9 -11,9 -11,-9 0,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path578"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 392,94 11,-9 11,9 -11,9 -11,-9 0,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g580">
+       id="g580"
+       transform="translate(-6,-6)">
       <path
-         d="m 478,94 -63,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path582"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="m 478,94 -63,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g584">
+       id="g584"
+       transform="translate(-6,-6)">
       <path
-         d="M 425.16267,89.790482 415,94 l 10.16267,4.209518"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path586"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         stroke-miterlimit="10"
+         d="M 425.16267,89.790482 415,94 l 10.16267,4.209518" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g588">
+       id="g588"
+       transform="translate(-6,-6)">
       <path
-         d="m 391,94 -54,0"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path590"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g592">
-      <path
-         d="M 347.16267,89.790482 337,94 l 10.16267,4.209518"
          stroke-miterlimit="10"
-         id="path594"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 391,94 -54,0" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g596">
+       id="g592"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path594"
+         stroke-miterlimit="10"
+         d="M 347.16267,89.790482 337,94 l 10.16267,4.209518" />
+    </g>
+    <g
+       id="g596"
+       transform="translate(-6,-6)">
       <g
          id="g598">
         <path
-           id="path600"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path600" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="351"
-           y="91"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text602"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+           y="91"
+           x="351"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[else]</text>
       </g>
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g604">
+       id="g604"
+       transform="translate(-6,-6)">
       <path
-         d="m 394,104 q -58,64 -93,180"
-         stroke-miterlimit="10"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
          id="path606"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-6,-6)"
-       id="g608">
-      <path
-         d="M 299.90554,273.05458 301,284 l 6.96568,-8.51348"
          stroke-miterlimit="10"
-         id="path610"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         d="m 394,104 q -58,64 -93,180" />
     </g>
     <g
-       transform="translate(-6,-6)"
-       id="g612">
+       id="g608"
+       transform="translate(-6,-6)">
+      <path
+         style="fill:none;stroke:#000000;stroke-miterlimit:10"
+         id="path610"
+         stroke-miterlimit="10"
+         d="M 299.90554,273.05458 301,284 l 6.96568,-8.51348" />
+    </g>
+    <g
+       id="g612"
+       transform="translate(-6,-6)">
       <g
          id="g614">
         <path
-           id="path616"
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
+           style="fill:none;stroke:none"
+           d=""
+           id="path616" />
         <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="367"
-           y="150"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none"
            id="text618"
-           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_triggerCount &gt; 0]</text>
+           y="150"
+           x="367"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="13px">[_triggerCount &gt; 0]</text>
       </g>
     </g>
   </g>
+  <text
+     id="text4750"
+     y="260.67398"
+     x="660.03082"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+       y="260.67398"
+       x="660.03082"
+       id="tspan4752">[currentTime &gt;= nextReleaseTime - 0.5 * _pollInterval</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+       id="tspan4754"
+       y="276.92398"
+       x="660.03082">AND</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+       id="tspan4756"
+       y="293.17398"
+       x="660.03082">currentTime &lt;= nextReleaseTime + 0.5 * _pollInterval]</tspan></text>
 </svg>
