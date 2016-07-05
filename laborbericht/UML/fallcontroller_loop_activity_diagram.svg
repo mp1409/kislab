@@ -1,1 +1,1582 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1175" height="476"><defs></defs><g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 289 32.5 C 289 27.2532944 293.2532944 23 298.5 23 C 303.7467056 23 308 27.2532944 308 32.5 C 308 37.7467056 303.7467056 42 298.5 42 C 293.2532944 42 289 37.7467056 289 32.5 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#000000" stroke="none" d="M 282 25.5 C 282 20.2532944 286.2532944 16 291.5 16 C 296.7467056 16 301 20.2532944 301 25.5 C 301 30.7467056 296.7467056 35 291.5 35 C 286.2532944 35 282 30.7467056 282 25.5 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 264 61 L 333 61 Q 343 61 343 71 L 343 131 Q 343 141 333 141 L 264 141 Q 254 141 254 131 L 254 71 Q 254 61 264 61 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 257 54 L 326 54 Q 336 54 336 64 L 336 124 Q 336 134 326 134 L 257 134 Q 247 134 247 124 L 247 64 Q 247 54 257 54 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 257 54 L 326 54 Q 336 54 336 64 L 336 124 Q 336 134 326 134 L 257 134 Q 247 134 247 124 L 247 64 Q 247 54 257 54 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="272" y="73.5">update</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 279 167 L 318 167 Q 328 167 328 177 L 328 197 Q 328 207 318 207 L 279 207 Q 269 207 269 197 L 269 177 Q 269 167 279 167 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 272 160 L 311 160 Q 321 160 321 170 L 321 190 Q 321 200 311 200 L 272 200 Q 262 200 262 190 L 262 170 Q 262 160 272 160 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 272 160 L 311 160 Q 321 160 321 170 L 321 190 Q 321 200 311 200 L 272 200 Q 262 200 262 190 L 262 170 Q 262 160 272 160 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="276" y="179.5">delay</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 135 L 291 159" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 148.83732514237585 L 291 159 L 295.209517756016 148.83732514237585" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 287 248.5 L 298.5 239 L 309 248.5 L 298.5 257 L 287 248.5" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#c1eac1" stroke="none" d="M 280 241 L 291 232 L 302 241 L 291 250 L 280 241"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 280 241 L 291 232 L 302 241 L 291 250 L 280 241 L 280 241" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 201 L 291 231" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 220.83732514237585 L 291 231 L 295.209517756016 220.83732514237585" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 264 292 L 333 292 Q 343 292 343 302 L 343 349 Q 343 359 333 359 L 264 359 Q 254 359 254 349 L 254 302 Q 254 292 264 292 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 257 285 L 326 285 Q 336 285 336 295 L 336 342 Q 336 352 326 352 L 257 352 Q 247 352 247 342 L 247 295 Q 247 285 257 285 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 257 285 L 326 285 Q 336 285 336 295 L 336 342 Q 336 352 326 352 L 257 352 Q 247 352 247 342 L 247 295 Q 247 285 257 285 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="272" y="304.5">update</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 251 L 291 284" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 273.83732514237585 L 291 284 L 295.209517756016 273.83732514237585" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="167" y="265"> [_triggerCount &gt;  0]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 279 233 Q 202 184 250 135" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 245.8954701992995 145.20552963423071 L 250 135 L 239.8812599343776 139.31405835430724" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="207" y="220"> [else]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 287 400.5 L 298.5 391 L 309 400.5 L 298.5 409 L 287 400.5" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#c1eac1" stroke="none" d="M 280 393 L 291 384 L 302 393 L 291 402 L 280 393"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 280 393 L 291 384 L 302 393 L 291 402 L 280 393 L 280 393" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 217 439 L 380 439 Q 390 439 390 449 L 390 469 Q 390 479 380 479 L 217 479 Q 207 479 207 469 L 207 449 Q 207 439 217 439 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 210 432 L 373 432 Q 383 432 383 442 L 383 462 Q 383 472 373 472 L 210 472 Q 200 472 200 462 L 200 442 Q 200 432 210 432 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 210 432 L 373 432 Q 383 432 383 442 L 383 462 Q 383 472 373 472 L 210 472 Q 200 472 200 462 L 200 442 Q 200 432 210 432 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="212.5" y="451.5">calculate NextReleaseTime</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 403 L 291 431" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 420.83732514237585 L 291 431 L 295.209517756016 420.83732514237585" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="295" y="413"> [_disk.isStable()]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 448 439 L 582 439 Q 592 439 592 449 L 592 469 Q 592 479 582 479 L 448 479 Q 438 479 438 469 L 438 449 Q 438 439 448 439 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 441 432 L 575 432 Q 585 432 585 442 L 585 462 Q 585 472 575 472 L 441 472 Q 431 472 431 462 L 431 442 Q 431 432 441 432 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 441 432 L 575 432 Q 585 432 585 442 L 585 462 Q 585 472 575 472 L 441 472 Q 431 472 431 462 L 431 442 Q 431 432 441 432 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="445" y="451.5">calculate CurrentTime</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 384 452 L 430 452" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 419.83732514237585 456.209517756016 L 430 452 L 419.83732514237585 447.790482243984" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 504 324.5 L 515.5 315 L 526 324.5 L 515.5 333 L 504 324.5" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#c1eac1" stroke="none" d="M 497 317 L 508 308 L 519 317 L 508 326 L 497 317"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 497 317 L 508 308 L 519 317 L 508 326 L 497 317 L 497 317" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 508 431 L 508 327" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 512.209517756016 337.16267485762415 L 508 327 L 503.790482243984 337.16267485762415" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 463 207 L 568 207 Q 578 207 578 217 L 578 237 Q 578 247 568 247 L 463 247 Q 453 247 453 237 L 453 217 Q 453 207 463 207 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 456 200 L 561 200 Q 571 200 571 210 L 571 230 Q 571 240 561 240 L 456 240 Q 446 240 446 230 L 446 210 Q 446 200 456 200 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 456 200 L 561 200 Q 571 200 571 210 L 571 230 Q 571 240 561 240 L 456 240 Q 446 240 446 230 L 446 210 Q 446 200 456 200 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="456.5" y="219.5">releaseTheKraken</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 508 307 L 508 241" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 512.209517756016 251.16267485762415 L 508 241 L 503.790482243984 251.16267485762415" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="511" y="280"> [currentTime &gt;= nextReleaseTime - 0.5 * _pollInterval  and  currentTime  &lt;= nextReleaseTime + 0.5 * _pollInterval]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 36 L 291 53" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 42.837325142375846 L 291 53 L 295.209517756016 42.837325142375846" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 496 317 L 337 318" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 347.1359994384236 313.72665056609253 L 337 318 L 347.188948300108 322.1455195739167" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="447" y="309"> [else]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="569" y="205" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 569 205 L 586 205 L 586 222 L 569 222 L 569 205 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 571 213 L 584 213" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 584 213 L 581 210" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 584 213 L 581 216" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="595.5" y="218">_release: Release</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="232" y="64" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 232 64 L 249 64 L 249 81 L 232 81 L 232 64 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 234 72 L 247 72" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 72 L 244 69" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 72 L 244 75" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="87.5" y="76">_pSensor: PhotoSensor</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="232" y="80" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 232 80 L 249 80 L 249 97 L 232 97 L 232 80 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 234 88 L 247 88" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 88 L 244 85" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 88 L 244 91" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="96.5" y="92">_hSensor: HallSensor</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="233" y="296" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 233 296 L 250 296 L 250 313 L 233 313 L 233 296 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 235 304 L 248 304" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 304 L 245 301" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 304 L 245 307" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="87.5" y="308">_pSensor: PhotoSensor</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="233" y="312" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 233 312 L 250 312 L 250 329 L 233 329 L 233 312 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 235 320 L 248 320" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 320 L 245 317" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 320 L 245 323" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="95.5" y="324">_hSensor: HallSensor</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 291 353 L 291 383" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 286.790482243984 372.83732514237585 L 291 383 L 295.209517756016 372.83732514237585" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 33 295 L 72 295 Q 82 295 82 305 L 82 325 Q 82 335 72 335 L 33 335 Q 23 335 23 325 L 23 305 Q 23 295 33 295 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 26 288 L 65 288 Q 75 288 75 298 L 75 318 Q 75 328 65 328 L 26 328 Q 16 328 16 318 L 16 298 Q 16 288 26 288 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 26 288 L 65 288 Q 75 288 75 298 L 75 318 Q 75 328 65 328 L 26 328 Q 16 328 16 318 L 16 298 Q 16 288 26 288 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="30" y="307.5">delay</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 279 394 Q 136 400 66 329" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 76.13256529459717 333.28148578775233 L 66 329 L 70.13733799655164 339.1922732646986" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="150" y="403"> [else]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 59 287 Q 120 192 246 120" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 239.26483291969117 128.69698363803937 L 246 120 L 235.08782157876314 121.38721379141532" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 496 81 L 535 81 Q 545 81 545 91 L 545 111 Q 545 121 535 121 L 496 121 Q 486 121 486 111 L 486 91 Q 486 81 496 81 Z" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#9ae79a" stroke="none" d="M 489 74 L 528 74 Q 538 74 538 84 L 538 104 Q 538 114 528 114 L 489 114 Q 479 114 479 104 L 479 84 Q 479 74 489 74 Z"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 489 74 L 528 74 Q 538 74 538 84 L 538 104 Q 538 114 528 114 L 489 114 Q 479 114 479 104 L 479 84 Q 479 74 489 74 Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="493" y="93.5">delay</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 508 199 L 508 115" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 512.209517756016 125.16267485762415 L 508 115 L 503.790482243984 125.16267485762415" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="232" y="96" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 232 96 L 249 96 L 249 113 L 232 113 L 232 96 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 234 104 L 247 104" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 104 L 244 101" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 247 104 L 244 107" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="134.5" y="107">_trigger: Trigger</text></g></g><g transform="translate(-6,-6) scale(1,1)"><rect fill="#ffffff" stroke="none" x="233" y="328" width="17" height="17"></rect></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 233 328 L 250 328 L 250 345 L 233 345 L 233 328 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 235 336 L 248 336" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 336 L 245 333" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 248 336 L 245 339" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="133.5" y="339">_trigger: Trigger</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#C0C0C0" stroke="none" d="M 399 101.5 L 410.5 92 L 421 101.5 L 410.5 110 L 399 101.5" opacity="0.2"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="#c1eac1" stroke="none" d="M 392 94 L 403 85 L 414 94 L 403 103 L 392 94"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 392 94 L 403 85 L 414 94 L 403 103 L 392 94 L 392 94" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 478 94 L 415 94" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 425.16267485762415 89.79048224398402 L 415 94 L 425.16267485762415 98.20951775601598" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 391 94 L 337 94" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 347.16267485762415 89.79048224398402 L 337 94 L 347.16267485762415 98.20951775601598" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="351" y="91"> [else]</text></g></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 394 104 Q 336 168 301 284" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><path fill="none" stroke="#000000" d="M 299.9055399951141 273.0545828175576 L 301 284 L 307.9656786214285 275.48652119618697" stroke-miterlimit="10"></path></g><g transform="translate(-6,-6) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="367" y="150"> [_triggerCount &gt;  0]</text></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="820"
+   height="476"
+   id="svg2"
+   inkscape:version="0.91 r"
+   sodipodi:docname="fallcontroller_loop_activity_diagram.svg">
+  <metadata
+     id="metadata622">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1023"
+     id="namedview620"
+     showgrid="false"
+     inkscape:zoom="2.2059574"
+     inkscape:cx="691.06209"
+     inkscape:cy="229.88018"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g262" />
+  <defs
+     id="defs4" />
+  <g
+     id="g6">
+    <g
+       transform="translate(-6,-6)"
+       id="g8">
+      <path
+         d="m 289,32.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z"
+         id="path10"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g12">
+      <path
+         d="m 282,25.5 c 0,-5.246706 4.25329,-9.5 9.5,-9.5 5.24671,0 9.5,4.253294 9.5,9.5 0,5.246706 -4.25329,9.5 -9.5,9.5 -5.24671,0 -9.5,-4.253294 -9.5,-9.5 z"
+         id="path14"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g16">
+      <path
+         d="m 264,61 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
+         id="path18"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g20">
+      <path
+         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
+         id="path22"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g24">
+      <path
+         d="m 257,54 69,0 q 10,0 10,10 l 0,60 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-60 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path26"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g28">
+      <g
+         id="g30">
+        <path
+           id="path32"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="272"
+           y="73.5"
+           id="text34"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">update</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g36">
+      <path
+         d="m 279,167 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path38"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g40">
+      <path
+         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path42"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g44">
+      <path
+         d="m 272,160 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path46"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g48">
+      <g
+         id="g50">
+        <path
+           id="path52"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="276"
+           y="179.5"
+           id="text54"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g56">
+      <path
+         d="m 291,135 0,24"
+         stroke-miterlimit="10"
+         id="path58"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g60">
+      <path
+         d="M 286.79048,148.83733 291,159 l 4.20952,-10.16267"
+         stroke-miterlimit="10"
+         id="path62"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g64">
+      <path
+         d="M 287,248.5 298.5,239 309,248.5 298.5,257 287,248.5"
+         id="path66"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g68">
+      <path
+         d="m 280,241 11,-9 11,9 -11,9 -11,-9"
+         id="path70"
+         inkscape:connector-curvature="0"
+         style="fill:#c1eac1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g72">
+      <path
+         d="m 280,241 11,-9 11,9 -11,9 -11,-9 0,0"
+         stroke-miterlimit="10"
+         id="path74"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g76">
+      <path
+         d="m 291,201 0,30"
+         stroke-miterlimit="10"
+         id="path78"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g80">
+      <path
+         d="M 286.79048,220.83733 291,231 l 4.20952,-10.16267"
+         stroke-miterlimit="10"
+         id="path82"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g84">
+      <path
+         d="m 264,292 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
+         id="path86"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g88">
+      <path
+         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
+         id="path90"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g92">
+      <path
+         d="m 257,285 69,0 q 10,0 10,10 l 0,47 q 0,10 -10,10 l -69,0 q -10,0 -10,-10 l 0,-47 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path94"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g96">
+      <g
+         id="g98">
+        <path
+           id="path100"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="272"
+           y="304.5"
+           id="text102"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">update</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g104">
+      <path
+         d="m 291,251 0,33"
+         stroke-miterlimit="10"
+         id="path106"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g108">
+      <path
+         d="M 286.79048,273.83733 291,284 l 4.20952,-10.16267"
+         stroke-miterlimit="10"
+         id="path110"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g112">
+      <g
+         id="g114">
+        <path
+           id="path116"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="167"
+           y="265"
+           id="text118"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_triggerCount &gt; 0]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g120">
+      <path
+         d="M 279,233 Q 202,184 250,135"
+         stroke-miterlimit="10"
+         id="path122"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g124">
+      <path
+         d="M 245.89547,145.20553 250,135 l -10.11874,4.31406"
+         stroke-miterlimit="10"
+         id="path126"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g128">
+      <g
+         id="g130">
+        <path
+           id="path132"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="207"
+           y="220"
+           id="text134"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g136">
+      <path
+         d="M 287,400.5 298.5,391 309,400.5 298.5,409 287,400.5"
+         id="path138"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g140">
+      <path
+         d="m 280,393 11,-9 11,9 -11,9 -11,-9"
+         id="path142"
+         inkscape:connector-curvature="0"
+         style="fill:#c1eac1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g144">
+      <path
+         d="m 280,393 11,-9 11,9 -11,9 -11,-9 0,0"
+         stroke-miterlimit="10"
+         id="path146"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g148">
+      <path
+         d="m 217,439 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path150"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g152">
+      <path
+         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path154"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g156">
+      <path
+         d="m 210,432 163,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -163,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path158"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g160">
+      <g
+         id="g162">
+        <path
+           id="path164"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="212.5"
+           y="451.5"
+           id="text166"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">calculate NextReleaseTime</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g168">
+      <path
+         d="m 291,403 0,28"
+         stroke-miterlimit="10"
+         id="path170"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g172">
+      <path
+         d="M 286.79048,420.83733 291,431 l 4.20952,-10.16267"
+         stroke-miterlimit="10"
+         id="path174"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g176">
+      <g
+         id="g178">
+        <path
+           id="path180"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="295"
+           y="413"
+           id="text182"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_disk.isStable()]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g184">
+      <path
+         d="m 448,439 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path186"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g188">
+      <path
+         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path190"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g192">
+      <path
+         d="m 441,432 134,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -134,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path194"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g196">
+      <g
+         id="g198">
+        <path
+           id="path200"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="445"
+           y="451.5"
+           id="text202"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">calculate CurrentTime</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g204">
+      <path
+         d="m 384,452 46,0"
+         stroke-miterlimit="10"
+         id="path206"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g208">
+      <path
+         d="M 419.83733,456.20952 430,452 419.83733,447.79048"
+         stroke-miterlimit="10"
+         id="path210"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g212">
+      <path
+         d="M 504,324.5 515.5,315 526,324.5 515.5,333 504,324.5"
+         id="path214"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g216">
+      <path
+         d="m 497,317 11,-9 11,9 -11,9 -11,-9"
+         id="path218"
+         inkscape:connector-curvature="0"
+         style="fill:#c1eac1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g220">
+      <path
+         d="m 497,317 11,-9 11,9 -11,9 -11,-9 0,0"
+         stroke-miterlimit="10"
+         id="path222"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g224">
+      <path
+         d="m 508,431 0,-104"
+         stroke-miterlimit="10"
+         id="path226"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g228">
+      <path
+         d="M 512.20952,337.16267 508,327 l -4.20952,10.16267"
+         stroke-miterlimit="10"
+         id="path230"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g232">
+      <path
+         d="m 463,207 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path234"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g236">
+      <path
+         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path238"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g240">
+      <path
+         d="m 456,200 105,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -105,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path242"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g244">
+      <g
+         id="g246">
+        <path
+           id="path248"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="456.5"
+           y="219.5"
+           id="text250"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">releaseTheKraken</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g252">
+      <path
+         d="m 508,307 0,-66"
+         stroke-miterlimit="10"
+         id="path254"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g256">
+      <path
+         d="M 512.20952,251.16267 508,241 l -4.20952,10.16267"
+         stroke-miterlimit="10"
+         id="path258"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g260">
+      <g
+         id="g262">
+        <path
+           id="path264"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="666.48413"
+           y="265.31403"
+           id="text5098"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5100"
+             x="666.48413"
+             y="265.31403"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle">[currentTime &gt;= nextReleaseTime - 0.5 * _pollInterval</tspan><tspan
+             sodipodi:role="line"
+             x="666.48413"
+             y="281.56403"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+             id="tspan5104">AND</tspan><tspan
+             sodipodi:role="line"
+             x="666.48413"
+             y="297.81403"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+             id="tspan5110">currentTime &lt;= nextReleaseTime + 0.5 * _pollInterval]</tspan><tspan
+             sodipodi:role="line"
+             x="666.48413"
+             y="314.06403"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.99999905px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+             id="tspan5108" /></text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g268">
+      <path
+         d="m 291,36 0,17"
+         stroke-miterlimit="10"
+         id="path270"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g272">
+      <path
+         d="M 286.79048,42.837325 291,53 295.20952,42.837325"
+         stroke-miterlimit="10"
+         id="path274"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g276">
+      <path
+         d="m 496,317 -159,1"
+         stroke-miterlimit="10"
+         id="path278"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g280">
+      <path
+         d="M 347.136,313.72665 337,318 l 10.18895,4.14552"
+         stroke-miterlimit="10"
+         id="path282"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g284">
+      <g
+         id="g286">
+        <path
+           id="path288"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="447"
+           y="309"
+           id="text290"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g292">
+      <rect
+         x="569"
+         y="205"
+         width="17"
+         height="17"
+         id="rect294"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g296">
+      <path
+         d="m 569,205 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path298"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g300">
+      <path
+         d="m 571,213 13,0"
+         stroke-miterlimit="10"
+         id="path302"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g304">
+      <path
+         d="m 584,213 -3,-3"
+         stroke-miterlimit="10"
+         id="path306"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g308">
+      <path
+         d="m 584,213 -3,3"
+         stroke-miterlimit="10"
+         id="path310"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g312">
+      <g
+         id="g314">
+        <path
+           id="path316"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="595.5"
+           y="218"
+           id="text318"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_release: Release</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g320">
+      <rect
+         x="232"
+         y="64"
+         width="17"
+         height="17"
+         id="rect322"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g324">
+      <path
+         d="m 232,64 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path326"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g328">
+      <path
+         d="m 234,72 13,0"
+         stroke-miterlimit="10"
+         id="path330"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g332">
+      <path
+         d="m 247,72 -3,-3"
+         stroke-miterlimit="10"
+         id="path334"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g336">
+      <path
+         d="m 247,72 -3,3"
+         stroke-miterlimit="10"
+         id="path338"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g340">
+      <g
+         id="g342">
+        <path
+           id="path344"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="87.5"
+           y="76"
+           id="text346"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_pSensor: PhotoSensor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g348">
+      <rect
+         x="232"
+         y="80"
+         width="17"
+         height="17"
+         id="rect350"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g352">
+      <path
+         d="m 232,80 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path354"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g356">
+      <path
+         d="m 234,88 13,0"
+         stroke-miterlimit="10"
+         id="path358"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g360">
+      <path
+         d="m 247,88 -3,-3"
+         stroke-miterlimit="10"
+         id="path362"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g364">
+      <path
+         d="m 247,88 -3,3"
+         stroke-miterlimit="10"
+         id="path366"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g368">
+      <g
+         id="g370">
+        <path
+           id="path372"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="96.5"
+           y="92"
+           id="text374"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_hSensor: HallSensor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g376">
+      <rect
+         x="233"
+         y="296"
+         width="17"
+         height="17"
+         id="rect378"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g380">
+      <path
+         d="m 233,296 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path382"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g384">
+      <path
+         d="m 235,304 13,0"
+         stroke-miterlimit="10"
+         id="path386"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g388">
+      <path
+         d="m 248,304 -3,-3"
+         stroke-miterlimit="10"
+         id="path390"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g392">
+      <path
+         d="m 248,304 -3,3"
+         stroke-miterlimit="10"
+         id="path394"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g396">
+      <g
+         id="g398">
+        <path
+           id="path400"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="87.5"
+           y="308"
+           id="text402"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_pSensor: PhotoSensor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g404">
+      <rect
+         x="233"
+         y="312"
+         width="17"
+         height="17"
+         id="rect406"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g408">
+      <path
+         d="m 233,312 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path410"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g412">
+      <path
+         d="m 235,320 13,0"
+         stroke-miterlimit="10"
+         id="path414"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g416">
+      <path
+         d="m 248,320 -3,-3"
+         stroke-miterlimit="10"
+         id="path418"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g420">
+      <path
+         d="m 248,320 -3,3"
+         stroke-miterlimit="10"
+         id="path422"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g424">
+      <g
+         id="g426">
+        <path
+           id="path428"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="95.5"
+           y="324"
+           id="text430"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_hSensor: HallSensor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g432">
+      <path
+         d="m 291,353 0,30"
+         stroke-miterlimit="10"
+         id="path434"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g436">
+      <path
+         d="M 286.79048,372.83733 291,383 l 4.20952,-10.16267"
+         stroke-miterlimit="10"
+         id="path438"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g440">
+      <path
+         d="m 33,295 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path442"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g444">
+      <path
+         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path446"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g448">
+      <path
+         d="m 26,288 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path450"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g452">
+      <g
+         id="g454">
+        <path
+           id="path456"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="30"
+           y="307.5"
+           id="text458"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g460">
+      <path
+         d="M 279,394 Q 136,400 66,329"
+         stroke-miterlimit="10"
+         id="path462"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g464">
+      <path
+         d="M 76.132565,333.28149 66,329 l 4.137338,10.19227"
+         stroke-miterlimit="10"
+         id="path466"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g468">
+      <g
+         id="g470">
+        <path
+           id="path472"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="150"
+           y="403"
+           id="text474"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g476">
+      <path
+         d="M 59,287 Q 120,192 246,120"
+         stroke-miterlimit="10"
+         id="path478"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g480">
+      <path
+         d="M 239.26483,128.69698 246,120 l -10.91218,1.38721"
+         stroke-miterlimit="10"
+         id="path482"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g484">
+      <path
+         d="m 496,81 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path486"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g488">
+      <path
+         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         id="path490"
+         inkscape:connector-curvature="0"
+         style="fill:#9ae79a;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g492">
+      <path
+         d="m 489,74 39,0 q 10,0 10,10 l 0,20 q 0,10 -10,10 l -39,0 q -10,0 -10,-10 l 0,-20 q 0,-10 10,-10 z"
+         stroke-miterlimit="10"
+         id="path494"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g496">
+      <g
+         id="g498">
+        <path
+           id="path500"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="493"
+           y="93.5"
+           id="text502"
+           style="font-style:normal;font-weight:bold;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">delay</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g504">
+      <path
+         d="m 508,199 0,-84"
+         stroke-miterlimit="10"
+         id="path506"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g508">
+      <path
+         d="M 512.20952,125.16267 508,115 l -4.20952,10.16267"
+         stroke-miterlimit="10"
+         id="path510"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g512">
+      <rect
+         x="232"
+         y="96"
+         width="17"
+         height="17"
+         id="rect514"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g516">
+      <path
+         d="m 232,96 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path518"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g520">
+      <path
+         d="m 234,104 13,0"
+         stroke-miterlimit="10"
+         id="path522"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g524">
+      <path
+         d="m 247,104 -3,-3"
+         stroke-miterlimit="10"
+         id="path526"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g528">
+      <path
+         d="m 247,104 -3,3"
+         stroke-miterlimit="10"
+         id="path530"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g532">
+      <g
+         id="g534">
+        <path
+           id="path536"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="134.5"
+           y="107"
+           id="text538"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_trigger: Trigger</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g540">
+      <rect
+         x="233"
+         y="328"
+         width="17"
+         height="17"
+         id="rect542"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g544">
+      <path
+         d="m 233,328 17,0 0,17 -17,0 0,-17 z"
+         stroke-miterlimit="10"
+         id="path546"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g548">
+      <path
+         d="m 235,336 13,0"
+         stroke-miterlimit="10"
+         id="path550"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g552">
+      <path
+         d="m 248,336 -3,-3"
+         stroke-miterlimit="10"
+         id="path554"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g556">
+      <path
+         d="m 248,336 -3,3"
+         stroke-miterlimit="10"
+         id="path558"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g560">
+      <g
+         id="g562">
+        <path
+           id="path564"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="133.5"
+           y="339"
+           id="text566"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">_trigger: Trigger</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g568">
+      <path
+         d="M 399,101.5 410.5,92 421,101.5 410.5,110 399,101.5"
+         id="path570"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g572">
+      <path
+         d="m 392,94 11,-9 11,9 -11,9 -11,-9"
+         id="path574"
+         inkscape:connector-curvature="0"
+         style="fill:#c1eac1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g576">
+      <path
+         d="m 392,94 11,-9 11,9 -11,9 -11,-9 0,0"
+         stroke-miterlimit="10"
+         id="path578"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g580">
+      <path
+         d="m 478,94 -63,0"
+         stroke-miterlimit="10"
+         id="path582"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g584">
+      <path
+         d="M 425.16267,89.790482 415,94 l 10.16267,4.209518"
+         stroke-miterlimit="10"
+         id="path586"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g588">
+      <path
+         d="m 391,94 -54,0"
+         stroke-miterlimit="10"
+         id="path590"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g592">
+      <path
+         d="M 347.16267,89.790482 337,94 l 10.16267,4.209518"
+         stroke-miterlimit="10"
+         id="path594"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g596">
+      <g
+         id="g598">
+        <path
+           id="path600"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="351"
+           y="91"
+           id="text602"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[else]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g604">
+      <path
+         d="m 394,104 q -58,64 -93,180"
+         stroke-miterlimit="10"
+         id="path606"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g608">
+      <path
+         d="M 299.90554,273.05458 301,284 l 6.96568,-8.51348"
+         stroke-miterlimit="10"
+         id="path610"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-6,-6)"
+       id="g612">
+      <g
+         id="g614">
+        <path
+           id="path616"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="367"
+           y="150"
+           id="text618"
+           style="font-style:normal;font-weight:normal;font-size:13px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">[_triggerCount &gt; 0]</text>
+      </g>
+    </g>
+  </g>
+</svg>
