@@ -19,7 +19,7 @@ Im folgenden wird genauer auf die Sensoren eingegangen.
 	\label{img:versuchsaufbau}
 \end{figure}
 
-\begin{figure}[h] \centering
+\begin{center}
 \begin{tabular}{lc} 
 	\textbf{Eigenschaft} 	& \textbf{Beschreibung}	\\
 	\toprule
@@ -36,7 +36,7 @@ Im folgenden wird genauer auf die Sensoren eingegangen.
 	Durchmesser 	& 12\,mm \\
 	\bottomrule
 \end{tabular}
-\end{figure}
+\end{center}
 
 \subsection{Sensoren}
 Der Hallsensor zeigt zwei mal pro Umdrehung exakt die Position der Scheibe an.
@@ -46,24 +46,25 @@ An den Positionen wechselt die Ausgabe der Sensoren auf den entsprechenden Wert,
 Der Photosensor gibt abhängig davon, ob er eine helle oder dunkle Fläche vor sich hat eine 1 oder 0 aus.
 Da die Felder auf der Unterseite der Scheibe gleichmäßig verteilt sind (siehe Abb. \ref{img:versuchsaufbau}), kann er nicht zur Positionsbestimmung, dafür für die Bestimmung der Drehgeschwindigkeit verwendet werden.
 
-Die Sensorwerte einer Scheibenumdrehung sind in Abb. \ref{img:sensorwerte} geplottet.
+Die Sensorwerte für Hall- und Photosensor einer Scheibenumdrehung sind in Abb. \ref{img:sensorwerte} dargestellt.
 
-\textbf{TODO: Trigger}
+Der dritte Sensor ist ein Trigger, welcher 1 ausgibt, wenn er gedrückt wird.
+Dieser soll dafür benutzt werden den Kugelfall zu initiieren, bzw. die Anzahl der Kugeln zu bestimmen, welche zum nächstmöglichen Zeitpunkt fallen gelassen werden sollen.
 
 \subsection{Aktoren}
 \label{subs:aktoren}
 Wie bereits beschrieben, wird die Abwurfvorrichtung durch einen Servo gesteuert.
 Sobald sich dieser aus seiner Ursprungsposition auf einen Winkel von 30° dreht, fällt eine Kugel aus dem Magazin und die nächste Kugel wird automatisch nachgeladen.
 
-Weiterhin gibt es noch einige LEDs.
+Weiterhin gibt es noch einige LEDs, welche in der Implementierung keine besondere Rolle besitzen.
 
 \subsection{Ansteuerung der Komponenten}
-Für die Ansteuerung stehen ein Arduino UNO und eine Art Blackbox zur Verfügung.
-Zweitere sorgt dafür, dass die Sensoren und Aktoren an die Pins des Arduino angeschlossen sind, und einfach angesteuert werden können.
-Die Belegung der Pins sind in folgender Tabelle beschrieben.
+Für das Auslesen der Sensoren und die Ansteuerung der Aktoren stehen ein Arduino UNO und eine Art Blackbox zur Verfügung.
+Zweitere sorgt dafür, dass die Sensoren und Aktoren direkt an die Pins des Arduino angeschlossen sind, und einfach mittels \texttt{digitalWrite} und \texttt{digitalRead} angesteuert werden können.
+Die Belegung der Pins sind in der folgenden Tabelle beschrieben:
 
 
-\begin{figure}[h] \centering
+\begin{center}
 \begin{tabular}{cll} 
 	\textbf{Pin} 	& \textbf{In/Out} & \textbf{Funktion}	\\
 	\toprule
@@ -79,7 +80,7 @@ Die Belegung der Pins sind in folgender Tabelle beschrieben.
 	13 &	Output &	LED 2\\
 	\bottomrule
 \end{tabular}
-\end{figure}
+\end{center}
 
 \begin{figure}[h] \centering
 	\includegraphics[width=\textwidth]{images/generated/sensor_messwerte1.pdf}
@@ -93,8 +94,7 @@ Um die Fallzeit einer Kugel zu berechnen wird die Formel für den freien Fall im
 	t(h) = \sqrt{\frac{2h}{g}}
 \end{align}
 verwendet.
-Setzt die oben beschriebenen, am Versuchsaufbau gemessenen, Messwerte ein
-
+Setzt man die oben beschriebenen, am Versuchsaufbau gemessenen, Werte ein
 \begin{align}
 t(h) &= \sqrt{\frac{2 * 0.75m}{9.81\,\nicefrac{m}{s^2}}} \\
 	 &= 0.391\,s \\
@@ -102,11 +102,31 @@ t(h) &= \sqrt{\frac{2 * 0.75m}{9.81\,\nicefrac{m}{s^2}}} \\
 \end{align}
 so kommt man auf eine Fallzeit von 391\,ms für eine Kugel.
 
-
+\subsection{Drehbewegung der Scheibe}
+Der Aufbau der Scheibe wurde bereits beschrieben.
+Für eine korrekte Berechnung der Abwurfszeit wird des weiteren eine Beschreibung des Drehverhaltens benötigt.
+Bei Messungen konnte folgendes Polynom für die Drehgeschwindigkeit [U/min] über der Zeit [s] (siehe Abb. \ref{img:drehgeschw}) festgestellt werden:
+\begin{align}
+	f(t) = 151.16 - 1.57 \cdot t + 0.0037 \cdot t^2 \label{form:f(t)}
+\end{align}
+Umgerechnet in die Funktion für die Zeit [ms] pro Umdrehung ergibt sich:
+\begin{align}
+	h(t) 	&= \frac{60000}{151.16 - 1.57t + 0.0037 \cdot t^2} \\
+	    	&= \frac{1.62162\cdot 10^7}{(t-276.65) (t-147.674)} \label{form:h(t)}
+\end{align}
+Die Umkehrfunktion, daher die Funktion, um mittels der Zeit pro Umdrehung die Position auf $h(t)$ zu berechnen, lautet:
+\begin{align}
+	h^{-1}(t) 	= 212.162 \pm \frac{0.27027 \cdot \sqrt{56933\cdot t^2 + 2.22\cdot 10^8 \cdot t}}{t} \label{form:h-1(t)}
+\end{align}
+Da später die Bremsgeschwindigkeit, daher die Beschleunigung vorausgesagt werden muss die erste Ableitung von $h(t)$ berechnet werden:
+\begin{align}
+	h'(t) 	= \frac{6.88093\cdot 10^9 - 3.24324 \cdot 10^7 \cdot t}{(t^2 - 424.324\cdot t + 40854.1)^2} \label{form:h'(t)}
+\end{align}
 
 % Approximationskurve
 \begin{figure}[hb] \centering
-	\includegraphics[width=\textwidth]{images/generated/Data4.pdf}
-	\caption{Drehgeschwindigkeit über der Zeit approximiert mit der Funktion: \newline $u(t) = 150.9575 - 1.5678\cdot t + 0.0036 \cdot t^2$}
+	\includegraphics[width=\textwidth]{images/generated/Data2.pdf}
+	\caption{Drehgeschwindigkeit über der Zeit approximiert mit der Funktion: \ref{form:f(t)}}
+	\label{img:drehgeschw}
 \end{figure}
 
