@@ -13,3 +13,4 @@ laborbericht/**/*.out
 laborbericht/**/*.toc
 
 laborbericht/Laborbericht.pdf
+laborbericht/UML/*.pdf
