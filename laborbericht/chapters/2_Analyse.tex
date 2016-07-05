@@ -27,6 +27,7 @@
 \end{tabular}
 \end{figure}
 
+\subsection{Sensoren}
 Der Hallsensor zeigt zwei mal pro Umdrehung exakt die Position der Scheibe an.
 Dies geschieht, wenn das Loch an \texttt{HallSensorPosition1} und \texttt{HallSensorPosition0} ist (siehe Abb. \ref{img:versuchsaufbau}), wobei zweiteres der Position entspricht, an welcher die Kugel durch das Loch fallen muss.
 An den Positionen wechselt die Ausgabe der Sensoren auf den entsprechenden Wert, daher 1 bzw. 0.
@@ -35,6 +36,24 @@ Der Photosensor gibt abhängig davon, ob er eine helle oder dunkle Fläche vor s
 Da die Felder auf der Unterseite der Scheibe gleichmäßig verteilt sind (siehe Abb. \ref{img:versuchsaufbau}), kann er nicht zur Positionsbestimmung, dafür für die Bestimmung der Drehgeschwindigkeit verwendet werden.
 
 Die Sensorwerte einer Scheibenumdrehung sind in Abb. \ref{img:sensorwerte} geplottet.
+
+\begin{figure}[h] \centering
+\begin{tabular}{cll} 
+	\textbf{Pin} 	& \textbf{In/Out} & \textbf{Funktion}	\\
+	\toprule
+	2 &	Input &	Photosensor \\
+	3 &	Input &	Hallsensor\\
+	4 &	Input &	Trigger\\
+	5 &	Input &	Switch\\
+	7 &	Output &	Blackbox LED gelb\\
+	9 &	Output &	Servo\\
+	10 &	Input &	Button 1\\
+	11 &	Input &	Button 2\\
+	12 &	Output &	LED 1\\
+	13 &	Output &	LED 2\\
+	\bottomrule
+\end{tabular}
+\end{figure}
 
 \begin{figure}[h] \centering
 	\includegraphics[width=\textwidth]{images/generated/sensor_messwerte1.pdf}
