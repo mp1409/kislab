@@ -14,11 +14,6 @@
 /**
  * This is a controller for the release of (several) bullets after the trigger
  * has been pressed.
- *
- * \todo When there are several things to poll (disk, trigger), consolidate them
- * into an update method.
- *
- * \todo Allow multiple trigger presses (store them in a variable)
  */
 class FallController : public Controller {
 	private:
@@ -27,6 +22,11 @@ class FallController : public Controller {
 		 * The default poll interval (for example for the disk).
 		 */
 		const unsigned int _pollInterval = 10;
+
+		/**
+		 * The delay between two independent trigger press events.
+		 */
+		const unsigned int _triggerCooldown = 100;
 
 		/**
 		 * Pointer to the disk instance.
@@ -44,12 +44,33 @@ class FallController : public Controller {
 		Trigger* _trigger;
 
 		/**
-		 * Calculates the next bullet release time, based on current values from
-		 * the disk.
+		 * The last recorded state of the trigger.
+		 */
+		Sensor::Value _lastTriggerState;
+
+		/**
+		 * The time when the last trigger reading happened.
+		 */
+		unsigned long _lastTriggerTime;
+
+		/**
+		 * The number of unprocessed trigger events.
+		 */
+		unsigned short _triggerCount;
+
+		/**
+		 * Calculates the next bullet release time, based on current values
+		 * from the disk.
 		 *
 		 * \return The next possible bullet release time.
 		 */
 		unsigned long calculateNextReleaseTime();
+
+		/**
+		 * Update the internal state (concerning the trigger) and the state of
+		 * the disk.
+		 */
+		void update();
 
 		/**
 		 * Release a ball while continuing to update the interal states.
@@ -66,7 +87,9 @@ class FallController : public Controller {
 		 * \param trigger Pointer to the Trigger instance.
 		 */
 		inline FallController(Disk* disk, Release* release, Trigger* trigger) :
-				_disk(disk), _release(release), _trigger(trigger) {}
+				_disk(disk), _release(release), _trigger(trigger),
+				_lastTriggerState(Sensor::Value::INVALID), _lastTriggerTime(0),
+				_triggerCount(0) {}
 
 		void run();
 };

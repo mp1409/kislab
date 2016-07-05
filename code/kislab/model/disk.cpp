@@ -60,7 +60,12 @@ void Disk::update() {
 		_pSensorLastValue = _pSensor->read();
 	} else if (_pSensorLastValue != _pSensor->read()) {
 		_timeIndex = (_timeIndex + 1) % _pSensorSampleSize;
-		_pSensorLastTimes[_timeIndex] = millis();
+		if (_invalidMeasuresCount == 0) {
+			_pSensorLastTimes[_timeIndex] = millis();
+		} else {
+			_pSensorLastTimes[_timeIndex] = 0;
+			_invalidMeasuresCount--;
+		}
 		_pSensorLastValue = static_cast<Sensor::Value>(1 - _pSensorLastValue);
 	}
 

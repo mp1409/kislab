@@ -33,7 +33,7 @@ class Release : public Component {
 		/**
 		 * Opens the release.
 		 */
-		inline void open() { _servo.write(20); }
+		inline void open() { _servo.write(30); }
 
 		/**
 		 * Closes the release.

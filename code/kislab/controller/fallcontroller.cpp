@@ -8,9 +8,7 @@
 
 unsigned long FallController::calculateNextReleaseTime() {
 	/**
-	 * \todo \b Implement!
-	 *
-	 * Add approximation function
+	 * \todo \b Add approximation function!
 	 */
 
 	Disk::DiskPosition diskPos = _disk->position();
@@ -18,15 +16,12 @@ unsigned long FallController::calculateNextReleaseTime() {
 
 	if(diskPos.value == Sensor::Value::ONE) {
 		inPositionTime += _disk->millisPerRot() / 2;
-	} else if (diskPos.value == Sensor::Value::ZERO) {
-		inPositionTime += _disk->millisPerRot();
-	} else {
+	} else  {
 		/**
-		 * \todo \b Implement!
-		 *
-		 * Fail, sensor invalid. This should not happen on a stable disk.
+		 * diskPos.value == Sensor::Value::ZERO. Sensor::Value::INVALID not
+		 * possible because disk is stable.
 		 */
-		return 0;
+		inPositionTime += _disk->millisPerRot();
 	}
 
 	const unsigned long fallTime = static_cast<unsigned long>(
@@ -36,20 +31,33 @@ unsigned long FallController::calculateNextReleaseTime() {
 	return inPositionTime - fallTime - 35;
 }
 
+void FallController::update() {
+	_disk->update();
+
+	Sensor::Value currentTriggerState = _trigger->read();
+	unsigned long currentTime = millis();
+
+	if(_lastTriggerState == Sensor::Value::INVALID) {
+		_lastTriggerState = currentTriggerState;
+		_lastTriggerTime = currentTime;
+	} else if(currentTime - _lastTriggerTime > _triggerCooldown) {
+		if((_lastTriggerState == Sensor::Value::ZERO) and
+				(currentTriggerState == Sensor::Value::ONE)) {
+			_triggerCount++;
+		}
+
+		_lastTriggerState = currentTriggerState;
+		_lastTriggerTime = currentTime;
+	}
+}
+
 void FallController::run() {
 	while(true) {
-		while(_trigger->read() != Sensor::Value::ZERO) {
-			_disk->update();
-			delay(_pollInterval);
-		}
+		update();
+		delay(_pollInterval);
 
-		while(_trigger->read() != Sensor::Value::ONE) {
-			_disk->update();
-			delay(_pollInterval);
-		}
-
-		while (true) {
-			_disk->update();
+		while (_triggerCount > 0) {
+			update();
 
 			if (not _disk->isStable()) {
 				delay(_pollInterval);
@@ -59,12 +67,15 @@ void FallController::run() {
 			unsigned long nextReleaseTime = calculateNextReleaseTime();
 			unsigned long currentTime = millis();
 
+
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
 				releaseTheKraken();
-				break;
 			}
+
+			delay(_pollInterval);
 		}
+
 	}
 }
 
@@ -72,8 +83,12 @@ void FallController::releaseTheKraken() {
 	_release->open();
 	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {
-		_disk->update();
+		update();
 		delay(_pollInterval);
 	}
 	_release->close();
+
+	_disk->invalidate();
+
+	_triggerCount--;
 }
