@@ -1,10 +1,26 @@
 \chapter{Einleitung}
 Dieser Laborbericht dokumentiert das Praktikum \enquote{Kugelfallversuch} zur Vorlesung \enquote{Komplexe Informationstechnische Systeme -- Grundlagen} der Gruppe im Sommersemester 2016.
-Der Bericht umfasst (neben dieser Einleitung) drei Kapitel.
+Die zu bearbeitende Aufgabe umfasste das erstellen eines Programmes welches die Steuerung eines Kugelfalls in ein Loch auf einer mit beliebiger Geschwindigkeit rotierender Scheibe realisieren soll sowie die Dokumentation des Vorgehens.
+Um diese Steuerung zu automatisieren stehen bei dem Versuch zwei Sensoren, mit denen die Scheibenposition und Geschwindigkeit bestimmt werden kann zur Verfügung, sowie ein Aktor mit dem die Kugel fallen gelassen werden kann.
+Des weiteren ist ein Arduino computer vorhanden, welcher an sämtliche Steuerungselement angeschlossen ist und diese Kontrolieren soll.
 
-\cref{k_analyse} umfasst eine knappe Beschreibung des Versuchsaufbaus, TODO
+Die Scheibe wird per Hand angedreht und kann in beide Richtungen verwendet werden.
+Eine detailierte Sicht auf den Versuchsaufbau kann in \cref{s_versuchsaufbau} gefunden werden.
+Die Vorgehensweise wird dabei durch die drei Abschnitte Systemanalyse, Design und Implementierung gegliedert deren Ergebnisse in diesem Bericht zusammengefasst werden.
+Ziel des ersten Abschnittes ist es die Komponenten des vom Fachgebiets bereitgestellen Versuchaufbaus zu verstehen und verwenden zu können, insbesondere die Sensoren und Aktoren sollen ausgelesen beziehungsweise angesteuert werden können.
+In der design Phase soll die Steuerung in $80$\% der Fälle funktionieren und das Loch treffen.
+Das Ziel der letzten Phase ist es die Lösung zu komplett zu programmieren und Randfälle wie Bremsen und Beschleunigen der Scheibe zu berücksichtigen.
 
+In Abweichung von der Aufgabenstellung wurde die miminale Geschwindigkeit der Scheibe von den vorgeschriebenen $10$ Sekunde pro Umdrehungen auf $5$ heraufgesetzt.
+Diese Änderung wurde vorgenommen, da die Scheibe bei einer geringeren Geschwindigkeit nicht stabil rotiert und anscheinend durch die Reibung stark beeinflusst wird. 
+
+Zur Herangehensweise an die Programmierung der Steuerung wurde eine Objektorientierte Lösung gewählt.
+Dies ist in diesem Scenario durchaus praktisch da die einzelnen Sensoren, Aktoren und die Scheibe als einzelne Objekte angesehen werden können.
+Dadurch kann die Lösung in einer Highlevel Befehlen geschrieben werden.
+
+
+Der Rest des Berichtes ist wie folgt aufgebaut:
+\cref{k_analyse} umfasst eine knappe Beschreibung des Versuchsaufbaus, sowie die hardware Grundlagen und Messungen zum Bremsverhalten der Scheibe. 
 Im darauffolgenden \cref{k_design} wird das entworfene Softwaresystem in seinem Aufbau und seiner Funktion beschrieben.
 Anschließend werden die Grenzwerte, unter denen das System seine Funktion erfüllt, dargestellt und eine Fehlerbetrachtung durchgeführt.
-
 In \cref{k_implementierung} wird schließlich die Implementierung des Systems detailliert und eine Validierung durchgeführt.
