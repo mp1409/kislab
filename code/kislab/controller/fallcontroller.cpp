@@ -94,8 +94,6 @@ void FallController::run() {
 }
 
 void FallController::releaseTheKraken() {
-
-
 	_release->open();
 	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {
