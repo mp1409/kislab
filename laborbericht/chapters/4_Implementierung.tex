@@ -11,7 +11,7 @@ Die abstrakte Basisklasse dieser Gruppe ist die \identifier{Component}.
 Von \identifier{Component} erben drei Klassen: \identifier{LED}, \identifier{Sensor} sowie \identifier{Release}:
 
 \begin{itemize}
-	\item Die abstrakte Basisklasse \identifier{LED} stellt Methode zum Ein-, Aus- und Umschalten von LEDs bereit.
+	\item Die abstrakte Basisklasse \identifier{LED} stellt Methoden zum Ein-, Aus- und Umschalten von LEDs bereit.
 In den konkreten abgeleiteten Klassen (wie \identifier{GreenLED}) erfolgt dann lediglich noch die Zuordnung zum korrekten PIN.
 	\item Bei \identifier{Sensor} handelt es sich ebenfalls um eine abstrakte Basisklasse, die das Abfragen von Sensoren erlaubt.
 Ähnlich wie bei den LEDs wird dann in den abgeleiteten Klassen \identifier{PhotoSensor}, \identifier{HallSensor} und \identifier{Trigger} nur noch die PIN-Nummer korrekt gesetzt.
@@ -41,7 +41,7 @@ Die aufwendigeren Berechnungen, vor allem für die Umlaufzeit, werden nur beim (
 
 \subsection{Controller}
 Controller-Klassen müssen gemäß ihrer abstrakten Basisklasse \identifier{Controller} lediglich eine \identifier{run()}-Methode implementieren.
-In dieser Methode ist die Hauptschleife des Programms implementiert, so dass sie eine ähnlichen Zweck erfüllt wie die \identifier{loop()}-Funktion von Arduino.
+In dieser Methode ist die Hauptschleife des Programms implementiert, so dass sie einen ähnlichen Zweck erfüllt wie die \identifier{loop()}-Funktion von Arduino.
 Im Sinne eines objektorientierten Designs wurde aber von der Verwendung der \identifier{loop()}-Funktion abgesehen.
 
 Der Kontrollfluss soll dabei den Controller nur für kurze Abfragen und Anweisungen verlassen, Methoden anderer Klassen also nicht blockieren.

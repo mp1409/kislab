@@ -1,17 +1,13 @@
 \chapter{Analyse}\label{k_analyse}
-
-% Beschreibung des Aufbaus
 \section{Versuchsaufbau}\label{s_versuchsaufbau}
 
 Der Versuchsaufbau besteht aus einer drehbaren Scheibe mit Loch und einer Kugelabwurfvorrichtung.
-Diese wird mit einem Servo bedient (siehe Abschnitt \ref{subs:aktoren}).
+Diese wird mit einem Servomotor bedient (siehe \cref{subs:aktoren}).
 Abbildung \ref{img:versuchsaufbau} zeigt eine schematische Darstellung.
 Da das Ziel des Praktikums ist, Kugeln durch das Loch fallen zu lassen, ist die Abwurfvorrichtung so angebracht, dass die Kugeln bei einer bestimmten Position der Scheibe durch dieses fallengelassen werden können.
-Die Unterseite des Scheibe besitzt zwei Farbschattierungen (hell und dunkel), welche durch einen Photosensor erkannt werden können.
-Weiterhin sind zwei Magneten angebracht, welche durch einen Hallsensor erkannt werden.
-Im folgenden wird genauer auf die Sensoren eingegangen.
-
-
+Die Unterseite der Scheibe besitzt zwei Farbschattierungen (hell und dunkel), welche durch einen Photosensor erkannt werden können.
+Weiterhin sind zwei Magneten angebracht, welche durch einen Hall-Sensor erkannt werden.
+Im Folgenden wird genauer auf die Sensoren eingegangen.
 
 \begin{figure}[h] \centering
 	\includegraphics[width=\textwidth]{images/aufbau.pdf}
@@ -26,8 +22,8 @@ Im folgenden wird genauer auf die Sensoren eingegangen.
 	\multicolumn{2}{c}{Tisch}\\ 
 	\midrule
 	Abwürfhöhe 	& 750\,mm \\
-	\#Schwarzer Felder 	& 6 \\
-	\#Weiße Felder 	& 6 \\
+	Anzahl Schwarze Felder 	& 6 \\
+	Anzahl Weiße Felder 	& 6 \\
 	Lochlänge innen 	& 55\,mm \\
 	\midrule 
 	\multicolumn{2}{c}{Kugel}\\ 
@@ -39,12 +35,12 @@ Im folgenden wird genauer auf die Sensoren eingegangen.
 \end{center}
 
 \subsection{Sensoren}
-Der Hallsensor zeigt zwei mal pro Umdrehung exakt die Position der Scheibe an.
+Der Hall-Sensor zeigt zwei mal pro Umdrehung exakt die Position der Scheibe an.
 Dies geschieht, wenn das Loch an \texttt{HallSensorPosition1} und \texttt{HallSensorPosition0} ist (siehe Abb. \ref{img:versuchsaufbau}), wobei zweiteres der Position entspricht, an welcher die Kugel durch das Loch fallen muss.
 An den Positionen wechselt die Ausgabe der Sensoren auf den entsprechenden Wert, daher 1 bzw. 0.
 
 Der Photosensor gibt abhängig davon, ob er eine helle oder dunkle Fläche vor sich hat eine 1 oder 0 aus.
-Da die Felder auf der Unterseite der Scheibe gleichmäßig verteilt sind (siehe Abb. \ref{img:versuchsaufbau}), kann er nicht zur Positionsbestimmung, dafür für die Bestimmung der Drehgeschwindigkeit verwendet werden.
+Da die Felder auf der Unterseite der Scheibe gleichmäßig verteilt sind (siehe Abb. \ref{img:versuchsaufbau}), kann er nicht zur Positionsbestimmung, jedoch für die Bestimmung der Drehgeschwindigkeit verwendet werden.
 
 Die Sensorwerte für Hall- und Photosensor einer Scheibenumdrehung sind in Abb. \ref{img:sensorwerte} dargestellt.
 
@@ -64,7 +60,6 @@ Weiterhin gibt es noch einige LEDs, welche in der Implementierung keine besonder
 Für das Auslesen der Sensoren und die Ansteuerung der Aktoren stehen ein Arduino UNO und eine Art Blackbox zur Verfügung.
 Zweitere sorgt dafür, dass die Sensoren und Aktoren direkt an die Pins des Arduino angeschlossen sind, und einfach mittels \texttt{digitalWrite} und \texttt{digitalRead} angesteuert werden können.
 Die Belegung der Pins sind in der folgenden Tabelle beschrieben:
-
 
 \begin{center}
 \begin{tabular}{cll} 
@@ -96,18 +91,18 @@ Um die Fallzeit einer Kugel zu berechnen wird die Formel für den freien Fall im
 	t(h) = \sqrt{\frac{2h}{g}}
 \end{align}
 verwendet.
-Setzt man die oben beschriebenen, am Versuchsaufbau gemessenen, Werte ein
+Setzt man die oben beschriebenen (am Versuchsaufbau gemessenen) Werte ein
 \begin{align}
 t(h) &= \sqrt{\frac{2 \cdot 0.75m}{9.81\,\nicefrac{m}{s^2}}} \\
 	 &= 0.391\,s \\
 	 &= 391\,ms
 \end{align}
-so kommt man auf eine Fallzeit von 391\,ms für eine Kugel.
+so erhält man eine eine Fallzeit von 391\,ms für eine Kugel.
 
 \subsection{Drehbewegung der Scheibe}
 \label{subs:dreh_approx}
 Der Aufbau der Scheibe wurde bereits beschrieben.
-Für eine korrekte Berechnung der Abwurfszeit wird des weiteren eine Beschreibung des Drehverhaltens benötigt.
+Für eine korrekte Berechnung der Abwurfzeit wird des weiteren eine Beschreibung des Drehverhaltens benötigt.
 Bei Messungen konnte folgendes Polynom für die Drehgeschwindigkeit [U/min] über der Zeit [s] (siehe Abb. \ref{img:drehgeschw}) festgestellt werden:
 \begin{align}
 	f(t) = 151.16 - 1.57 \cdot t + 0.0037 \cdot t^2 \label{form:f(t)}
