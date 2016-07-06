@@ -8,10 +8,6 @@
 #include "limits.h"
 
 bool Disk::isStable() {
-	/**
-	 * \todo Finish implementation!
-	 */
-
 	if(_position.value == Sensor::Value::INVALID) {
 		return false;
 	}
@@ -36,20 +32,12 @@ bool Disk::isStable() {
 	 */
 	const unsigned long millisPerRotLowerLimit = 450;
 	const unsigned long millisPerRotUpperLimit = 5000;
-	/**
-	 * \todo \b Set sensible (and tested) values for lower and upper limit.
-	 */
 
 	unsigned long currentMillisPerRot = millisPerRot();
 	if((currentMillisPerRot < millisPerRotLowerLimit)
 			or (currentMillisPerRot > millisPerRotUpperLimit)) {
 		return false;
 	}
-
-	/**
-	 * \todo Test on jumps in disk speed? Perhaps do this by checking if the
-	 * previous prediction was only xy% different from the real value?
-	 */
 
 	return true;
 }

@@ -18,8 +18,6 @@
  * state of the class. The internal state is updated by a non-blocking method.
  * By this, a clear seperation between polling sensors and return of values is
  * established.
- *
- * \todo Add direction (of rotation) as class member.
  */
 class Disk {
 	public:
