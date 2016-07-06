@@ -5,23 +5,21 @@ Um diese Steuerung zu automatisieren, stehen bei dem Versuch unterschiedliche Se
 Weiterhin gibt es einen Aktor, mit welchem die Kugel fallen gelassen werden kann.
 Die Steuerung erfolgt mit einem Arduino UNO, welcher bereits an die Sensorik und Aktorik angeschlossen ist.
 Die Scheibe wird per Hand, wahlweise im oder gegen den Uhrzeigersinn, angedreht.
-Eine detailierte Beschreibung des Versuchsaufbaus erfolgt in \cref{s_versuchsaufbau}.
+Eine detaillierte Beschreibung des Versuchsaufbaus erfolgt in \cref{s_versuchsaufbau}.
 
-Die Vorgehensweise wird in die drei Abschnitte, Systemanalyse, Design und Implementierung, gegliedert deren Ergebnisse jeweils in den entsprechenden Kapiteln zusammengefasst werden.
+Die Vorgehensweise wird in die drei Abschnitte, Systemanalyse, Design und Implementierung gegliedert ,deren Ergebnisse jeweils in eigenen Kapiteln zusammengefasst werden.
 Ziel des ersten Abschnittes ist es, die Komponenten des vom Fachgebiets bereitgestellten Versuchsaufbaus verstehen und korrekt zu verwenden.
 Insbesondere die Sensoren und Aktoren sollen ausgelesen beziehungsweise angesteuert werden können.
 In der Design-Phase werden grundlegende Fragestellungen behandelt, wobei die Kombination der Antworten dazu führen soll, dass die Kugel exakt in das Loch fallen gelassen werden kann.
 Das Ziel der letzten Phase ist es, die Lösung zu komplett zu implementieren und Randfälle zu berücksichtigen.
 Bei der dazugehörigen Validierung sollen mindestens 80\,\% der Kugeln das Loch treffen.
 
-
 Als Paradigma für die Programmierung der Steuerung wurde die Objektorientierung gewählt.
 Dies hat in diesem Szenario den Vorteil, dass die einzelnen Sensoren, Aktoren und die Scheibe als Objekte beschrieben werden können und dadurch eine einheitliche, abstrakte Schnittstelle bieten.
-
 
 Der Bericht ist an die einzelnen Phasen angepasst und enthält folgende Themen:\\
 \cref{k_analyse} umfasst eine knappe Beschreibung des Versuchsaufbaus, sowie die Hardwaregrundlagen und Messungen zum Bremsverhalten der Scheibe. 
 Im darauffolgenden \cref{k_design} wird das entworfene Softwaresystem in seinem Aufbau und seiner Funktion beschrieben.
 Anschließend werden die Grenzwerte, unter denen das System seine Funktion erfüllt, dargestellt und eine Fehlerbetrachtung durchgeführt.
 In \cref{k_implementierung} wird die Implementierung des Systems detailliert beschrieben und eine kurze Validierung durchgeführt.
-Abschließend folgt in \cref{k_zusammenfassung} wird eine kurze Zusammenfassung.
+Abschließend folgt in \cref{k_zusammenfassung} eine kurze Zusammenfassung.
