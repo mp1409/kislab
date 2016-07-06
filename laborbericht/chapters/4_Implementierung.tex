@@ -18,7 +18,7 @@ In den konkreten abgeleiteten Klassen (wie \identifier{GreenLED}) erfolgt dann l
 	\item Die konkrete Klasse \identifier{Release} kapselt die konkrete Ansteuerung des Servomotors, und stellt diese über die Methoden \identifier{open()} und \identifier{close()} zur Verfügung.
 \end{itemize}
 
-\begin{figure}[hb] \centering
+\begin{figure}[htb!] \centering
 	\includegraphics[width=\textwidth]{UML/class_diagram.pdf}
 	\caption{Klassendiagramm der Implementierung}
 	\label{uml:class_diagram}
@@ -32,8 +32,8 @@ In dieser Gruppe befindet sich nur die Klasse \identifier{Disk}, die folgende ö
 	\item \identifier{millisPerRot()} gibt die aktuellste Schätzung für die Umlaufdauer zurück.
 	Die Berechnung ist in \cref{design_geschwindigkeit} beschrieben.
 	\item \identifier{isStable()} prüft die Sensorwerte mit den Tests aus \cref{design_stabilitaet} auf Plausibilität.
-	\item \identifier{invalidate()} invaldiert 5 Sensorwerte.
-	Diese Methode ist muss jeweils nach dem aktivieren des Servomotors (\identifier{open()} bzw. \identifier{close()} des Release) aufgerufen werden.
+	\item \identifier{invalidate()} invalidiert 5 Sensorwerte.
+	Diese Methode ist muss jeweils nach dem aktivieren des Servomotors (\identifier{open()} beziehungsweise \identifier{close()} des Release) aufgerufen werden.
 \end{itemize}
 
 Konzeptuell gilt für diese Klasse noch, dass beim (häufigen) Aktualisieren der Messwerte (via \identifier{update()}) nur die minimal nötigen Berechnungen durchgeführt werden.
@@ -53,13 +53,18 @@ Die Funktion des für die Aufgabenstellung relevanten Controllers (\identifier{F
 \section{Laufzeitverhalten}
 \subsection{Objekterzeugung und Speicherverwaltung}
 Prinzipiell muss bei der Programmierung in C++ die Speicherverwaltung von Objekten, die auf dem Heap alloziert werden, manuell erfolgen.
-Im vorliegenden System müssen allerdings nach der Intialisierung keine Objekte auf dem Heap mehr angelegt werden.
+Im vorliegenden System müssen allerdings nach der Initialisierung keine Objekte auf dem Heap mehr angelegt werden.
 Zugleich bleiben die initial erzeugten Objekte über die gesamte Laufzeit des Programms in Verwendung, sodass hier auf Delete-Anweisungen verzichtet werden kann.
 
 \subsection{Kontrollfluss}
-TODO
+Der Kontrollfluss ist in den UML-Diagrammen in \cref{uml:statechart} und in \cref{uml:activity_diagram} dargestellt.
+Zunächst ist zu beachten, das -- wie bereits in \cref{k_design} erläutert -- sämtliche Wartevorgänge alle 10 Millisekunden durch Sensorabfragen unterbrochen werden.
 
-\begin{figure}[hb] \centering
+Zu diesen Sensorabfragen gehören einerseits die Hall- und Photo-Sensoren, anderseits aber auch der Trigger.
+Letzterer wird in einer Zählvariable gehalten, und inkrementiert, sobald eine 0-1-Flanke detektiert wurde.
+Zusätzlich wurde der Trigger mit einem \enquote{Cooldown}-Intervall versehen, um eine Entprellung zu realisieren.
+
+\begin{figure}[htb!] \centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\includegraphics[width=\textwidth]{UML/fallcontroller_simple_loop_statechart.pdf}
 		\caption{Einfache Darstellung}
@@ -74,23 +79,42 @@ TODO
 	\label{uml:statechart}
 \end{figure}
 
-\begin{figure}[hb] \centering
-\end{figure}
+Bei jedem Durchlauf der Hauptschleife werden die Sensorwerte aktualisiert, und anschließend 10 Millisekunden abgewartet.
+Sobald die Zählvariable größer als 0 ist, geht das System in den aktiven Zustand über.
+In diesem wird zunächst die Stabilität der Sensorwerte überprüft.
+Sobald die Werte stabil sind, und das passende Zeitfenster erreicht wurde, wird das Release betätigt.
 
-\begin{figure}[hb] \centering
+Zuletzt wird dann noch die Zählvariable dekrementiert.
+Auch während des Wartens auf stabilen Zustand der Scheibe sowie auf das Zeitfenster erfolgt natürlich eine kontinuierliche Abfrage der Sensoren und des Triggers alle 10 Millisekunden.
+
+\begin{figure}[htb!] \centering
 	\includegraphics[width=\textwidth]{UML/fallcontroller_loop_activity_diagram.pdf}
 	\caption{Genauere Beschreibung der Hauptschleife als Aktivitätsdiagramm}
 	\label{uml:activity_diagram}
 \end{figure}
 
-%TODO why no interrupts
+Prinzipiell wäre es auch möglich gewesen, anstatt regelmäßiger Abfragen Interrupts zu verwenden.
+Jedoch wurde der bereits in \cref{k_design} angesprochene Fehler in Bezug auf ungültige Sensorwerte zunächst auf einen Fehler im Interrupt-Handling des Arduino zurückgeführt, woraufhin von einer Verwendung von Interrupts abgesehen wurde.
+Durch ein entsprechend kurzes Abfrageintervall von 10 Millisekunden in Verbindung mit nichtblockierenden Methodenaufrufen kann dennoch ein \enquote{Verpassen} von Signalen vermieden werden.
 
 \section{Validierung}
-\begin{figure}[hb] \centering
+Zum Test der Funktion des Programms wurde eine Messreihe mit 41 Versuchen durchgeführt.
+Von diesen waren 34 Treffer, was einer Rate von 83 \% entspricht.
+Zusätzlich wurde für jeden Versuch die Scheibengeschwindigkeit aufgezeichnet.
+Die Verteilung der Messwerte zeigt \cref{img:auswertungsplot}.
+
+\begin{figure}[htb!] \centering
 	\includegraphics[width=\textwidth]{images/auswertung.pdf}
-	\caption{Auswertung der Trefferzahlen über der Drehgeschwindigkeit (200\,ms Intervalle)}
+	\caption{Auswertung der Trefferzahlen über der Drehgeschwindigkeit (Intervallgröße: 200\,ms)}
 	\label{img:auswertungsplot}
 \end{figure}
 
+Die fehlerhaften Versuche liegen alle im Bereich von Umlaufdauern unter einer Sekunde.
+Vermutlich liegt die Ursache darin, dass die Toleranzbereiche für Fehler bei höheren Geschwindigkeiten kleiner sind.
+Zudem wurde die Approximation der Umlaufdauern (beschrieben in \cref{subs:dreh_approx}) für den anderen Versuchsaufbau erzeugt.
+Bedingt durch einen fehlerhaften Photosensor musste der Aufbau dann aber kurzfristig gewechselt werden.
+
 \section{Sonstiges}
-TODO github, travis, doxygen
+Für die gemeinsame Softwareentwicklung wurde Git als Versionskontrollsystem verwendet.\footnote{Repository: \url{https://github.com/mp1409/kislab}}
+Um einen stets kompilierbaren Zustand des Codes zu erreichen, kam der Continious-Integration-Dienst von Travis zum Einsatz.\footnote{Travis: \url{https://travis-ci.org/mp1409/kislab/branches}}
+Die Quelltextdokumentation wurde mit Doxygen generiert.

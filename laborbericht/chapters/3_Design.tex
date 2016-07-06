@@ -3,7 +3,7 @@
 Die Systemkomponenten wurden in drei Gruppen eingeteilt:
 \begin{itemize}
 	\item Gruppe \textbf{Hardware}: Die Komponenten dieser Gruppe stellen eine direkte Abstraktion der Sensoren und Aktoren dar, mit denen direkt interagiert werden kann.
-	Dies umfasst die LEDs, den Photo- und den Hallsensor, den Trigger und das Release.
+	Dies umfasst die LEDs, den Photo- und den Hall-Sensor, den Trigger und das Release.
 	\item Gruppe \textbf{Model}: In dieser Gruppe befinden sich (physikalisch vorhandene) Objekte, mit denen nicht direkt interagiert werden kann, deren Modellierung als eigenes Objekt dennoch den Systementwurf vereinfacht.
 	In der derzeitigen Systemgestaltung befindet sich in dieser Gruppe nur die Scheibe.
 	\item Gruppe \textbf{Controller}\footnote{Die Ähnlichkeit der Gruppennamen zum MVC-Entwurfsmuster ist zufällig entstanden und wurde nicht beabsichtigt.}:
@@ -16,7 +16,7 @@ Die Systemkomponenten wurden in drei Gruppen eingeteilt:
 Das von Controller-Komponente für den Kugelfall realisierte Verhalten wird im Folgenden genauer dargestellt.
 
 \subsection{Positionsbestimmung}\label{design_pos}
-Zur Ermittlung der Scheibenposition wird bei der letzten Flanke des Hallsensors die Zeit gespeichert.
+Zur Ermittlung der Scheibenposition wird bei der letzten Flanke des Hall-Sensors die Zeit gespeichert.
 
 \subsection{Geschwindigkeitsberechnung}\label{design_geschwindigkeit}
 Die Zeitpunkte der Flanken des Fotosensors der letzten Umdrehung werden in einem Ringpuffer gehalten.
@@ -32,7 +32,7 @@ T_U = \frac{t_0 - t_{-11}}{12}
 Die zuvor genannten Messwerte müssen, um weiterverarbeitet werden zu können beziehungsweise ein Auslösen des Release zu erlauben, gewisse Stabilitätskriterien erfüllen.
 Diese sind:
 \begin{itemize}
-	\item Es müssen bereits Flanken für den Photo- und Hallsensor registriert sein.
+	\item Es müssen bereits Flanken für den Photo- und Hall-Sensor registriert sein.
 	\item Für den Photosensor muss der Ringpuffer mit Werten gefüllt sein.
 	\item Die aktuelle Geschwindigkeit muss sich innerhalb eines zulässigen Bereichs bewegen.
 \end{itemize}
