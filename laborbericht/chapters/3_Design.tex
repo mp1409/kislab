@@ -35,7 +35,6 @@ Diese sind:
 	\item Es müssen bereits Flanken für den Photo- und Hallsensor registriert sein.
 	\item Für den Photosensor muss der Ringpuffer mit Werten gefüllt sein.
 	\item Die aktuelle Geschwindigkeit muss sich innerhalb eines zulässigen Bereichs bewegen.
-	\item TODO: Jumps (Scheibe festhalten)
 \end{itemize}
 
 Zusätzlich existiert bei dem gewählten Aufbau noch das Problem, dass bei der Bewegung des Servos ungültige Photosensorwerte entstehen.
@@ -57,15 +56,14 @@ t_A = t_P - T_F +
 \end{cases}
 \end{equation*}
 
-%	if(diskPos.value == Sensor::Value::ONE) {
-%		inPositionTime += millisPerRot / 2 + (unsigned long) a / 2;
-%	} else  {
-%		inPositionTime += millisPerRot + (unsigned long) a;
-
 \subsection{Kontinuierliche Aktualisierung und Auslösung}\label{design_aktualisierung}
-TODO
+Die zuvor erwähnten Messwerte werden kontinuierlich in einem definierten Abstand von $T_M$ aktualisiert.
+Dadurch kann auch die Schätzung für den nächsten Auslösezeitpunkt $t_A$ kontinuierlich aktualisiert werden.
+In der Praxis stellte sich ein Wert von 10 Millisekunden für $T_M$ als ausreichend heraus.
 
-% fenster
-
-\section{Fehlerbetrachtung}
-TODO
+Dadurch, dass zwischen den Messpunkten immer $T_M$ gewartet wird, wird der (mit einer Genauigkeit von einer Millisekunde berechnete) Auslösezeitpunkt eventuell nicht exakt erreicht.
+Deshalb erfolgt das Aulösen in einem Zeitfenster.
+Wenn $t$ die aktuelle Zeit bezeichnet, erfolgt das Auslösen, wenn folgende Beziehung gilt:
+\begin{equation*}
+t_A - \frac{T_M}{2} \leq t \leq t_A + \frac{T_M}{2}
+\end{equation*}
