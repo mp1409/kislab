@@ -16,6 +16,10 @@ unsigned long FallController::calculateNextReleaseTime() {
 		a = (6.88093e9 - 3.24324e7 * t) / pow(pow(t, 2) - 424.324 * t + 40854.1, 2);
 	}
 
+	if(a < 20) {
+		a = 0;
+	}
+
 	Disk::DiskPosition diskPos = _disk->position();
 	unsigned long inPositionTime = diskPos.time;
 
@@ -33,7 +37,7 @@ unsigned long FallController::calculateNextReleaseTime() {
 			sqrt(2 * 0.75 / 9.81) * 1000
 	);
 
-	return inPositionTime - fallTime - 35;
+	return inPositionTime - fallTime - 50;
 }
 
 void FallController::update() {
@@ -75,6 +79,11 @@ void FallController::run() {
 
 			if(currentTime >= nextReleaseTime - 0.5 * _pollInterval and
 					currentTime  <= nextReleaseTime + 0.5 * _pollInterval) {
+
+				unsigned long millisPerRot = _disk->millisPerRot();
+				Serial.print(millisPerRot);
+				Serial.print("\t");
+				Serial.println(1000.0 / (double) millisPerRot);
 				releaseTheKraken();
 			}
 
@@ -85,6 +94,8 @@ void FallController::run() {
 }
 
 void FallController::releaseTheKraken() {
+
+
 	_release->open();
 	unsigned long timeToClose = millis() + 200;
 	while(millis() < timeToClose) {

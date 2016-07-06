@@ -34,8 +34,8 @@ bool Disk::isStable() {
 	 * \li millisPerRotUpperLimit is the \b lower limit for the speed of the
 	 * disk.
 	 */
-	const unsigned long millisPerRotLowerLimit = 1;
-	const unsigned long millisPerRotUpperLimit = ULONG_MAX;
+	const unsigned long millisPerRotLowerLimit = 450;
+	const unsigned long millisPerRotUpperLimit = 5000;
 	/**
 	 * \todo \b Set sensible (and tested) values for lower and upper limit.
 	 */
