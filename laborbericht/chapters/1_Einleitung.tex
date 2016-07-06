@@ -1,26 +1,27 @@
 \chapter{Einleitung}
-Dieser Laborbericht dokumentiert das Praktikum \enquote{Kugelfallversuch} zur Vorlesung \enquote{Komplexe Informationstechnische Systeme -- Grundlagen} der Gruppe im Sommersemester 2016.
-Die zu bearbeitende Aufgabe umfasste das erstellen eines Programmes welches die Steuerung eines Kugelfalls in ein Loch auf einer mit beliebiger Geschwindigkeit rotierender Scheibe realisieren soll sowie die Dokumentation des Vorgehens.
-Um diese Steuerung zu automatisieren stehen bei dem Versuch zwei Sensoren, mit denen die Scheibenposition und Geschwindigkeit bestimmt werden kann zur Verfügung, sowie ein Aktor mit dem die Kugel fallen gelassen werden kann.
-Des weiteren ist ein Arduino computer vorhanden, welcher an sämtliche Steuerungselement angeschlossen ist und diese Kontrolieren soll.
+Dieser Laborbericht dokumentiert das Praktikum \enquote{Kugelfallversuch} zur Vorlesung \enquote{Komplexe Informationstechnische Systeme -- Grundlagen} der Gruppe IN02 im Sommersemester 2016.
+Die zu bearbeitende Aufgabe umfasst das Erstellen eines Programms, das die Steuerung eines Kugelfalls durch ein Loch, welches in einer rotierenden Scheibe liegt, sowie die Dokumentation des Vorgehens.
+Um diese Steuerung zu automatisieren, stehen bei dem Versuch unterschiedliche Sensoren zur Verfügung, mit welchen die Scheibenposition und Geschwindigkeit ermittelt werden kann.
+Weiterhin gibt es einen Aktor, mit welchem die Kugel fallen gelassen werden kann.
+Die Steuerung erfolgt mit einem Arduino UNO, welcher bereits an die Sensorik und Aktorik angeschlossen ist.
+Die Scheibe wird per Hand, wahlweise im oder gegen den Uhrzeigersinn, angedreht.
+Eine detailierte Beschreibung des Versuchsaufbaus erfolgt in \cref{s_versuchsaufbau}.
 
-Die Scheibe wird per Hand angedreht und kann in beide Richtungen verwendet werden.
-Eine detailierte Sicht auf den Versuchsaufbau kann in \cref{s_versuchsaufbau} gefunden werden.
-Die Vorgehensweise wird dabei durch die drei Abschnitte Systemanalyse, Design und Implementierung gegliedert deren Ergebnisse in diesem Bericht zusammengefasst werden.
-Ziel des ersten Abschnittes ist es die Komponenten des vom Fachgebiets bereitgestellen Versuchaufbaus zu verstehen und verwenden zu können, insbesondere die Sensoren und Aktoren sollen ausgelesen beziehungsweise angesteuert werden können.
-In der design Phase soll die Steuerung in $80$\% der Fälle funktionieren und das Loch treffen.
-Das Ziel der letzten Phase ist es die Lösung zu komplett zu programmieren und Randfälle wie Bremsen und Beschleunigen der Scheibe zu berücksichtigen.
-
-In Abweichung von der Aufgabenstellung wurde die miminale Geschwindigkeit der Scheibe von den vorgeschriebenen $10$ Sekunde pro Umdrehungen auf $5$ heraufgesetzt.
-Diese Änderung wurde vorgenommen, da die Scheibe bei einer geringeren Geschwindigkeit nicht stabil rotiert und anscheinend durch die Reibung stark beeinflusst wird. 
-
-Zur Herangehensweise an die Programmierung der Steuerung wurde eine Objektorientierte Lösung gewählt.
-Dies ist in diesem Scenario durchaus praktisch da die einzelnen Sensoren, Aktoren und die Scheibe als einzelne Objekte angesehen werden können.
-Dadurch kann die Lösung in einer Highlevel Befehlen geschrieben werden.
+Die Vorgehensweise wird in die drei Abschnitte, Systemanalyse, Design und Implementierung, gegliedert deren Ergebnisse jeweils in den entsprechenden Kapiteln zusammengefasst werden.
+Ziel des ersten Abschnittes ist es, die Komponenten des vom Fachgebiets bereitgestellten Versuchsaufbaus verstehen und korrekt zu verwenden.
+Insbesondere die Sensoren und Aktoren sollen ausgelesen beziehungsweise angesteuert werden können.
+In der Design-Phase werden grundlegende Fragestellungen behandelt, wobei die Kombination der Antworten dazu führen soll, dass die Kugel exakt in das Loch fallen gelassen werden kann.
+Das Ziel der letzten Phase ist es, die Lösung zu komplett zu implementieren und Randfälle zu berücksichtigen.
+Bei der dazugehörigen Validierung sollen mindestens 80\,\% der Kugeln das Loch treffen.
 
 
-Der Rest des Berichtes ist wie folgt aufgebaut:
-\cref{k_analyse} umfasst eine knappe Beschreibung des Versuchsaufbaus, sowie die hardware Grundlagen und Messungen zum Bremsverhalten der Scheibe. 
+Als Paradigma für die Programmierung der Steuerung wurde die Objektorientierung gewählt.
+Dies hat in diesem Szenario den Vorteil, dass die einzelnen Sensoren, Aktoren und die Scheibe als Objekte beschrieben werden können und dadurch eine einheitliche, abstrakte Schnittstelle bieten.
+
+
+Der Bericht ist an die einzelnen Phasen angepasst und enthält folgende Themen:\\
+\cref{k_analyse} umfasst eine knappe Beschreibung des Versuchsaufbaus, sowie die Hardwaregrundlagen und Messungen zum Bremsverhalten der Scheibe. 
 Im darauffolgenden \cref{k_design} wird das entworfene Softwaresystem in seinem Aufbau und seiner Funktion beschrieben.
 Anschließend werden die Grenzwerte, unter denen das System seine Funktion erfüllt, dargestellt und eine Fehlerbetrachtung durchgeführt.
-In \cref{k_implementierung} wird dann die Implementierung des Systems detailliert und eine Validierung durchgeführt und im folgenden \cref{k_zusammenfassung} wird eine kurze Zusammenfassung gegeben.
+In \cref{k_implementierung} wird die Implementierung des Systems detailliert beschrieben und eine kurze Validierung durchgeführt.
+Abschließend folgt in \cref{k_zusammenfassung} wird eine kurze Zusammenfassung.
