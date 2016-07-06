@@ -6,7 +6,7 @@ Die Systemkomponenten wurden in drei Gruppen eingeteilt:
 	Dies umfasst die LEDs, den Photo- und den Hallsensor, den Trigger und das Release.
 	\item Gruppe \textbf{Model}: In dieser Gruppe befinden sich (physikalisch vorhandene) Objekte, mit denen nicht direkt interagiert werden kann, deren Modellierung als eigenes Objekt dennoch den Systementwurf vereinfacht.
 	In der derzeitigen Systemgestaltung befindet sich in dieser Gruppe nur die Scheibe.
-	\item Gruppe \textbf{Controller}\footnote{Die Ähnlichkeit der Gruppenamen zum MVC-Pattern ist zufällig entstanden und wurde nicht beabsichtigt.}:
+	\item Gruppe \textbf{Controller}\footnote{Die Ähnlichkeit der Gruppennamen zum MVC-Entwurfsmuster ist zufällig entstanden und wurde nicht beabsichtigt.}:
 	Die Komponenten in dieser Gruppe implementieren die Ablauflogik des Programms.
 	Durch ein einheitliches Interface dieser Komponenten ist einerseits ein einfacher Wechsel zwischen verschiedenen Programmfunktionen möglich, andererseits bleiben unterschiedliche Funktionen getrennt.
 	Hier wurde die Hauptaufgabe (automatischer Kugelfall), ein manuell gesteuerter Abwurf und die Ausgabe der Sensorwerte im CSV-Format als jeweils eigene Komponente realisiert.
@@ -16,20 +16,20 @@ Die Systemkomponenten wurden in drei Gruppen eingeteilt:
 Das von Controller-Komponente für den Kugelfall realisierte Verhalten wird im Folgenden genauer dargestellt.
 
 \subsection{Positionsbestimmung}\label{design_pos}
-Zur Ermittlung der Scheibenpositon wird bei der letzten Flanke des Hallsensors die Zeit gespeichert.
+Zur Ermittlung der Scheibenposition wird bei der letzten Flanke des Hallsensors die Zeit gespeichert.
 
 \subsection{Geschwindigkeitsberechnung}\label{design_geschwindigkeit}
 Die Zeitpunkte der Flanken des Fotosensors der letzten Umdrehung werden in einem Ringpuffer gehalten.
 Da eine Umdrehung 12 Flanken entspricht, stehen die Zeitpunkte $t_0$, $t_{-1}$, \dots $t_{-11}$ zur Verfügung, wobei $t_0$ den jüngsten und $t_{-11}$ den ältesten Zeitpunkt bezeichnet.
 
 Für die weitere Verarbeitung ist es vorteilhaft, nicht die Drehzahl sondern die Umlaufdauer $T_U$ zu berechnen.
-Für diese kann dann eine Approxmation für den Durchschnittswert der letzten Umdrehung gewonnen werden:
+Für diese kann dann eine Approximation für den Durchschnittswert der letzten Umdrehung gewonnen werden:
 \begin{equation*}
 T_U = \frac{t_0 - t_{-11}}{12}
 \end{equation*}
 
 \subsection{Stabilität der Messwerte}\label{design_stabilitaet}
-Die zuvor genannten Messwerte müssen, um weiterverarbeitet werden zu können bzw. ein Auslösen des Release zu erlauben, gewisse Stabilitätskriterien erfüllen.
+Die zuvor genannten Messwerte müssen, um weiterverarbeitet werden zu können beziehungsweise ein Auslösen des Release zu erlauben, gewisse Stabilitätskriterien erfüllen.
 Diese sind:
 \begin{itemize}
 	\item Es müssen bereits Flanken für den Photo- und Hallsensor registriert sein.
@@ -37,8 +37,8 @@ Diese sind:
 	\item Die aktuelle Geschwindigkeit muss sich innerhalb eines zulässigen Bereichs bewegen.
 \end{itemize}
 
-Zusätzlich existiert bei dem gewählten Aufbau noch das Problem, dass bei der Bewegung des Servos ungültige Photosensorwerte entstehen.
-Diesem Problem wird durch ein explizites Invaldieren eines Teils des Ringpuffers begegnet.
+Zusätzlich existiert bei dem gewählten Aufbau noch das Problem, dass bei der Bewegung des Servomotors ungültige Photosensorwerte entstehen.
+Diesem Problem wird durch ein explizites Invalidieren eines Teils des Ringpuffers begegnet.
 
 \subsection{Berechnung des nächsten Fallzeitpunktes}\label{design_zeitpunkt}
 Wenn die Messwerte stabil sind, kann eine Schätzung für den besten nächsten Auslösezeitpunkt $t_A$ berechnet werden.
@@ -61,9 +61,12 @@ Die zuvor erwähnten Messwerte werden kontinuierlich in einem definierten Abstan
 Dadurch kann auch die Schätzung für den nächsten Auslösezeitpunkt $t_A$ kontinuierlich aktualisiert werden.
 In der Praxis stellte sich ein Wert von 10 Millisekunden für $T_M$ als ausreichend heraus.
 
-Dadurch, dass zwischen den Messpunkten immer $T_M$ gewartet wird, wird der (mit einer Genauigkeit von einer Millisekunde berechnete) Auslösezeitpunkt eventuell nicht exakt erreicht.
-Deshalb erfolgt das Aulösen in einem Zeitfenster.
+Dadurch, dass zwischen den Messpunkten immer $T_M$ gewartet wird, also länger als eine Millisekunde, wird der (mit einer Genauigkeit von einer Millisekunde berechnete) Auslösezeitpunkt eventuell nicht exakt erreicht.
+Deshalb erfolgt das Auslösen in einem Zeitfenster.
 Wenn $t$ die aktuelle Zeit bezeichnet, erfolgt das Auslösen, wenn folgende Beziehung gilt:
 \begin{equation*}
 t_A - \frac{T_M}{2} \leq t \leq t_A + \frac{T_M}{2}
 \end{equation*}
+
+Zusätzlich werden natürlich die oben genannten Stabilitätskriterien überprüft.
+Falls diese noch nicht erfüllt sind, oder das Zeitfenster verfehlt wurde, wird wieder $T_M$ abgewartet.
